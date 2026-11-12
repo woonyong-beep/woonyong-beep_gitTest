@@ -1,9 +1,10 @@
 """매수듀레이션(Buy Duration) 이론 시뮬레이션.
 
 설정
-- 동일 종목, 동일 예산 B=1, 동일 투자기간 T.
+- 동일 종목, 동일 예산 100, 동일 투자기간 T.
+- 기준군: 0시점에 예산 100 전액 매수.
+- 비교군: 그 외의 매수 일정. 아직 매수하지 않은 예산은 무위험채권에 둔다.
 - 매수듀레이션 D: 예산을 [0, D) 구간에 걸쳐 균등 분할 매수한다 (D=0 이면 일시 매수).
-- 아직 매수하지 않은 현금은 무위험채권(연 r)에 둔다.
 - 성과는 만기 T 시점의 총수익률 R = W_T / B - 1 의 (위험=표준편차, 기대수익률)로 평가한다.
 
 비교 대상
@@ -22,6 +23,7 @@ MONTHS = 60          # 투자기간 T = 5년 (월 단위)
 DT = 1 / 12
 MU, SIGMA, RF = 0.08, 0.20, 0.03   # 연 기대수익률, 변동성, 무위험이자율
 N_PATHS = 200_000
+BUDGET = 100       # 예산
 DURATIONS = [0, 6, 12, 24, 36, 48, 60]   # 매수듀레이션 (개월). 0 = 일시 매수
 
 
@@ -59,6 +61,7 @@ def duration_weights(d):
 
 
 def stats(wealth):
+    """wealth: 예산 1 기준 만기 자산. (기대수익률, 위험, 샤프)를 돌려준다."""
     rf_total = np.exp(RF * DT * MONTHS) - 1
     r = wealth - 1
     mean, std = r.mean(), r.std()
@@ -85,31 +88,39 @@ def tangency_schedule(x):
 
 
 def run(label, **model):
+    """기준군(0시점에 예산 전액 매수)과 비교군(분할 매수 + 잔여 예산은 무위험채권)을 비교."""
     rng = np.random.default_rng(0)
     x = timing_assets(simulate_prices(rng, **model))
     rf_total = np.exp(RF * DT * MONTHS) - 1
 
     print(f"\n=== {label} ===")
-    print(f"무위험 총수익률({MONTHS}개월): {rf_total:6.2%}")
-    print(f"{'전략':<22}{'기대수익':>9}{'위험':>9}{'샤프':>8}{'동일위험 CML 대비':>18}")
+    print(f"예산 {BUDGET}, 전액 무위험채권일 때 만기 자산: {BUDGET * (1 + rf_total):.1f}")
+    print(f"{'전략':<22}{'기대만기자산':>8}{'위험':>8}{'샤프':>8}"
+          f"{'기준군 대비':>10}{'기준군 이길 확률':>12}{'위험조정 초과':>10}")
 
-    lump_mean, lump_std, lump_sharpe = stats(x @ duration_weights(0))
-    rows = [(f"D={d:>2}개월" if d else "D= 0 (일시매수)", duration_weights(d)) for d in DURATIONS]
+    base = x @ duration_weights(0)          # 기준군: 0시점 전액 매수
+    base_mean, base_std, base_sharpe = stats(base)
+    rows = [("기준군: 0시점 전액매수", duration_weights(0))]
+    rows += [(f"비교군: D={d:>2}개월", duration_weights(d)) for d in DURATIONS[1:]]
     w_opt = tangency_schedule(x)
-    rows.append(("최적 매수일정(접점)", w_opt))
+    rows.append(("비교군: 최적 매수일정", w_opt))
 
     points = []
     for name, w in rows:
-        mean, std, sharpe = stats(x @ w)
-        # 같은 위험을 지는 CML 위의 점 (t=0 에 일부만 일시매수) 대비 초과 기대수익
-        vs_cml = mean - (rf_total + lump_sharpe * std)
-        print(f"{name:<22}{mean:>9.2%}{std:>9.2%}{sharpe:>8.3f}{vs_cml:>+17.2%}")
+        wealth = x @ w
+        mean, std, sharpe = stats(wealth)
+        diff = BUDGET * (mean - base_mean)                  # 기대 만기자산 차이
+        win = (wealth > base).mean()                        # 기준군보다 만기자산이 큰 경로 비율
+        # 같은 위험을 지도록 기준군을 무위험채권과 섞었을 때 대비 초과 기대자산
+        adj = BUDGET * (mean - (rf_total + base_sharpe * std))
+        print(f"{name:<22}{BUDGET * (1 + mean):>12.1f}{BUDGET * std:>10.1f}{sharpe:>10.3f}"
+              f"{diff:>+13.1f}{win:>17.1%}{adj:>+15.1f}")
         points.append((name, mean, std))
 
     top = np.argsort(w_opt)[::-1][:5]
     desc = ", ".join(f"{t}개월차 {w_opt[t]:.0%}" for t in sorted(top) if w_opt[t] > 0.01)
     print(f"최적 매수일정의 주요 매수 시점: {desc}")
-    return points, (rf_total, lump_sharpe)
+    return points, (rf_total, base_sharpe)
 
 
 def plot(results, path="buy_duration_frontier.png"):
@@ -122,7 +133,7 @@ def plot(results, path="buy_duration_frontier.png"):
         dur = points[:-1]
         stds = [p[2] for p in dur]
         ax.plot([0, max(stds) * 1.05], [rf_total, rf_total + lump_sharpe * max(stds) * 1.05],
-                "--", color="gray", label="CML (lump sum + risk-free)")
+                "--", color="gray", label="benchmark (lump sum at t=0) mixed with risk-free")
         ax.plot(stds, [p[1] for p in dur], "o-", label="buy-duration frontier")
         for d, p in zip(DURATIONS, dur):
             ax.annotate(f"D={d}", (p[2], p[1]), textcoords="offset points", xytext=(5, -10), fontsize=8)
