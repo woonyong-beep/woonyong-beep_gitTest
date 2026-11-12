@@ -39,7 +39,7 @@ def simulate_prices(rng, mu, sigma, kappa=0.0):
 
 def infinite_buy(prices, take_profit=TAKE_PROFIT):
     """만기 자산(예산 1 기준), 완료 사이클 수, 평균 주식 비중, 만기 시 물린 상태 여부."""
-    n = len(prices)
+    n, days = prices.shape[0], prices.shape[1] - 1   # 기간은 가격 배열 길이에서 정한다 (실데이터 백테스트에서도 재사용)
     cash = np.ones(n)
     shares = np.zeros(n)
     cost = np.zeros(n)            # 현재 사이클 투입 원금
@@ -49,7 +49,7 @@ def infinite_buy(prices, take_profit=TAKE_PROFIT):
     exposure = np.zeros(n)
     growth = np.exp(RF * DT)
 
-    for t in range(DAYS):
+    for t in range(days):
         s = prices[:, t]
         if t:
             cash *= growth
@@ -72,7 +72,7 @@ def infinite_buy(prices, take_profit=TAKE_PROFIT):
     cash *= growth
     wealth = cash + shares * s
     stuck = (shares > 0) & (s * shares < cost)
-    return wealth, cycles, exposure / DAYS, stuck
+    return wealth, cycles, exposure / days, stuck
 
 
 def dca_hold(prices):
