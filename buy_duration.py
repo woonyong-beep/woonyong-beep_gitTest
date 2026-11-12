@@ -2,6 +2,8 @@
 
 설정
 - 동일 종목, 동일 예산 100, 동일 투자기간 T.
+- 투자종목은 시장포트폴리오의 기대수익률과 변동성을 따른다.
+  따라서 기준군과 무위험채권을 잇는 선이 곧 자본시장선(CML)이다.
 - 기준군: 0시점에 예산 100 전액 매수.
 - 비교군: 그 외의 매수 일정. 아직 매수하지 않은 예산은 무위험채권에 둔다.
 - 매수듀레이션 D: 예산을 [0, D) 구간에 걸쳐 균등 분할 매수한다 (D=0 이면 일시 매수).
@@ -21,7 +23,10 @@ from scipy.optimize import minimize
 
 MONTHS = 60          # 투자기간 T = 5년 (월 단위)
 DT = 1 / 12
-MU, SIGMA, RF = 0.08, 0.20, 0.03   # 연 기대수익률, 변동성, 무위험이자율
+# 투자종목 = 시장포트폴리오. 기대수익률과 변동성은 시장포트폴리오의 값을 적용한다.
+# (가정: 무위험 3%, 시장위험프리미엄 5%, 시장 변동성 16% -> 연 샤프비율 약 0.31)
+RF = 0.03                  # 무위험이자율 (연)
+MU, SIGMA = 0.08, 0.16     # 시장포트폴리오 기대수익률, 변동성 (연)
 N_PATHS = 200_000
 BUDGET = 100       # 예산
 DURATIONS = [0, 6, 12, 24, 36, 48, 60]   # 매수듀레이션 (개월). 0 = 일시 매수
@@ -133,7 +138,7 @@ def plot(results, path="buy_duration_frontier.png"):
         dur = points[:-1]
         stds = [p[2] for p in dur]
         ax.plot([0, max(stds) * 1.05], [rf_total, rf_total + lump_sharpe * max(stds) * 1.05],
-                "--", color="gray", label="benchmark (lump sum at t=0) mixed with risk-free")
+                "--", color="gray", label="CML (market lump sum at t=0 + risk-free)")
         ax.plot(stds, [p[1] for p in dur], "o-", label="buy-duration frontier")
         for d, p in zip(DURATIONS, dur):
             ax.annotate(f"D={d}", (p[2], p[1]), textcoords="offset points", xytext=(5, -10), fontsize=8)
