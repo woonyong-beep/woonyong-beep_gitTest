@@ -1,0 +1,545 @@
+corp_code,company,fs_div,account_id,account_nm,occurrence,std_id,method,confidence,review,note,years,n_rows
+00126380,삼성전자,CFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_ShortTermOtherReceivables,미수금,1,BS.A132,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,dart_ShortTermPrepaidExpenses,선급비용,1,BS.A161,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,1,BS.A122,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,1,BS.A122,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,1,BS.A17,position,high,ok,"원문: FY2025 연결 재무상태표(doc_probe_rows.csv 11행)에서 기타유동자산 다음, 비유동자산 앞. 전전기 열(2023 말 2,178억)이 API 와 일치. 산술: 금액이 0 이 아닌 3칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음",2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A169,manual,high,ok,"같은 표에 선급비용이 따로 있어 그 나머지 -> BS.A169. 원문(FY2025 연결, doc_probe_rows.csv)에서 선급비용과 기타유동자산이 나란한 줄",2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계종속기업투자자산-지분법,1,BS.A25,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 비유동금융자산,1,BS.A262,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,1,BS.E1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_ElementsOfOtherStockholdersEquity,기타자본항목,1,BS.E19,manual,high,ok,"기타포괄손익누계액 줄이 따로 없어, 기타포괄손익누계액과 기타자본항목을 합친 묶음 노드에 대응 (책임자 결정)",2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_IssuedCapitalOfCommonStock,보통주자본금,1,BS.E111,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_IssuedCapitalOfPreferredStock,우선주자본금,1,BS.E112,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_SharePremium,주식발행초과금,1,BS.E12,xbrl_id,high,ok,자본잉여금 대신 주식발행초과금만 표시 -> BS.E12 (책임자 규칙),2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncontrollingInterests,비지배지분,1,BS.E2,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_EquityAndLiabilities,자본과부채총계,1,BS.T,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_ShortTermAdvancesCustomers,선수금,1,BS.L171,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,dart_ShortTermWithholdings,예수금,1,BS.L172,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,-표준계정코드 미사용-,단기차입금,1,BS.L121,name,high,ok,"표준코드 미사용, 이름으로. 원문(FY2025 연결)에서 유동부채 구획",2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,1,BS.L113,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,1,BS.L122,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024,2
+00126380,삼성전자,CFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,1,BS.L18,position,high,ok,"원문: FY2025 연결 재무상태표(34행)에서 유동부채 마지막 줄, 비유동부채 앞. 산술: 금액이 0 이 아닌 3칸(재무제표×기간) 모두에서 BS.L28 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음",2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_OtherCurrentLiabilities,기타 유동부채,1,BS.L179,manual,high,ok,같은 표에 선수금·예수금이 따로 있어 그 나머지 -> BS.L179. 원문(FY2025 연결)에서 나란한 줄,2023,1
+00126380,삼성전자,CFS,ifrs-full_OtherCurrentPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_NoncurrentProvisions,장기충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024,2
+00126380,삼성전자,CFS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,ifrs-full_OtherNoncurrentLiabilities,기타 비유동 부채,1,BS.L28,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,ifrs-full_OtherNoncurrentPayables,장기미지급금,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,dart_ShortTermOtherReceivables,미수금,1,BS.A132,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,dart_ShortTermPrepaidExpenses,선급비용,1,BS.A161,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A169,manual,high,ok,"같은 표에 선급비용이 따로 있어 그 나머지 -> BS.A169. 원문(FY2025 연결, doc_probe_rows.csv)에서 선급비용과 기타유동자산이 나란한 줄",2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_IntangibleAssetsOtherThanGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,영업권 제외 무형자산 id. 책임자 규칙에 따라 영업권 포함 id 와 같은 BS.A24,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자",1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 비유동금융자산,1,BS.A262,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,dart_ElementsOfOtherStockholdersEquity,기타자본항목,1,BS.E19,manual,high,ok,"기타포괄손익누계액 줄이 따로 없어, 기타포괄손익누계액과 기타자본항목을 합친 묶음 노드에 대응 (책임자 결정)",2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,dart_IssuedCapitalOfCommonStock,보통주자본금,1,BS.E111,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,dart_IssuedCapitalOfPreferredStock,우선주자본금,1,BS.E112,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_SharePremium,주식발행초과금,1,BS.E12,xbrl_id,high,ok,자본잉여금 대신 주식발행초과금만 표시 -> BS.E12 (책임자 규칙),2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_EquityAndLiabilities,자본과부채총계,1,BS.T,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,dart_ShortTermAdvancesCustomers,선수금,1,BS.L171,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,dart_ShortTermWithholdings,예수금,1,BS.L172,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,-표준계정코드 미사용-,단기차입금,1,BS.L121,name,high,ok,"표준코드 미사용, 이름으로. 원문(FY2025 연결)에서 유동부채 구획",2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,1,BS.L113,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,1,BS.L122,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024,2
+00126380,삼성전자,OFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_OtherCurrentLiabilities,기타 유동부채,1,BS.L179,manual,high,ok,같은 표에 선수금·예수금이 따로 있어 그 나머지 -> BS.L179. 원문(FY2025 연결)에서 나란한 줄,2023,1
+00126380,삼성전자,OFS,ifrs-full_OtherCurrentPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,ifrs-full_NoncurrentProvisions,장기충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024,2
+00126380,삼성전자,OFS,ifrs-full_OtherNoncurrentLiabilities,기타 비유동 부채,1,BS.L28,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,ifrs-full_OtherNoncurrentPayables,장기미지급금,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,dart_ShortTermOtherReceivablesNet,미수금,1,BS.A132,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_CurrentPrepaidExpenses,선급비용,1,BS.A161,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,1,BS.A25,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2024,1
+00126380,삼성전자,CFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_CurrentAdvances,선수금,1,BS.L171,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L179,manual,high,ok,같은 표에 선수금·예수금이 따로 있어 그 나머지 -> BS.L179. 원문(FY2025 연결)에서 나란한 줄,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,dart_ShortTermOtherReceivablesNet,미수금,1,BS.A132,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,ifrs-full_CurrentPrepaidExpenses,선급비용,1,BS.A161,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2024,1
+00126380,삼성전자,OFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,ifrs-full_CurrentAdvances,선수금,1,BS.L171,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L179,manual,high,ok,같은 표에 선수금·예수금이 따로 있어 그 나머지 -> BS.L179. 원문(FY2025 연결)에서 나란한 줄,2024;2025,2
+00126380,삼성전자,OFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2025,1
+00126380,삼성전자,CFS,ifrs-full_OtherShorttermProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,IFRS 이름은 기타단기충당부채이나 이 회사는 유동 충당부채를 이 한 줄로만 표시 (2024 까지는 CurrentProvisions),2025,1
+00126380,삼성전자,CFS,ifrs-full_OtherLongtermProvisions,장기충당부채,1,BS.L23,xbrl_id,high,ok,IFRS 이름은 기타장기충당부채이나 이 회사는 비유동 충당부채를 이 한 줄로만 표시 (2024 까지는 NoncurrentProvisions),2025,1
+00126380,삼성전자,OFS,ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,1,BS.A262,xbrl_id,high,ok,,2025,1
+00126380,삼성전자,OFS,ifrs-full_OtherShorttermProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,IFRS 이름은 기타단기충당부채이나 이 회사는 유동 충당부채를 이 한 줄로만 표시 (2024 까지는 CurrentProvisions),2025,1
+00126380,삼성전자,OFS,ifrs-full_OtherLongtermProvisions,장기충당부채,1,BS.L23,xbrl_id,high,ok,IFRS 이름은 기타장기충당부채이나 이 회사는 비유동 충당부채를 이 한 줄로만 표시 (2024 까지는 NoncurrentProvisions),2025,1
+00164779,SK하이닉스,CFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,-표준계정코드 미사용-,매각예정자산,1,BS.A17,position,medium,ok,"표준코드 미사용. 산술: 금액이 0 이 아닌 3칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (표준코드 미사용 줄 2023 1칸 + 표준 id 줄 2024~25 2칸). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2023,1
+00164779,SK하이닉스,CFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentInvestments,단기투자자산,1,BS.A122,xbrl_id,high,ok,단기투자자산 (공정가치·상각후원가 구분 없이 한 줄),2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentTaxAssets,당기법인세자산,1,BS.A15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentFinancialAssets,기타금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentReceivables,기타수취채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업투자,1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod,장기투자자산,1,BS.A262,xbrl_id,high,ok,장기투자자산 (지분법 외 투자 한 줄),2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,종업원급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentFinancialAssets,기타금융자산,1,BS.A263,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentReceivables,기타수취채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유주에게 귀속되는 자본,1,BS.E1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,dart_ElementsOfOtherStockholdersEquity,기타자본,1,BS.E15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncontrollingInterests,비지배지분,1,BS.E2,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_EquityAndLiabilities,부채및자본총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,dart_CurrentNontradePayables,기타지급채무,1,BS.L112,xbrl_id,high,ok,기타지급채무 (미지급금과 별도 줄). 미지급금과 같은 BS.L112 에 합산,2023;2024;2025,3
+00164779,SK하이닉스,CFS,dart_ShortTermOtherPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentFinancialLiabilities,기타금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentLiabilities,기타 유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024,2
+00164779,SK하이닉스,CFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,dart_NoncurrentNontradePayables,기타지급채무,1,BS.L26,xbrl_id,high,ok,비유동 기타지급채무. 장기미지급금과 같은 BS.L26 에 합산,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_LongtermBorrowings,차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentProvisions,충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,확정급여부채,1,BS.L24,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentLiabilities,기타 비유동 부채,1,BS.L28,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentPayables,장기미지급금,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentInvestments,단기투자자산,1,BS.A122,xbrl_id,high,ok,단기투자자산 (공정가치·상각후원가 구분 없이 한 줄),2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentTaxAssets,당기법인세자산,1,BS.A15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentFinancialAssets,기타금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentReceivables,기타수취채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2025,2
+00164779,SK하이닉스,OFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_NonCurrentAvailableForSaleFinancialAssets,기타금융자산,1,BS.A263,name,medium,ok,"두 노드에 맞음: id(매도가능금융자산)로는 BS.A262 장기투자금융자산, 이름(기타금융자산)과 이듬해 연속성으로는 BS.A263. 둘 다 BS.A26 아래라 BS.A26 이상 합계는 같음. 이름 쪽(BS.A263)을 골랐음 (2023 별도 한 줄, 628억) / 책임자 결정: 이듬해 보고서와의 연속성을 우선해 BS.A263 유지",2023,1
+00164779,SK하이닉스,OFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 공동기업과 관계기업에 대한 투자자산",1,BS.A25,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,ifrs-full_NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod,장기투자자산,1,BS.A262,xbrl_id,high,ok,장기투자자산 (지분법 외 투자 한 줄),2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,종업원급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentReceivables,기타수취채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_ElementsOfOtherStockholdersEquity,기타자본,1,BS.E15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_EquityAndLiabilities,부채및자본총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_CurrentNontradePayables,기타지급채무,1,BS.L112,xbrl_id,high,ok,기타지급채무 (미지급금과 별도 줄). 미지급금과 같은 BS.L112 에 합산,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_ShortTermOtherPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_ShortTermTradePayables,매입채무,1,BS.L111,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentFinancialLiabilities,기타금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentLiabilities,기타 유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024,2
+00164779,SK하이닉스,OFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,dart_NoncurrentNontradePayables,기타지급채무,1,BS.L26,xbrl_id,high,ok,비유동 기타지급채무. 장기미지급금과 같은 BS.L26 에 합산,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024,2
+00164779,SK하이닉스,OFS,ifrs-full_LongtermBorrowings,차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentLiabilities,기타 비유동 부채,1,BS.L28,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentPayables,장기미지급금,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 3칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (표준코드 미사용 줄 2023 1칸 + 표준 id 줄 2024~25 2칸). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2024;2025,2
+00164779,SK하이닉스,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유지분,1,BS.E1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,CFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,-표준계정코드 미사용-,단기금융상품,1,BS.A121,name,high,ok,"표준코드 미사용, 이름으로 (2024 한 해만)",2024,1
+00164779,SK하이닉스,OFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업투자,1,BS.A25,xbrl_id,high,ok,별도재무제표인데 지분법 id (2024 한 해). 2023·2025 의 종속기업·관계기업 투자 줄과 같은 자리 -> BS.A25,2024,1
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentFinancialAssets,기타금융자산,1,BS.A263,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,CFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2025,1
+00164779,SK하이닉스,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업투자",1,BS.A25,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2025,1
+00164742,현대자동차,CFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,-표준계정코드 미사용-,금융업채권,1,BS.A18,position,medium,ok,"같은 표에 같은 (id, 이름) 두 줄. ord 순 첫째 줄. 산술: 금액이 0 이 아닌 9칸(재무제표×기간) 모두에서 두 줄의 노드를 맞바꾸면 유동·비유동자산 대사가 수십조 원 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 첫째 줄은 유동자산 구간, 둘째 줄은 비유동자산 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentTaxAssets,당기법인세자산,1,BS.A15,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정비유동자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 9칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherCurrentAssets,기타자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherCurrentFinancialAssets,기타금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherCurrentReceivables,기타채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_LongTermDepositsNotClassifiedAsCashEquivalents,장기금융상품,1,BS.A261,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,-표준계정코드 미사용-,금융업채권,2,BS.A2B,position,medium,ok,"같은 표에 같은 (id, 이름) 두 줄. ord 순 둘째 줄. 산술: 금액이 0 이 아닌 9칸(재무제표×기간) 모두에서 두 줄의 노드를 맞바꾸면 유동·비유동자산 대사가 수십조 원 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 첫째 줄은 유동자산 구간, 둘째 줄은 비유동자산 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2023;2024;2025,3
+00164742,현대자동차,CFS,-표준계정코드 미사용-,운용리스 자산,1,BS.A2C,name,high,ok,"표준코드 미사용. 이름으로 (현대 고유 노드). 산술: 금액이 0 이 아닌 9칸(재무제표×기간) 모두에서 BS.A169 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음",2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,공동기업 및 관계기업투자,1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentTradeReceivables,장기성매출채권,1,BS.A271,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherNoncurrentAssets,기타자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherNoncurrentFinancialAssets,기타금융자산,1,BS.A263,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherNoncurrentReceivables,기타채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업소유주지분,1,BS.E1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_ElementsOfOtherStockholdersEquity,기타자본항목,1,BS.E15,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncontrollingInterests,비지배지분,1,BS.E2,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_ShortTermOtherPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_ShortTermTradePayables,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,1,BS.L122,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정비유동부채,1,BS.L18,position,medium,ok,"산술: 금액이 0 이 아닌 7칸(재무제표×기간) 모두에서 BS.L28 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 유동부채~부채총계 머리 줄 사이 구간 (보조 근거)",2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherCurrentFinancialLiabilities,기타금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherCurrentLiabilities,기타부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_ShorttermBorrowings,단기차입금,1,BS.L121,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_PostemploymentBenefitObligations,순확정급여부채,1,BS.L24,position,medium,ok,"id 에 유동/비유동 구분 없음. 차트에 확정급여부채 노드는 BS.L24 하나. 산술: 금액이 0 이 아닌 3+6칸(재무제표×기간) 모두에서 유동(BS.L15 로 시험) 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 비유동부채 머리 줄 뒤 구간 (보조 근거)",2023,1
+00164742,현대자동차,CFS,-표준계정코드 미사용-,장기성미지급금,1,BS.L26,name,high,ok,표준코드 미사용 (2023). 2024~ 는 dart_LongTermOtherPayablesNet,2023,1
+00164742,현대자동차,CFS,-표준계정코드 미사용-,장기차입금,1,BS.L212,name,high,ok,표준코드 미사용 (2023). 2024~ 는 NoncurrentPortionOfNoncurrentLoansReceived,2023,1
+00164742,현대자동차,CFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_NoncurrentProvisions,충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,ifrs-full_OtherNoncurrentLiabilities,기타부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherCurrentAssets,기타자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherCurrentFinancialAssets,기타금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherCurrentReceivables,기타채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_LongTermDepositsNotClassifiedAsCashEquivalents,장기금융상품,1,BS.A261,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업,공동기업 및 관계기업투자",1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,1,BS.A29,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentTradeReceivables,장기성매출채권,1,BS.A271,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherNoncurrentAssets,기타자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherNoncurrentFinancialAssets,기타금융자산,1,BS.A263,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherNoncurrentReceivables,기타채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_ElementsOfOtherStockholdersEquity,기타자본항목,1,BS.E15,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_ShortTermOtherPayables,미지급금,1,BS.L112,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,dart_ShortTermTradePayables,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,1,BS.L122,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherCurrentFinancialLiabilities,기타금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherCurrentLiabilities,기타부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_ShorttermBorrowings,단기차입금,1,BS.L121,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,-표준계정코드 미사용-,장기성 미지급금,1,BS.L26,name,high,ok,표준코드 미사용 (2023). 2024~ 는 dart_LongTermOtherPayablesNet,2023,1
+00164742,현대자동차,OFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_NoncurrentProvisions,충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,ifrs-full_OtherNoncurrentLiabilities,기타부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,dart_LongTermOtherPayablesNet,장기성미지급금,1,BS.L26,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,ifrs-full_RecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,position,medium,ok,"id 에 유동/비유동 구분 없음. 차트에 확정급여부채 노드는 BS.L24 하나. 산술: 금액이 0 이 아닌 3+6칸(재무제표×기간) 모두에서 유동(BS.L15 로 시험) 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음. 보조: API ord 가 비유동부채 머리 줄 뒤 구간 (보조 근거)",2024;2025,2
+00164742,현대자동차,OFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정비유동자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 2칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (나머지 4칸은 0 이라 산술로 못 가림; 같은 키라 같은 노드). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2024;2025,2
+00164742,현대자동차,OFS,dart_LongTermOtherPayablesNet,장기성미지급금,1,BS.L26,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,OFS,ifrs-full_RecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,position,medium,ok,"id 에 유동/비유동 구분 없음. 차트에 확정급여부채 노드는 BS.L24 하나. 산술: 금액이 0 이 아닌 2칸(재무제표×기간) 모두에서 유동(BS.L15 로 시험) 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음 (나머지 0). 보조: API ord 가 비유동부채 머리 줄 뒤 구간 (보조 근거)",2024;2025,2
+00164742,현대자동차,OFS,ifrs-full_CurrentTaxAssets,당기법인세자산,1,BS.A15,xbrl_id,high,ok,,2025,1
+01515323,LG에너지솔루션,CFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentTaxAssets,선급법인세,1,BS.A15,xbrl_id,high,ok,이름 선급법인세 -> BS.A15 (책임자 규칙),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherCurrentFinancialAssets,기타유동금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherCurrentReceivables,기타수취채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업투자자산,1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentTradeReceivables,장기매출채권,1,BS.A271,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherNoncurrentFinancialAssets,기타비유동금융자산,1,BS.A263,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherNoncurrentReceivables,기타장기수취채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유주지분,1,BS.E1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncontrollingInterests,비지배지분,1,BS.E2,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_EquityAndLiabilities,자본과부채총계,1,BS.T,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,dart_CurrentNontradePayables,기타지급채무,1,BS.L112,xbrl_id,high,ok,기타지급채무 (미지급금과 별도 줄). 미지급금과 같은 BS.L112 에 합산,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2023,1
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentProvisions,유동성충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentTaxLiabilities,미지급법인세,1,BS.L15,xbrl_id,high,ok,이름 미지급법인세 -> BS.L15 (책임자 규칙),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherCurrentFinancialLiabilities,기타유동금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_LongtermBorrowings,차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2023,1
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentPayablesToTradeSuppliers,기타장기지급채무,1,BS.L26,xbrl_id,high,ok,"id 는 비유동 매입채무, 이름은 기타장기지급채무. 어느 쪽이든 BS.L26",2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentProvisions,비유동성충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,xbrl_id,high,ok,,2023;2024,2
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타비유동금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentTaxAssets,선급법인세,1,BS.A15,xbrl_id,high,ok,이름 선급법인세 -> BS.A15 (책임자 규칙),2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentTradeReceivables,매출채권,1,BS.A131,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherCurrentFinancialAssets,기타유동금융자산,1,BS.A123,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherCurrentReceivables,기타수취채권,1,BS.A132,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,-표준계정코드 미사용-,관계기업 및 공동기업투자자산,1,BS.A25,name,high,ok,"표준코드 미사용, 이름으로",2023;2024,2
+01515323,LG에너지솔루션,OFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_IntangibleAssetsOtherThanGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,영업권 제외 무형자산 id. 책임자 규칙에 따라 영업권 포함 id 와 같은 BS.A24,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_InvestmentsInSubsidiaries,종속기업투자자산,1,BS.A25,xbrl_id,high,ok,별도재무제표 종속기업 투자 -> BS.A25 (책임자 규칙),2023;2024,2
+01515323,LG에너지솔루션,OFS,ifrs-full_NoncurrentTradeReceivables,장기매출채권,1,BS.A271,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherNoncurrentFinancialAssets,기타비유동금융자산,1,BS.A263,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherNoncurrentReceivables,기타장기수취채권,1,BS.A272,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,1,BS.E14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_EquityAndLiabilities,자본과부채총계,1,BS.T,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,dart_CurrentNontradePayables,기타지급채무,1,BS.L112,xbrl_id,high,ok,기타지급채무 (미지급금과 별도 줄). 미지급금과 같은 BS.L112 에 합산,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2023,1
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentProvisions,유동성충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherCurrentFinancialLiabilities,기타유동금융부채,1,BS.L16,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_TradeAndOtherPayablesToTradeSuppliers,매입채무,1,BS.L111,position,high,ok,"id·이름 모두 유동/비유동 구분 없음. 2025 보고서는 같은 줄을 TradeAndOtherCurrentPayablesToTradeSuppliers 로 표시하고 전기 금액이 2024 당기와 같음. 산술: 금액이 0 이 아닌 6칸(재무제표×기간) 모두에서 BS.L26 로 옮기면 유동·비유동부채 대사가 깨지고, 이 배정이면 원 단위로 맞음. 2025 보고서가 같은 줄을 유동 id 로 표시하고 전기 금액(1,114,929백만)이 2024 당기와 같음. 보조: API ord 가 유동부채~부채총계 머리 줄 사이 구간 (보조 근거)",2023;2024,2
+01515323,LG에너지솔루션,OFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_LongtermBorrowings,차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2023,1
+01515323,LG에너지솔루션,OFS,ifrs-full_NoncurrentPayablesToTradeSuppliers,기타장기지급채무,1,BS.L26,xbrl_id,high,ok,"id 는 비유동 매입채무, 이름은 기타장기지급채무. 어느 쪽이든 BS.L26",2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_NoncurrentProvisions,비유동성충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타비유동금융부채,1,BS.L27,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,CFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,유동성차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2024;2025,2
+01515323,LG에너지솔루션,CFS,ifrs-full_LongtermBorrowings,비유동성차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2024;2025,2
+01515323,LG에너지솔루션,OFS,ifrs-full_EquityAndLiabilities,부채와자본총계,1,BS.T,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,OFS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,유동성차입금,1,BS.L12,xbrl_id,high,ok,단기차입금과 유동성장기부채를 합친 한 줄 -> 묶음 BS.L12 (책임자 규칙),2024;2025,2
+01515323,LG에너지솔루션,OFS,ifrs-full_LongtermBorrowings,비유동성차입금,1,BS.L21,xbrl_id,high,ok,사채·장기차입금을 합친 비유동 차입금 한 줄 -> 묶음 BS.L21 (책임자 규칙). 사채 포함 여부는 확인 안 함,2024;2025,2
+01515323,LG에너지솔루션,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 1칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (2025 만 있음). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2025,1
+01515323,LG에너지솔루션,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자",1,BS.A25,xbrl_id,high,ok,,2025,1
+01515323,LG에너지솔루션,OFS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,1,BS.L111,xbrl_id,high,ok,,2025,1
+00266961,NAVER,CFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_CurrentFinancialAssetDesignationAsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융자산,1,BS.A122,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A122,xbrl_id,high,ok,유동 기타포괄손익-공정가치 금융자산 (금액 빈칸 행),2023,1
+00266961,NAVER,CFS,ifrs-full_CurrentTaxAssets,당기법인세자산,1,BS.A15,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 1칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (2023 이름). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2023,1
+00266961,NAVER,CFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_TradeAndOtherCurrentReceivables,매출채권및기타채권,1,BS.A13,xbrl_id,high,ok,매출채권과 기타채권을 한 줄로 표시 -> 묶음 BS.A13,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_LongTermDepositsNotClassifiedAsCashEquivalents,장기금융상품,1,BS.A261,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_LongTermTradeAndOtherNonCurrentReceivablesGross,매출채권및기타채권,1,BS.A27,xbrl_id,high,ok,id 에 Gross 가 있으나 2024 보고서 전기(NoncurrentReceivables)와 금액이 같아 같은 줄로 봄 -> 묶음 BS.A27,2023,1
+00266961,NAVER,CFS,dart_NonCurrentFairValueFinancialAsset,당기손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업및공동기업 투자,1,BS.A25,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,CFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유주에게 귀속되는 자본,1,BS.E1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_ElementsOfOtherStockholdersEquity,기타자본구성요소,1,BS.E19,manual,high,ok,"기타포괄손익누계액 줄이 따로 없어, 기타포괄손익누계액과 기타자본항목을 합친 묶음 노드에 대응 (책임자 결정)",2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncontrollingInterests,비지배지분,1,BS.E2,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_EquityAndLiabilities,자본및부채총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,-표준계정코드 미사용-,단기차입금,1,BS.L121,name,high,ok,표준코드 미사용 (2023). 2024~ 는 ShorttermBorrowings,2023,1
+00266961,NAVER,CFS,-표준계정코드 미사용-,유동성장기차입금,1,BS.L122,name,high,ok,"표준코드 미사용, 이름으로",2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued,유동성사채,1,BS.L122,xbrl_id,high,ok,유동성사채 -> BS.L122 (단기사채가 섞였는지는 확인 안 함),2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognition,당기손익-공정가치 측정 금융부채,1,BS.L16,xbrl_id,high,ok,당기손익-공정가치 측정 금융부채(유동) -> BS.L16 (책임자 규칙). 같은 이름이 해마다 다른 id,2023,1
+00266961,NAVER,CFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_TradeAndOtherCurrentPayables,매입채무및기타채무,1,BS.L11,xbrl_id,high,ok,매입채무와 기타채무를 한 줄로 표시 -> 묶음 BS.L11,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,dart_LongTermTradeAndOtherNonCurrentPayables,매입채무및기타채무,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognition,당기손익-공정가치 측정 금융부채,1,BS.L27,xbrl_id,high,ok,당기손익-공정가치 측정 금융부채(비유동) -> BS.L27 (책임자 규칙). 같은 이름이 해마다 다른 id,2023,1
+00266961,NAVER,CFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentProvisions,충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_Assets,자산총계,1,BS.A,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentAssets,유동자산,1,BS.A1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,1,BS.A11,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융자산,1,BS.A122,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A122,xbrl_id,high,ok,유동 기타포괄손익-공정가치 금융자산 (금액 빈칸 행),2023,1
+00266961,NAVER,OFS,ifrs-full_Inventories,재고자산,1,BS.A14,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_OtherCurrentAssets,기타유동자산,1,BS.A16,xbrl_id,high,ok,선급비용을 따로 표시하지 않아 묶음 BS.A16,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,1,BS.A121,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_TradeAndOtherCurrentReceivables,매출채권및기타채권,1,BS.A13,xbrl_id,high,ok,매출채권과 기타채권을 한 줄로 표시 -> 묶음 BS.A13,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentAssets,비유동자산,1,BS.A2,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,dart_LongTermDepositsNotClassifiedAsCashEquivalents,장기금융상품,1,BS.A261,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,dart_LongTermTradeAndOtherNonCurrentReceivablesGross,매출채권및기타채권,1,BS.A27,xbrl_id,high,ok,id 에 Gross 가 있으나 2024 보고서 전기(NoncurrentReceivables)와 금액이 같아 같은 줄로 봄 -> 묶음 BS.A27,2023,1
+00266961,NAVER,OFS,dart_NonCurrentFairValueFinancialAsset,당기손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_DeferredTaxAssets,이연법인세자산,1,BS.A28,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,1,BS.A24,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_InvestmentProperty,투자부동산,1,BS.A23,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자",1,BS.A25,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,OFS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,1,BS.A2A,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_PropertyPlantAndEquipment,유형자산,1,BS.A21,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_RightofuseAssets,사용권자산,1,BS.A22,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,dart_CapitalSurplus,자본잉여금,1,BS.E12,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,dart_ElementsOfOtherStockholdersEquity,기타자본구성요소,1,BS.E19,manual,high,ok,"기타포괄손익누계액 줄이 따로 없어, 기타포괄손익누계액과 기타자본항목을 합친 묶음 노드에 대응 (책임자 결정)",2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_Equity,자본총계,1,BS.E,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_IssuedCapital,자본금,1,BS.E11,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_RetainedEarnings,이익잉여금,1,BS.E13,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_EquityAndLiabilities,자본및부채총계,1,BS.T,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentLiabilities,유동부채,1,BS.L1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,-표준계정코드 미사용-,유동성장기차입금,1,BS.L122,name,high,ok,"표준코드 미사용, 이름으로",2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentLeaseLiabilities,리스부채,1,BS.L13,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성사채,1,BS.L122,xbrl_id,high,ok,"id 는 유동성장기부채, 이름은 유동성사채. 어느 쪽이든 BS.L122",2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentProvisions,충당부채,1,BS.L14,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,1,BS.L15,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_OtherCurrentLiabilities,기타유동부채,1,BS.L17,xbrl_id,high,ok,선수금·예수금을 따로 표시하지 않아 묶음 BS.L17,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_TradeAndOtherCurrentPayables,매입채무및기타채무,1,BS.L11,xbrl_id,high,ok,매입채무와 기타채무를 한 줄로 표시 -> 묶음 BS.L11,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_Liabilities,부채총계,1,BS.L,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentLiabilities,비유동부채,1,BS.L2,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,dart_LongTermTradeAndOtherNonCurrentPayables,매입채무및기타채무,1,BS.L26,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,1,BS.L22,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,1,BS.L211,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,1,BS.L212,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentProvisions,충당부채,1,BS.L23,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,1,BS.L24,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,1,BS.L28,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정비유동자산,1,BS.A17,position,medium,ok,"산술: 금액이 0 이 아닌 2칸(재무제표×기간) 모두에서 BS.A2A 로 옮기면 유동·비유동자산 대사가 깨지고, 이 배정이면 원 단위로 맞음 (2024~25 이름, 나머지 0). 보조: API ord 가 유동자산~비유동자산 머리 줄 사이 구간 (ord 는 표시 순서가 아니므로 보조 근거)",2024;2025,2
+00266961,NAVER,CFS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,1,BS.A25,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,CFS,ifrs-full_NoncurrentReceivables,매출채권및기타채권,1,BS.A27,xbrl_id,high,ok,비유동 매출채권및기타채권 한 줄 -> 묶음 BS.A27,2024;2025,2
+00266961,NAVER,CFS,dart_CurrentFinancialLiabilitiesDesignationAsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,1,BS.L16,xbrl_id,high,ok,당기손익-공정가치 측정 금융부채(유동) -> BS.L16 (책임자 규칙). 같은 이름이 해마다 다른 id,2024,1
+00266961,NAVER,CFS,ifrs-full_ShorttermBorrowings,단기차입금,1,BS.L121,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,CFS,ifrs-full_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,1,BS.L27,xbrl_id,high,ok,당기손익-공정가치 측정 금융부채(비유동) -> BS.L27 (책임자 규칙). 같은 이름이 해마다 다른 id,2024;2025,2
+00266961,NAVER,OFS,ifrs-full_NoncurrentReceivables,매출채권및기타채권,1,BS.A27,xbrl_id,high,ok,비유동 매출채권및기타채권 한 줄 -> 묶음 BS.A27,2024;2025,2
+00266961,NAVER,CFS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2025,1
+00266961,NAVER,CFS,ifrs-full_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,1,BS.L16,xbrl_id,high,ok,당기손익-공정가치 측정 금융부채(유동) -> BS.L16 (책임자 규칙). 같은 이름이 해마다 다른 id,2025,1
+00266961,NAVER,OFS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,1,BS.A262,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,1,BS.L25,xbrl_id,high,ok,,2025,1

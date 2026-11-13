@@ -168,7 +168,8 @@ python -m pytest
 ## DART 재무제표 (파일럿)
 
 OpenDART API 로 사업보고서 재무제표(재무상태표 BS, 손익계산서 IS, 포괄손익계산서 CIS, 현금흐름표 CF, 자본변동표 SCE)를
-받아 **받은 그대로(as-reported)** 저장한다. 표준화 계정과목으로 옮기는 층은 아직 없다. 값을 지어내거나 채우지 않는다.
+받아 **받은 그대로(as-reported)** 저장하고, 재무상태표는 표준 계정과목(트리)으로 옮긴 층도 만든다 (아래 "표준화 층").
+값을 지어내거나 채우지 않는다.
 
 ```
 export DART_API_KEY=...            # OpenDART 인증키. 코드는 환경 변수에서만 읽고 어디에도 남기지 않는다
@@ -177,6 +178,7 @@ python dart_collect.py --years 2021-2025 --only 삼성전자
 python dart_collect.py --check     # 받지 않고 점검 -> data/dart/checks.csv, checks.md
 python dart_collect.py --inventory # 받지 않고 계정 목록 -> data/dart/account_inventory.csv
 python dart_collect.py --doc-probe # 삼성전자 원문 문서에서 연결 재무상태표 시험 추출 -> data/dart/doc_probe.md
+python dart_collect.py --standardize # 받지 않고 재무상태표 표준화·대사 -> data/dart/standardized/
 ```
 
 받은 응답은 모두 디스크에 캐시하고, 캐시가 있으면 다시 받지 않는다 (OpenDART 는 하루 호출 한도가 있다).
@@ -197,8 +199,34 @@ python dart_collect.py --doc-probe # 삼성전자 원문 문서에서 연결 재
    currency, raw_file, raw_index`. `raw_file` 의 `list[raw_index]` 가 그 행의 원본이다.
    금액이 빈칸이거나 "-" 이면 빈칸으로 둔다. `rcept_dt` 는 공시목록(list.json)에서 그 접수번호의 접수일을 가져온다.
    `filings.csv` 는 사업보고서 공시 목록(원본·정정 포함)과 재무제표 API 가 실제로 쓴 접수번호(`used_by_fnltt`).
-3. **표준화 층** — 아직 없다 (계정과목 설계 뒤에 만든다). 설계 근거로 `data/dart/account_inventory.csv` 를 만든다:
-   서로 다른 (재무제표, account_id, 계정명) 마다 쓰는 회사, 연도, 연결/별도, 행 수, ord 범위, 같은 이름의 id 수, 같은 id 의 이름 수.
+3. **표준화 층** `data/dart/standardized/` — 지금은 재무상태표(BS)만. 아래 "표준화 층 (재무상태표)" 절.
+   설계 근거 자료로 `data/dart/account_inventory.csv` 가 있다: 서로 다른 (재무제표, account_id, 계정명) 마다 쓰는 회사, 연도,
+   연결/별도, 행 수, ord 범위, 같은 이름의 id 수, 같은 id 의 이름 수.
+
+### 표준화 층 (재무상태표, `--standardize`)
+
+- **표준 계정과목** `data/dart/standard/accounts_bs.csv` (`std_id, parent, name_ko, name_en, kind, note`): 트리다.
+  루트는 `BS.A` 자산총계, `BS.L` 부채총계, `BS.E` 자본총계, `BS.T` 부채와자본총계. 그 아래 유동·비유동 소계(`BS.A1` …),
+  항목, 묶음(group, 예: `BS.A13` 매출채권및기타채권 아래 `BS.A131` 매출채권, `BS.A132` 미수금및기타채권). 회사마다 표시
+  단위가 달라서(NAVER 는 "매출채권및기타채권" 한 줄, 삼성전자는 매출채권·미수금을 따로) 각 줄을 **맞는 가장 깊은 노드**에
+  붙이고, 회사끼리 비교할 때는 자식을 공통 조상까지 더한다. 차트는 연구 책임이 정한다.
+- **매핑표** `data/dart/standard/mapping_bs.csv`: as-reported BS 줄 하나 = 한 행. 키는
+  `corp_code, fs_div, account_id, account_nm, occurrence` (occurrence 는 한 재무제표 안에 같은 (id, 이름) 이 여러 번 있을 때
+  ord 순서로 매긴 1, 2, … — 현대자동차 연결 "금융업채권" 두 줄만 2 까지 있다). 열 `std_id`, `method`(`xbrl_id` id 만으로,
+  `name` 계정명으로, `position` 표 안의 위치로(유동/비유동을 산술 대사·원문으로 확인), `manual` 그 밖), `confidence`
+  (high/medium/low), `review`(`ok` / `needs_lead`), `note`, 참고용 `years, n_rows`.
+- **표준화 표** `bs.csv`: 재무제표 × 기간(`period` = current/prior/prior2, `period_end` 는 사업연도와 기업개황 결산월로 계산) ×
+  노드의 긴 표. `source=reported` 는 그 노드에 바로 대응한 줄(여러 줄이면 합), `source=rollup` 은 값이 있는 자식 노드 값의 합
+  (자식 값은 보고값 우선, 없으면 그 자식의 합계). 둘 다 있으면 두 행. 둘 다 없으면 행이 없다 (0 으로 채우지 않는다).
+  `raw_file` + `raw_index`(세미콜론 목록)가 실제로 더한 as-reported 줄을 가리킨다.
+- **대사** `bs_checks.csv`, 요약 `bs_checks.md`: 보고값과 하위 합계가 둘 다 있는 모든 노드(유동자산, 비유동자산, 자산총계,
+  유동·비유동부채, 부채총계, 지배기업소유주지분(연결), 자본총계, 자본금 …), 그리고 BS.L + BS.E = BS.T, BS.A = BS.T.
+  원 단위로 정확히 같아야 통과다. 실패는 고치지 않고 차이와 관련 줄을 적는다.
+- **비교 가능성** `bs_coverage.csv`: 노드마다 30개 재무제표(5개사 × 3년 × 연결/별도, 당기 열) 중 값이 있는 수, 매핑 행 수,
+  연결에서 5개사 × 3년 모두 값이 있는지(`all5_cfs`), 그 노드가 공통으로 비교되는 가장 깊은 노드인지(`frontier_cfs`).
+
+`python dart_collect.py --standardize` 는 받지 않고 `statements.csv` 에서 다시 만든다. 점검 실패나 매핑 없는 줄이 있으면
+종료 코드 1. 매핑표에 없는 줄(새 회사·새 연도)은 "매핑 없음" 으로 보고하고 값에 넣지 않는다.
 
 ### 점검 (`--check`)
 

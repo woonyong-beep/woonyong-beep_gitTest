@@ -70,7 +70,8 @@ BS.E111,BS.E11,보통주자본금,Common stock,item,
 BS.E112,BS.E11,우선주자본금,Preferred stock,item,
 BS.E12,BS.E1,자본잉여금,Capital surplus,item,주식발행초과금만 표시하는 회사는 여기에 대응
 BS.E13,BS.E1,이익잉여금,Retained earnings,item,
-BS.E14,BS.E1,기타포괄손익누계액,Accumulated other comprehensive income,item,
-BS.E15,BS.E1,기타자본항목,Other components of equity,item,기타포괄손익누계액을 따로 표시하지 않는 회사는 여기에 포함되어 있을 수 있음
+BS.E19,BS.E1,기타자본구성요소,Other equity components including AOCI,group,기타포괄손익누계액과 기타자본항목의 묶음. 둘을 나누지 않고 한 줄로 표시하는 회사(삼성전자·NAVER)는 이 묶음에 직접 대응
+BS.E14,BS.E19,기타포괄손익누계액,Accumulated other comprehensive income,item,
+BS.E15,BS.E19,기타자본항목,Other components of equity,item,기타포괄손익누계액을 따로 표시하는 회사의 나머지 자본 항목
 BS.E2,BS.E,비지배지분,Non-controlling interests,item,
 BS.T,,부채와자본총계,Total equity and liabilities,total,
