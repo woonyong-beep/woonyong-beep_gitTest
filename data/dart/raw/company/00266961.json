@@ -1,0 +1,21 @@
+{
+ "status": "000",
+ "message": "정상",
+ "corp_code": "00266961",
+ "corp_name": "네이버(주)",
+ "corp_name_eng": "NAVER Corporation",
+ "stock_name": "NAVER",
+ "stock_code": "035420",
+ "ceo_nm": "최수연",
+ "corp_cls": "Y",
+ "jurir_no": "1101111707178",
+ "bizr_no": "2208162517",
+ "adres": "경기도 성남시 분당구 정자일로 95 1784",
+ "hm_url": "www.navercorp.com",
+ "ir_url": "https://www.navercorp.com/investment/investors",
+ "phn_no": "1588-3830",
+ "fax_no": "031-784-4175",
+ "induty_code": "63120",
+ "est_dt": "19990602",
+ "acc_mt": "12"
+}

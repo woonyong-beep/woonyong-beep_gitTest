@@ -1,3 +1,6 @@
 __pycache__/
 .pytest_cache/
 *.tmp
+
+# DART 원문·XBRL·corpCode zip (크다. data/dart/large_manifest.csv 에 목록과 sha256 을 남긴다)
+data/dart/raw/_large/

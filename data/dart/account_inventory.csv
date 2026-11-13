@@ -1,0 +1,689 @@
+sj_div,account_id,account_nm,name_norm,standard_id,n_companies,companies,years,fs_divs,n_rows,n_details,ord_min,ord_median,ord_max,ids_for_same_name,names_for_same_id
+BS,ifrs-full_Assets,자산총계,자산총계,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,7,7.0,7,1,1
+BS,ifrs-full_CurrentAssets,유동자산,유동자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,8,8.0,8,1,1
+BS,ifrs-full_CashAndCashEquivalents,현금및현금성자산,현금및현금성자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,9,9.0,11,1,1
+BS,ifrs-full_Inventories,재고자산,재고자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,11,13.0,15,1,1
+BS,ifrs-full_NoncurrentAssets,비유동자산,비유동자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,15,17.0,19,1,1
+BS,ifrs-full_DeferredTaxAssets,이연법인세자산,이연법인세자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,17,19.5,23,1,1
+BS,ifrs-full_IntangibleAssetsAndGoodwill,무형자산,무형자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,24,1,18,21.0,24,2,1
+BS,ifrs-full_PropertyPlantAndEquipment,유형자산,유형자산,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,24,27.0,32,1,1
+BS,ifrs-full_Equity,자본총계,자본총계,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,27,30.0,35,1,1
+BS,ifrs-full_IssuedCapital,자본금,자본금,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,28,33.0,40,1,1
+BS,ifrs-full_RetainedEarnings,이익잉여금,이익잉여금,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,31,35.0,41,1,1
+BS,ifrs-full_NoncontrollingInterests,비지배지분,비지배지분,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS,15,1,33,37,42,1,1
+BS,ifrs-full_CurrentLiabilities,유동부채,유동부채,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,34,39.0,45,1,1
+BS,ifrs-full_Liabilities,부채총계,부채총계,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,41,49.0,56,1,1
+BS,ifrs-full_NoncurrentLiabilities,비유동부채,비유동부채,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,42,50.0,57,1,1
+BS,ifrs-full_DeferredTaxLiabilities,이연법인세부채,이연법인세부채,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,46,53.5,61,1,1
+BS,ifrs-full_CurrentTradeReceivables,매출채권,매출채권,ifrs,4,LG에너지솔루션;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,24,1,10,12.0,14,1,1
+BS,ifrs-full_OtherCurrentAssets,기타유동자산,기타유동자산,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,24,1,12,14.0,17,1,2
+BS,ifrs-full_ShorttermDepositsNotClassifiedAsCashEquivalents,단기금융상품,단기금융상품,ifrs,4,NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,23,1,13,17,18,2,1
+BS,ifrs-full_InvestmentProperty,투자부동산,투자부동산,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,24,1,19,22.0,26,1,1
+BS,ifrs-full_OtherNoncurrentAssets,기타비유동자산,기타비유동자산,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,24,1,22,25.0,27,1,2
+BS,dart_CapitalSurplus,자본잉여금,자본잉여금,dart,4,LG에너지솔루션;NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,24,1,27,31.0,37,1,1
+BS,ifrs-full_OtherCurrentLiabilities,기타유동부채,기타유동부채,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,18,1,39,42.5,50,1,3
+BS,ifrs-full_CurrentProvisions,충당부채,충당부채,ifrs,4,NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,22,1,39,44.5,50,3,2
+BS,ifrs-full_CurrentTaxLiabilities,당기법인세부채,당기법인세부채,ifrs,4,NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,24,1,40,45.5,51,1,2
+BS,ifrs-full_OtherNoncurrentLiabilities,기타비유동부채,기타비유동부채,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,20,1,47,52.0,61,1,3
+BS,ifrs-full_CurrentTaxAssets,당기법인세자산,당기법인세자산,ifrs,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,13,1,10,11,12,1,2
+BS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정자산,매각예정자산,ifrs,3,LG에너지솔루션;NAVER;SK하이닉스,2023;2024;2025,CFS,4,1,13,14.0,14,2,3
+BS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자","종속기업,관계기업및공동기업투자",ifrs,3,LG에너지솔루션;NAVER;삼성전자,2023;2024;2025,OFS,7,1,19,20,23,1,4
+BS,ifrs-full_RightofuseAssets,사용권자산,사용권자산,ifrs,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,18,1,26,29.0,33,1,1
+BS,dart_OtherComprehensiveIncomeLossAccumulatedAmount,기타포괄손익누계액,기타포괄손익누계액,dart,3,LG에너지솔루션;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,18,1,28,33.0,39,1,1
+BS,ifrs-full_EquityAndLiabilities,부채와자본총계,부채와자본총계,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,14,1,32,36.5,43,1,4
+BS,ifrs-full_CurrentLeaseLiabilities,리스부채,리스부채,ifrs,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,18,1,37,43.0,48,2,1
+BS,ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers,매입채무,매입채무,ifrs,3,LG에너지솔루션;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,15,1,40,48,51,3,1
+BS,ifrs-full_NoncurrentLeaseLiabilities,리스부채,리스부채,ifrs,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,18,1,46,54.0,62,2,1
+BS,ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued,사채,사채,ifrs,3,NAVER;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,47,54.5,63,1,1
+BS,ifrs-full_NoncurrentPortionOfNoncurrentLoansReceived,장기차입금,장기차입금,ifrs,3,NAVER;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,17,1,48,55,62,2,1
+BS,ifrs-full_NoncurrentProvisions,충당부채,충당부채,ifrs,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,15,1,49,57,64,3,3
+BS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,순확정급여부채,ifrs,3,LG에너지솔루션;NAVER;삼성전자,2023;2024;2025,CFS;OFS,11,1,50,57,59,3,2
+BS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정비유동자산,매각예정비유동자산,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS,5,1,13,14,14,2,3
+BS,ifrs-full_OtherCurrentFinancialAssets,기타금융자산,기타금융자산,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,12,1,13,16.0,16,3,2
+BS,ifrs-full_OtherCurrentReceivables,기타수취채권,기타수취채권,ifrs,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS;OFS,12,1,15,16.0,17,2,2
+BS,dart_LongTermDepositsNotClassifiedAsCashEquivalents,장기금융상품,장기금융상품,dart,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,12,1,16,18.0,20,1,1
+BS,ifrs-full_IntangibleAssetsOtherThanGoodwill,무형자산,무형자산,ifrs,2,LG에너지솔루션;삼성전자,2023;2024;2025,OFS,6,1,18,18.0,19,2,1
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업 투자,관계기업및공동기업투자,ifrs,2,NAVER;삼성전자,2024;2025,CFS,4,1,22,22.0,22,1,6
+BS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,순확정급여자산,순확정급여자산,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,22,24.5,27,1,2
+BS,ifrs-full_OtherNoncurrentFinancialAssets,기타금융자산,기타금융자산,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,11,1,25,27,30,3,2
+BS,dart_ElementsOfOtherStockholdersEquity,기타자본항목,기타자본항목,dart,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,26,31.0,38,1,3
+BS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유주에게 귀속되는 자본,지배기업의소유주에게귀속되는자본,ifrs,2,NAVER;SK하이닉스,2023;2024;2025,CFS,4,1,31,31.5,33,1,5
+BS,ifrs-full_EquityAndLiabilities,자본과부채총계,자본과부채총계,ifrs,2,LG에너지솔루션;삼성전자,2023,CFS;OFS,4,1,33,33.5,38,1,4
+BS,dart_CurrentNontradePayables,기타지급채무,기타지급채무,dart,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS;OFS,12,1,35,39.0,43,2,1
+BS,-표준계정코드 미사용-,단기차입금,단기차입금,N,2,NAVER;삼성전자,2023;2024;2025,CFS;OFS,7,1,37,41,43,2,
+BS,dart_ShortTermTradePayables,매입채무,매입채무,dart,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,7,1,40,42,47,3,1
+BS,dart_ShortTermOtherPayables,미지급금,미지급금,dart,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,12,1,39,42.5,46,2,1
+BS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,차입금,차입금,ifrs,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS;OFS,8,1,37,42.5,45,2,2
+BS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성장기부채,유동성장기부채,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,40,44.5,49,1,2
+BS,ifrs-full_OtherCurrentFinancialLiabilities,기타금융부채,기타금융부채,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,12,1,45,48.0,53,2,2
+BS,ifrs-full_OtherCurrentLiabilities,기타 유동부채,기타유동부채,ifrs,2,SK하이닉스;삼성전자,2023;2024,CFS;OFS,6,1,43,48.5,50,1,3
+BS,ifrs-full_ShorttermBorrowings,단기차입금,단기차입금,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,8,1,47,48.5,55,2,1
+BS,ifrs-full_LongtermBorrowings,차입금,차입금,ifrs,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS;OFS,8,1,44,53.0,56,2,2
+BS,ifrs-full_OtherNoncurrentLiabilities,기타 비유동 부채,기타비유동부채,ifrs,2,SK하이닉스;삼성전자,2023,CFS;OFS,4,1,51,57.5,61,1,3
+BS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타금융부채,기타금융부채,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,12,1,54,58.5,65,2,2
+BS,ifrs-full_OtherNoncurrentPayables,장기미지급금,장기미지급금,ifrs,2,SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,12,1,52,58.5,62,1,1
+BS,-표준계정코드 미사용-,단기금융상품,단기금융상품,N,1,SK하이닉스,2024,OFS,1,1,9,9,9,2,
+BS,-표준계정코드 미사용-,매각예정자산,매각예정자산,N,1,SK하이닉스,2023,CFS,1,1,9,9,9,2,
+BS,dart_CurrentFinancialAssetDesignationAsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융자산,당기손익-공정가치측정금융자산,dart,1,NAVER,2023;2024;2025,CFS,3,1,9,9,9,3,1
+BS,dart_ShortTermOtherReceivables,미수금,미수금,dart,1,삼성전자,2023,CFS;OFS,2,1,9,9.0,9,2,1
+BS,dart_ShortTermOtherReceivablesNet,미수금,미수금,dart,1,삼성전자,2024;2025,CFS;OFS,4,1,9,9.0,9,2,1
+BS,dart_ShortTermPrepaidExpenses,선급비용,선급비용,dart,1,삼성전자,2023,CFS;OFS,2,1,10,10.0,10,2,1
+BS,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융자산,당기손익-공정가치측정금융자산,ifrs,1,NAVER,2023;2024;2025,OFS,3,1,10,10,10,3,2
+BS,ifrs-full_CurrentInvestments,단기투자자산,단기투자자산,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,10,10.0,11,1,1
+BS,ifrs-full_CurrentTaxAssets,선급법인세,선급법인세,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,10,10.0,10,1,2
+BS,ifrs-full_CurrentFinancialAssetsAtAmortisedCost,단기상각후원가금융자산,단기상각후원가금융자산,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,11,11,12,1,1
+BS,ifrs-full_CurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,기타포괄손익-공정가치측정금융자산,ifrs,1,NAVER,2023,CFS;OFS,2,1,11,11.0,11,3,1
+BS,ifrs-full_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss,단기당기손익-공정가치금융자산,단기당기손익-공정가치금융자산,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,12,12,13,1,2
+BS,ifrs-full_CurrentPrepaidExpenses,선급비용,선급비용,ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,11,12.0,13,2,1
+BS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정비유동자산,매각예정비유동자산,ifrs,1,현대자동차,2024;2025,OFS,2,1,12,12.5,13,2,1
+BS,ifrs-full_OtherCurrentFinancialAssets,기타유동금융자산,기타유동금융자산,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,14,14.0,15,1,2
+BS,ifrs-full_OtherCurrentAssets,기타자산,기타자산,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,12,14.5,15,2,2
+BS,-표준계정코드 미사용-,금융업채권,금융업채권,N,1,현대자동차,2023;2024;2025,CFS,6,1,9,15.0,21,1,
+BS,ifrs-full_TradeAndOtherCurrentReceivables,매출채권및기타채권,매출채권및기타채권,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,14,15.5,17,3,1
+BS,ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners,매각예정분류자산,매각예정분류자산,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,16,16,16,1,3
+BS,ifrs-full_OtherCurrentReceivables,기타채권,기타채권,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,14,16.5,17,2,2
+BS,-표준계정코드 미사용-,관계기업 및 공동기업투자자산,관계기업및공동기업투자자산,N,1,LG에너지솔루션,2023;2024,OFS,2,1,17,17.0,17,2,
+BS,dart_LongTermTradeAndOtherNonCurrentReceivablesGross,매출채권및기타채권,매출채권및기타채권,dart,1,NAVER,2023,CFS;OFS,2,1,18,19.0,20,3,1
+BS,dart_NonCurrentAvailableForSaleFinancialAssets,기타금융자산,기타금융자산,dart,1,SK하이닉스,2023,OFS,1,1,19,19,19,3,1
+BS,dart_NonCurrentFairValueFinancialAsset,당기손익-공정가치 측정 금융자산,당기손익-공정가치측정금융자산,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,17,19.0,21,3,1
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업투자자산,관계기업및공동기업투자자산,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,19,19,20,2,6
+BS,ifrs-full_InvestmentsInSubsidiaries,종속기업투자자산,종속기업투자자산,ifrs,1,LG에너지솔루션,2023;2024,OFS,2,1,21,21.0,21,1,1
+BS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss,당기손익-공정가치금융자산,당기손익-공정가치금융자산,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,20,21.5,23,1,1
+BS,ifrs-full_NoncurrentTradeReceivables,장기매출채권,장기매출채권,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,21,21.5,22,1,2
+BS,-표준계정코드 미사용-,운용리스 자산,운용리스자산,N,1,현대자동차,2023;2024;2025,CFS,3,1,22,22,22,1,
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업 및 공동기업투자,관계기업및공동기업투자,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,4,1,21,22.0,22,1,6
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계종속기업투자자산-지분법,관계종속기업투자자산-지분법,ifrs,1,삼성전자,2023,CFS,1,1,22,22,22,1,6
+BS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업투자","종속기업,관계기업및공동기업투자",ifrs,1,SK하이닉스,2025,OFS,1,1,22,22,22,1,4
+BS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업,공동기업 및 관계기업투자","종속기업,공동기업및관계기업투자",ifrs,1,현대자동차,2023;2024;2025,OFS,3,1,21,22,23,1,4
+BS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 비유동금융자산,기타포괄손익-공정가치측정비유동금융자산,ifrs,1,삼성전자,2023,CFS;OFS,2,1,21,22.5,24,1,3
+BS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,기타포괄손익-공정가치금융자산,ifrs,1,삼성전자,2024,CFS;OFS,2,1,21,22.5,24,2,3
+BS,ifrs-full_NoncurrentInvestmentsInEquityInstrumentsDesignatedAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산,기타포괄손익-공정가치금융자산,ifrs,1,삼성전자,2025,CFS;OFS,2,1,21,22.5,24,2,1
+BS,ifrs-full_InvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 공동기업과 관계기업에 대한 투자자산","종속기업,공동기업과관계기업에대한투자자산",ifrs,1,SK하이닉스,2023,OFS,1,1,23,23,23,1,4
+BS,ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,기타포괄손익-공정가치측정금융자산,ifrs,1,NAVER,2025,CFS;OFS,2,1,22,23.0,24,3,1
+BS,ifrs-full_OtherNoncurrentFinancialAssets,기타비유동금융자산,기타비유동금융자산,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,23,23.5,24,1,2
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,관계기업및공동기업 투자,관계기업및공동기업투자,ifrs,1,NAVER,2023,CFS,1,1,24,24,24,1,6
+BS,ifrs-full_NoncurrentFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산,기타포괄손익-공정가치측정금융자산,ifrs,1,NAVER,2023;2024,CFS;OFS,4,1,22,24.0,26,3,3
+BS,ifrs-full_NoncurrentInvestmentsOtherThanInvestmentsAccountedForUsingEquityMethod,장기투자자산,장기투자자산,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,23,24.0,24,1,1
+BS,ifrs-full_NoncurrentReceivables,매출채권및기타채권,매출채권및기타채권,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,23,24.0,25,3,1
+BS,ifrs-full_OtherNoncurrentReceivables,기타장기수취채권,기타장기수취채권,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,24,24.5,25,1,3
+BS,ifrs-full_InvestmentAccountedForUsingEquityMethod,공동기업 및 관계기업투자,공동기업및관계기업투자,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,25,25,25,1,6
+BS,ifrs-full_NoncurrentRecognisedAssetsDefinedBenefitPlan,종업원급여자산,종업원급여자산,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,24,25.0,25,1,2
+BS,ifrs-full_NoncurrentTradeReceivables,장기성매출채권,장기성매출채권,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,23,26.5,28,1,2
+BS,ifrs-full_OtherNoncurrentAssets,기타자산,기타자산,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,24,27.5,29,2,2
+BS,ifrs-full_OtherNoncurrentReceivables,기타수취채권,기타수취채권,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,27,27.5,28,2,3
+BS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유주지분,지배기업의소유주지분,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,28,28,29,1,5
+BS,ifrs-full_OtherNoncurrentReceivables,기타채권,기타채권,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,26,29.5,31,2,3
+BS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업 소유주지분,지배기업소유주지분,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,30,30,30,1,5
+BS,dart_IssuedCapitalOfCommonStock,보통주자본금,보통주자본금,dart,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,29,31.0,33,1,1
+BS,dart_ElementsOfOtherStockholdersEquity,기타자본구성요소,기타자본구성요소,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,29,31.5,34,1,3
+BS,dart_IssuedCapitalOfPreferredStock,우선주자본금,우선주자본금,dart,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,30,32.0,34,1,1
+BS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업의 소유지분,지배기업의소유지분,ifrs,1,SK하이닉스,2024;2025,CFS,2,1,33,33.0,33,1,5
+BS,dart_ElementsOfOtherStockholdersEquity,기타자본,기타자본,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,32,33.5,35,1,3
+BS,ifrs-full_SharePremium,주식발행초과금,주식발행초과금,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,32,34.0,36,1,1
+BS,ifrs-full_EquityAndLiabilities,자본및부채총계,자본및부채총계,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,33,35.5,38,1,4
+BS,ifrs-full_EquityAttributableToOwnersOfParent,지배기업소유주지분,지배기업소유주지분,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,36,36,36,1,5
+BS,ifrs-full_CurrentBorrowingsAndCurrentPortionOfNoncurrentBorrowings,유동성차입금,유동성차입금,ifrs,1,LG에너지솔루션,2024;2025,CFS;OFS,4,1,36,37.5,39,1,2
+BS,ifrs-full_CurrentPortionOfLongtermBorrowings,유동성사채,유동성사채,ifrs,1,NAVER,2023;2024;2025,OFS,3,1,38,38,39,2,2
+BS,-표준계정코드 미사용-,유동성장기차입금,유동성장기차입금,N,1,NAVER,2023;2024;2025,CFS;OFS,6,1,36,38.5,42,1,
+BS,dart_ShortTermAdvancesCustomers,선수금,선수금,dart,1,삼성전자,2023,CFS;OFS,2,1,36,38.5,41,2,1
+BS,ifrs-full_CurrentProvisions,유동성충당부채,유동성충당부채,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,37,38.5,40,1,2
+BS,ifrs-full_EquityAndLiabilities,부채및자본총계,부채및자본총계,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,37,38.5,40,1,4
+BS,dart_ShortTermWithholdings,예수금,예수금,dart,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,36,39.0,42,1,1
+BS,dart_CurrentFinancialLiabilitiesDesignationAsAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,당기손익-공정가치측정금융부채,dart,1,NAVER,2024,CFS,1,1,40,40,40,5,1
+BS,ifrs-full_CurrentTaxLiabilities,미지급법인세,미지급법인세,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,40,40,41,1,2
+BS,ifrs-full_OtherCurrentFinancialLiabilities,기타유동금융부채,기타유동금융부채,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,38,40.0,42,1,2
+BS,ifrs-full_AccrualsClassifiedAsCurrent,미지급비용,미지급비용,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,38,41.0,44,1,1
+BS,ifrs-full_TradeAndOtherPayablesToTradeSuppliers,매입채무,매입채무,ifrs,1,LG에너지솔루션,2023;2024,OFS,2,1,41,41.0,41,3,1
+BS,ifrs-full_CurrentAdvances,선수금,선수금,ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,39,41.5,44,2,1
+BS,ifrs-full_CurrentBondsIssuedAndCurrentPortionOfNoncurrentBondsIssued,유동성사채,유동성사채,ifrs,1,NAVER,2023;2024;2025,CFS,3,1,41,42,43,2,1
+BS,ifrs-full_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,당기손익-공정가치측정금융부채,ifrs,1,NAVER,2025,CFS,1,1,42,42,42,5,1
+BS,ifrs-full_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognition,당기손익-공정가치 측정 금융부채,당기손익-공정가치측정금융부채,ifrs,1,NAVER,2023,CFS,1,1,44,44,44,5,1
+BS,ifrs-full_LongtermBorrowings,비유동성차입금,비유동성차입금,ifrs,1,LG에너지솔루션,2024;2025,CFS;OFS,4,1,43,45.5,48,1,2
+BS,ifrs-full_TradeAndOtherCurrentPayables,매입채무및기타채무,매입채무및기타채무,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,42,45.5,49,2,1
+BS,ifrs-full_NoncurrentPayablesToTradeSuppliers,기타장기지급채무,기타장기지급채무,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,44,46.5,49,1,1
+BS,ifrs-full_OtherCurrentPayables,미지급금,미지급금,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,43,46.5,50,2,1
+BS,ifrs-full_OtherShorttermProvisions,충당부채,충당부채,ifrs,1,삼성전자,2025,CFS;OFS,2,1,44,47.0,50,3,1
+BS,ifrs-full_NoncurrentProvisions,비유동성충당부채,비유동성충당부채,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,45,47.5,50,1,3
+BS,ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정분류부채,매각예정분류부채,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,47,48,48,1,2
+BS,dart_LongTermTradeAndOtherNonCurrentPayables,매입채무및기타채무,매입채무및기타채무,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,45,48.5,52,2,1
+BS,ifrs-full_OtherNoncurrentFinancialLiabilities,기타비유동금융부채,기타비유동금융부채,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,46,49.0,51,1,2
+BS,-표준계정코드 미사용-,장기성 미지급금,장기성미지급금,N,1,현대자동차,2023,OFS,1,1,50,50,50,2,
+BS,ifrs-full_OtherCurrentLiabilities,기타부채,기타부채,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,46,51.0,54,2,3
+BS,ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정비유동부채,매각예정비유동부채,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,52,52,52,1,2
+BS,dart_NoncurrentNontradePayables,기타지급채무,기타지급채무,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,51,52.5,54,2,1
+BS,ifrs-full_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss,당기손익-공정가치 측정 금융부채,당기손익-공정가치측정금융부채,ifrs,1,NAVER,2024;2025,CFS,2,1,53,53.0,53,5,1
+BS,ifrs-full_NoncurrentProvisions,장기충당부채,장기충당부채,ifrs,1,삼성전자,2023;2024,CFS;OFS,4,1,50,53.5,57,2,3
+BS,ifrs-full_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLossDesignatedUponInitialRecognition,당기손익-공정가치 측정 금융부채,당기손익-공정가치측정금융부채,ifrs,1,NAVER,2023,CFS,1,1,54,54,54,5,1
+BS,ifrs-full_OtherLongtermProvisions,장기충당부채,장기충당부채,ifrs,1,삼성전자,2025,CFS;OFS,2,1,50,54.0,58,2,1
+BS,dart_LongTermOtherPayablesNet,장기성미지급금,장기성미지급금,dart,1,현대자동차,2024;2025,CFS;OFS,4,1,51,55.0,58,2,1
+BS,dart_PostemploymentBenefitObligations,순확정급여부채,순확정급여부채,dart,1,현대자동차,2023,CFS,1,1,58,58,58,3,1
+BS,-표준계정코드 미사용-,장기성미지급금,장기성미지급금,N,1,현대자동차,2023,CFS,1,1,59,59,59,2,
+BS,ifrs-full_NoncurrentRecognisedLiabilitiesDefinedBenefitPlan,확정급여부채,확정급여부채,ifrs,1,SK하이닉스,2023;2024;2025,CFS,3,1,59,59,59,1,2
+BS,-표준계정코드 미사용-,장기차입금,장기차입금,N,1,현대자동차,2023,CFS,1,1,60,60,60,2,
+BS,ifrs-full_OtherNoncurrentLiabilities,기타부채,기타부채,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,56,61.5,66,2,3
+BS,ifrs-full_RecognisedLiabilitiesDefinedBenefitPlan,순확정급여부채,순확정급여부채,ifrs,1,현대자동차,2024;2025,CFS;OFS,4,1,58,62.5,66,3,1
+CF,ifrs-full_ProceedsFromSalesOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 처분,무형자산의처분,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,20,28.5,47,1,1
+CF,ifrs-full_ProceedsFromSalesOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 처분,유형자산의처분,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,22,31.0,48,1,1
+CF,ifrs-full_PurchaseOfIntangibleAssetsClassifiedAsInvestingActivities,무형자산의 취득,무형자산의취득,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,23,32.0,49,1,1
+CF,ifrs-full_PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities,유형자산의 취득,유형자산의취득,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,30,1,24,34.0,50,1,1
+CF,ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동현금흐름,영업활동현금흐름,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,22,1,25,35.0,51,1,3
+CF,ifrs-full_InterestPaidClassifiedAsOperatingActivities,이자의 지급,이자의지급,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,28,1,32,40.0,55,2,1
+CF,dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초현금및현금성자산,기초현금및현금성자산,dart,4,NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,20,1,2,2.0,2,1,3
+CF,dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말현금및현금성자산,기말현금및현금성자산,dart,4,NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,20,1,3,3.0,4,1,4
+CF,ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동현금흐름,재무활동현금흐름,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,18,1,8,8.0,9,1,3
+CF,ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동현금흐름,투자활동현금흐름,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,18,1,13,16.0,26,1,3
+CF,ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금의 수취,배당금의수취,ifrs,4,LG에너지솔루션;NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,20,1,33,38.0,53,1,3
+CF,ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수취,이자의수취,ifrs,4,LG에너지솔루션;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,22,1,33,40.5,49,1,3
+CF,dart_AcquisitionOfTreasuryShares,자기주식의 취득,자기주식의취득,dart,3,NAVER;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,9,9.0,10,2,1
+CF,dart_PaymentsOfFinanceLeaseLiabilitiesClassifiedAsFinancingActivities,리스부채의 상환,리스부채의상환,dart,3,NAVER;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,14,1,10,10.0,13,2,1
+CF,ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의 지급,배당금의지급,ifrs,3,SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,16,1,10,13.5,19,1,4
+CF,ifrs-full_CashFlowsFromUsedInOperations,영업에서 창출된 현금흐름,영업에서창출된현금흐름,ifrs,3,NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,14,1,26,36.5,52,1,3
+CF,ifrs-full_CashFlowsFromUsedInOperations,영업으로부터 창출된 현금흐름,영업으로부터창출된현금흐름,ifrs,3,LG에너지솔루션;SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,14,1,32,36.5,44,1,3
+CF,ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세의 납부,법인세의납부,ifrs,3,LG에너지솔루션;NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,18,1,34,38.5,54,1,3
+CF,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,현금및현금성자산의 환율변동효과,현금및현금성자산의환율변동효과,ifrs,3,LG에너지솔루션;NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,12,1,37,41.0,57,1,4
+CF,dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초 현금및현금성자산,기초현금및현금성자산,dart,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS;OFS,8,1,2,2.0,2,1,3
+CF,dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말 현금및현금성자산,기말현금및현금성자산,dart,2,LG에너지솔루션;SK하이닉스,2023;2025,CFS;OFS,4,1,3,3.0,3,1,4
+CF,ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동으로 인한 현금흐름,재무활동으로인한현금흐름,ifrs,2,LG에너지솔루션;현대자동차,2023;2024;2025,CFS;OFS,8,1,8,8.0,9,1,3
+CF,dart_DispositionOfTreasuryShares,자기주식의 처분,자기주식의처분,dart,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,8,1,9,9.0,11,1,1
+CF,ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동으로 인한 현금흐름,투자활동으로인한현금흐름,ifrs,2,LG에너지솔루션;현대자동차,2023;2024;2025,CFS;OFS,8,1,14,18.0,23,1,3
+CF,dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치측정금융자산의처분,기타포괄손익-공정가치측정금융자산의처분,dart,2,NAVER;삼성전자,2023,CFS;OFS,4,1,15,19.0,26,1,3
+CF,dart_ProceedsFromSalesOfShortTermFinancialInstruments,단기금융상품의 감소,단기금융상품의감소,dart,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,10,1,17,20.0,32,1,1
+CF,dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치측정금융자산의취득,기타포괄손익-공정가치측정금융자산의취득,dart,2,NAVER;삼성전자,2023,CFS;OFS,4,1,17,22.5,29,1,3
+CF,dart_PurchaseOfShortTermFinancialInstruments,단기금융상품의 증가,단기금융상품의증가,dart,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,10,1,21,23.0,39,1,1
+CF,ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,정부보조금의 수취,정부보조금의수취,ifrs,2,LG에너지솔루션;삼성전자,2024;2025,CFS;OFS,5,1,20,24,30,1,3
+CF,dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 감소,장기금융상품의감소,dart,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,9,1,20,25,30,1,2
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유출입액,기타투자활동으로인한현금유출입액,ifrs,2,NAVER;삼성전자,2023;2024;2025,CFS;OFS,8,1,20,27.5,39,1,5
+CF,-표준계정코드 미사용-,사업결합으로 인한 현금유출,사업결합으로인한현금유출,N,2,LG에너지솔루션;SK하이닉스,2024;2025,CFS,2,1,24,28.0,32,1,
+CF,dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 증가,장기금융상품의증가,dart,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,10,1,24,28.0,37,1,2
+CF,-표준계정코드 미사용-,단기금융상품의 순증감,단기금융상품의순증감,N,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,8,1,26,28.5,35,1,
+CF,ifrs-full_AdjustmentsForReconcileProfitLoss,조정,조정,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,10,1,29,37.0,44,1,2
+CF,ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금수취,배당금수취,ifrs,2,NAVER;SK하이닉스,2023,CFS;OFS,4,1,35,37.5,46,1,3
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 순증감,현금및현금성자산의순증감,ifrs,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,8,1,41,42.5,58,2,5
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증가(감소),현금및현금성자산의증가(감소),ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,6,1,36,44.0,50,2,5
+CF,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,현금및현금성자산에 대한 환율변동효과,현금및현금성자산에대한환율변동효과,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,5,1,39,49,50,1,4
+CF,dart_CashAndCashEquivalentsAtBeginningOfPeriodCf,기초의 현금및현금성자산,기초의현금및현금성자산,dart,1,삼성전자,2025,CFS;OFS,2,1,2,2.0,2,1,3
+CF,-표준계정코드 미사용-,기초 매각예정자산으로 분류된 현금및현금성자산,기초매각예정자산으로분류된현금및현금성자산,N,1,NAVER,2023,CFS,1,1,3,3,3,1,
+CF,dart_CashAndCashEquivalentsAtEndOfPeriodCf,기말의 현금및현금성자산,기말의현금및현금성자산,dart,1,삼성전자,2025,CFS;OFS,2,1,3,3.0,3,1,4
+CF,dart_CashAndCashEquivalentsAtEndOfPeriodCf,당기말 현금및현금성자산,당기말현금및현금성자산,dart,1,LG에너지솔루션,2024;2025,CFS;OFS,4,1,3,3.0,3,1,4
+CF,-표준계정코드 미사용-,매각예정분류,매각예정분류,N,1,삼성전자,2023;2024;2025,CFS,3,1,8,8,8,1,
+CF,-표준계정코드 미사용-,매각예정처분자산집단 대체,매각예정처분자산집단대체,N,1,현대자동차,2023;2024;2025,CFS,3,1,8,8,8,1,
+CF,ifrs-full_CashFlowsFromUsedInFinancingActivities,재무활동 현금흐름,재무활동현금흐름,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,8,8.0,8,1,3
+CF,dart_ProceedsFromLongTermBorrowings,장기차입금의 차입 (주27),장기차입금의차입(주27),dart,1,삼성전자,2023,CFS;OFS,2,1,9,9.5,10,1,3
+CF,-표준계정코드 미사용-,비지배지분에 의한 자본납입,비지배지분에의한자본납입,N,1,LG에너지솔루션,2023,CFS,1,1,10,10,10,1,
+CF,-표준계정코드 미사용-,재무활동으로 인한 현금유입액,재무활동으로인한현금유입액,N,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,9,10.0,11,1,
+CF,dart_AdjustmentsForDecreaseInFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLossClassifiedAsFinancingActivities,당기손익-공정가치 측정 금융부채의 감소,당기손익-공정가치측정금융부채의감소,dart,1,NAVER,2024;2025,CFS,2,1,10,10.0,10,2,1
+CF,dart_AdjustmentsForGainsOnTransactionOfDerivativeFinancialInstrumentsFinancialIncome,파생상품 정산,파생상품정산,dart,1,LG에너지솔루션,2025,CFS,1,1,10,10,10,1,1
+CF,dart_AdjustmentsForLossesOnTransactionOfDerivativeFinancialInstrumentsFinancialExpense,파생상품의 정산,파생상품의정산,dart,1,LG에너지솔루션,2024,CFS,1,1,10,10,10,1,1
+CF,dart_ProceedsFromExerciseOfShareOptions,주식선택권의 행사,주식선택권의행사,dart,1,SK하이닉스,2023;2024;2025,CFS,3,1,10,10,11,1,3
+CF,dart_ProceedsFromLongTermBorrowings,장기차입금의 차입,장기차입금의차입,dart,1,삼성전자,2024;2025,CFS;OFS,3,1,9,10,12,1,3
+CF,dart_RepaymentsOfLongTermBorrowings,사채 및 장기차입금의 상환 (주27),사채및장기차입금의상환(주27),dart,1,삼성전자,2023,CFS;OFS,2,1,10,10.5,11,1,2
+CF,-표준계정코드 미사용-,사채 및 장기차입금의 상환,사채및장기차입금의상환,N,1,삼성전자,2024,CFS;OFS,2,1,10,11.0,12,2,
+CF,-표준계정코드 미사용-,재무활동으로 인한 현금유출액,재무활동으로인한현금유출액,N,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,9,11.0,14,1,
+CF,-표준계정코드 미사용-,종속기업 유상증자 및 소유지분변동,종속기업유상증자및소유지분변동,N,1,SK하이닉스,2023;2024;2025,CFS,3,1,11,11,12,1,
+CF,dart_AdjustmentsForIncreaseInFinancialLiabilitiesDesignatedAtFairValueThroughProfitOrLossClassifiedAsFinancingActivities,당기손익-공정가치 측정 금융부채의 증가,당기손익-공정가치측정금융부채의증가,dart,1,NAVER,2023;2024;2025,CFS,3,1,10,11,11,1,1
+CF,dart_CashInflowFromIssuanceOfHybridBond,신종자본증권의 발행,신종자본증권의발행,dart,1,현대자동차,2023;2024;2025,CFS,3,1,11,11,11,1,1
+CF,dart_DecreaseInNoncontrollingInterests,비지배지분의 증감,비지배지분의증감,dart,1,삼성전자,2025,CFS,1,1,11,11,11,2,1
+CF,ifrs-full_IncreaseDecreaseThroughOtherContributionsByOwners,유상증자,유상증자,ifrs,1,LG에너지솔루션,2023,CFS,1,1,11,11,11,3,1
+CF,-표준계정코드 미사용-,비지배지분의 증감,비지배지분의증감,N,1,삼성전자,2023;2024,CFS,2,1,11,11.5,12,2,
+CF,dart_AdjustmentsForGainsLossesOnTransactionOfDerivativeFinancialInstruments,파생상품거래의 정산,파생상품거래의정산,dart,1,LG에너지솔루션,2024;2025,OFS,2,1,12,12.0,12,1,1
+CF,dart_CashOutflowForRepaymentOfHybridBond,신종자본증권의 상환,신종자본증권의상환,dart,1,현대자동차,2023;2024;2025,CFS,3,1,12,12,12,1,1
+CF,dart_PaymentForConsolidatedCapitalTransactions,비지배지분과의 거래로 인한 현금유출,비지배지분과의거래로인한현금유출,dart,1,NAVER,2024;2025,CFS,2,1,12,12.0,12,2,2
+CF,dart_ProceedsFromBonds,사채의 발행,사채의발행,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,11,12.0,14,1,1
+CF,dart_ProceedsFromPaidinCapitalIncrease,유상증자,유상증자,dart,1,LG에너지솔루션,2024,CFS;OFS,2,1,11,12.0,13,3,1
+CF,ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소),단기차입금의순증가(감소),ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,10,12.0,13,1,3
+CF,ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증가(감소) (주27),단기차입금의순증가(감소)(주27),ifrs,1,삼성전자,2023,CFS;OFS,2,1,11,12.0,13,1,3
+CF,ifrs-full_IssueOfEquity,유상증자,유상증자,ifrs,1,LG에너지솔루션,2023,OFS,1,1,12,12,12,3,1
+CF,ifrs-full_PaymentsOfLeaseLiabilitiesClassifiedAsFinancingActivities,리스부채의 상환,리스부채의상환,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,11,12.0,13,2,1
+CF,ifrs-full_ProceedsFromNoncurrentBorrowings,사채 및 장기차입금의 차입,사채및장기차입금의차입,ifrs,1,삼성전자,2025,OFS,1,1,12,12,12,1,1
+CF,ifrs-full_ProceedsFromBorrowingsClassifiedAsFinancingActivities,차입금 등의 증가,차입금등의증가,ifrs,1,LG에너지솔루션,2024;2025,CFS;OFS,4,1,11,12.5,14,1,3
+CF,ifrs-full_ProceedsFromBorrowingsClassifiedAsFinancingActivities,차입금의 증가,차입금의증가,ifrs,1,LG에너지솔루션,2023,CFS;OFS,2,1,12,12.5,13,1,3
+CF,ifrs-full_ProceedsFromContributionsOfNoncontrollingInterests,비지배지분의 출자,비지배지분의출자,ifrs,1,LG에너지솔루션,2024;2025,CFS,2,1,12,12.5,13,1,1
+CF,-표준계정코드 미사용-,파생상품자산의 처분,파생상품자산의처분,N,1,현대자동차,2023;2024;2025,OFS,3,1,11,13,13,2,
+CF,dart_ProceedsFromExerciseOfShareOptions,주식선택권 행사,주식선택권행사,dart,1,NAVER,2023,CFS;OFS,2,1,12,13.0,14,1,3
+CF,ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금의지급,배당금의지급,ifrs,1,삼성전자,2024,CFS;OFS,2,1,12,13.0,14,1,4
+CF,ifrs-full_ProceedsFromBorrowingsClassifiedAsFinancingActivities,차입금의 차입,차입금의차입,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,12,13.0,14,1,3
+CF,ifrs-full_RepaymentsOfBorrowingsClassifiedAsFinancingActivities,차입금 등의 상환,차입금등의상환,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,10,13.0,17,1,2
+CF,-표준계정코드 미사용-,유동성장기부채의 상환,유동성장기부채의상환,N,1,현대자동차,2023;2024;2025,OFS,3,1,13,14,14,1,
+CF,-표준계정코드 미사용-,종속기업의 유상감자,종속기업의유상감자,N,1,LG에너지솔루션,2023,CFS,1,1,14,14,14,1,
+CF,dart_PaymentForStockRedemption,감자로 인한 현금유출,감자로인한현금유출,dart,1,LG에너지솔루션,2025,CFS,1,1,14,14,14,1,1
+CF,dart_ProceedsFromConsolidatedCapitalTransactions,연결자본거래로 인한 현금유입,연결자본거래로인한현금유입,dart,1,현대자동차,2024;2025,CFS,2,1,14,14.0,14,1,2
+CF,dart_ProceedsFromExerciseOfShareOptions,주식기준보상관련 현금유입,주식기준보상관련현금유입,dart,1,NAVER,2024;2025,CFS;OFS,4,1,12,14.0,16,1,3
+CF,dart_ProceedsFromLongTermBorrowings,비유동차입금의 차입,비유동차입금의차입,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,13,14.0,17,1,3
+CF,dart_ProceedsFromShortTermBorrowings,단기차입금의 차입,단기차입금의차입,dart,1,현대자동차,2023;2024;2025,CFS;OFS,5,1,11,14,15,1,2
+CF,ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,자기주식의취득,ifrs,1,삼성전자,2024,CFS;OFS,2,1,13,14.0,15,2,1
+CF,ifrs-full_RepaymentsOfBorrowingsClassifiedAsFinancingActivities,차입금의 상환,차입금의상환,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,13,14.0,15,1,2
+CF,ifrs-full_RepaymentsOfNoncurrentBorrowings,사채 및 장기차입금의 상환,사채및장기차입금의상환,ifrs,1,삼성전자,2025,CFS;OFS,2,1,13,14.0,15,2,1
+CF,-표준계정코드 미사용-,종속기업의 자기주식 취득,종속기업의자기주식취득,N,1,LG에너지솔루션,2023,CFS,1,1,15,15,15,1,
+CF,dart_AdjustmentsForDecreaseincreaseInOtherFinancialAssets,기타금융자산의 처분(취득),기타금융자산의처분(취득),dart,1,SK하이닉스,2023,OFS,1,1,15,15,15,2,1
+CF,dart_ProceedsFromConsolidatedCapitalTransactions,비지배지분과의 거래로 인한 현금유입,비지배지분과의거래로인한현금유입,dart,1,NAVER,2024;2025,CFS,2,1,15,15.0,15,2,2
+CF,dart_ProceedsFromSalesOfInvestmentsInSubsidiaries,종속기업투자(주식)의 처분,종속기업투자(주식)의처분,dart,1,SK하이닉스,2024;2025,OFS,2,1,15,15.0,15,1,1
+CF,dart_ProceedsFromShortTermBorrowings,유동차입금의 차입,유동차입금의차입,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,14,15.0,18,1,2
+CF,dart_RepaymentsOfShortTermBorrowings,단기차입금의 상환,단기차입금의상환,dart,1,현대자동차,2023;2024;2025,CFS;OFS,5,1,12,15,16,1,2
+CF,dart_StockRedemption,유상감자,유상감자,dart,1,LG에너지솔루션,2024,CFS,1,1,15,15,15,1,1
+CF,ifrs-full_CashFlowsFromUsedInIncreaseDecreaseInCurrentBorrowings,단기차입금의 순증감,단기차입금의순증감,ifrs,1,현대자동차,2025,OFS,1,1,15,15,15,1,3
+CF,ifrs-full_CashFlowsFromUsedInInvestingActivities,투자활동 현금흐름,투자활동현금흐름,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,14,15.0,16,1,3
+CF,dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치금융자산의 처분,당기손익-공정가치금융자산의처분,dart,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,14,15.5,17,1,2
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,기타재무활동의 유출,기타재무활동의유출,ifrs,1,LG에너지솔루션,2024;2025,CFS,2,1,15,15.5,16,1,6
+CF,-표준계정코드 미사용-,종속기업에 대한 투자자산의 취득,종속기업에대한투자자산의취득,N,1,현대자동차,2023,CFS,1,1,16,16,16,1,
+CF,dart_ProceedsFromSalesOfInvestmentsInAssociates,관계기업투자의 처분,관계기업투자의처분,dart,1,SK하이닉스,2023,OFS,1,1,16,16,16,2,1
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,기타,기타,ifrs,1,LG에너지솔루션,2023,CFS,1,1,16,16,16,2,6
+CF,dart_RepaymentsOfLongTermBorrowings,비유동차입금의 상환,비유동차입금의상환,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,15,16.5,20,1,2
+CF,-표준계정코드 미사용-,장기차입금 및 사채의 상환,장기차입금및사채의상환,N,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,12,17.0,18,1,
+CF,-표준계정코드 미사용-,장기차입금 및 사채의 차입,장기차입금및사채의차입,N,1,현대자동차,2023;2024;2025,CFS;OFS,5,1,14,17,17,1,
+CF,dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 처분,기타포괄손익-공정가치금융자산의처분,dart,1,삼성전자,2024;2025,CFS;OFS,4,1,16,17.0,18,1,3
+CF,dart_ProceedsFromSalesOfInvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자의 처분","종속기업,관계기업및공동기업투자의처분",dart,1,삼성전자,2023;2024;2025,OFS,3,1,16,17,17,1,3
+CF,dart_ProceedsFromSalesOfLiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분,매각예정자산의처분,dart,1,SK하이닉스,2025,CFS,1,1,17,17,17,2,1
+CF,dart_ProceedsFromSalesOfLoansAndReceivables,기타수취채권의 감소,기타수취채권의감소,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,16,17.0,18,2,1
+CF,dart_RepaymentsOfBonds,사채의 상환,사채의상환,dart,1,NAVER,2024;2025,CFS;OFS,4,1,15,17.0,19,1,1
+CF,ifrs-full_InflowsOfCashFromInvestingActivities,투자활동으로 인한 현금유입액,투자활동으로인한현금유입액,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,15,17.0,19,1,1
+CF,dart_RepaymentsOfShortTermBorrowings,유동차입금의 상환,유동차입금의상환,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,16,17.5,21,1,2
+CF,dart_ProceedsFromSalesOfFinancialInstruments,금융상품의 처분,금융상품의처분,dart,1,LG에너지솔루션,2024;2025,CFS;OFS,4,1,16,18.0,20,2,1
+CF,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분,매각예정자산의처분,dart,1,SK하이닉스,2024,CFS,1,1,18,18,18,2,5
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,기타재무활동으로 인한 현금유출입액,기타재무활동으로인한현금유출입액,ifrs,1,NAVER,2023,OFS,1,1,18,18,18,1,6
+CF,dart_ProceedsFromSalesOfOtherFinancialAssets,기타금융자산의 감소,기타금융자산의감소,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,4,1,17,18.5,19,1,2
+CF,-표준계정코드 미사용-,기타투자활동의 유입,기타투자활동의유입,N,1,LG에너지솔루션,2025,OFS,1,1,19,19,19,2,
+CF,dart_ProceedsFromSalesOfLongTermFinancialInstruments,장기금융상품의 처분,장기금융상품의처분,dart,1,삼성전자,2023;2024;2025,CFS,3,1,18,19,19,1,2
+CF,dart_ProceedsFromSalesOfLongTermLoansAndReceivables,기타장기수취채권의 감소,기타장기수취채권의감소,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,16,19.0,21,1,2
+CF,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정으로 분류된 비유동자산이나 처분자산집단의 처분,매각예정으로분류된비유동자산이나처분자산집단의처분,dart,1,삼성전자,2023,CFS,1,1,19,19,19,1,5
+CF,dart_ProceedsFromSalesOfOtherFinancialAssets,금융상품의 처분,금융상품의처분,dart,1,LG에너지솔루션,2023,CFS;OFS,2,1,17,19.0,21,2,2
+CF,dart_PurchaseOfInvestmentsInAssociates,관계기업투자의 취득,관계기업투자의취득,dart,1,SK하이닉스,2023,OFS,1,1,19,19,19,2,2
+CF,dart_PurchaseOfInvestmentsInSubsidiaries,종속기업투자(주식)의 취득,종속기업투자(주식)의취득,dart,1,SK하이닉스,2023;2024;2025,OFS,3,1,18,19,20,1,3
+CF,dart_PurchaseOfInvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 관계기업 및 공동기업 투자의 취득","종속기업,관계기업및공동기업투자의취득",dart,1,삼성전자,2023;2024;2025,OFS,3,1,18,19,19,1,3
+CF,-표준계정코드 미사용-,기타재무활동으로 인한 현금유출액,기타재무활동으로인한현금유출액,N,1,NAVER,2023;2024;2025,CFS;OFS,5,1,18,20,23,1,
+CF,dart_ProceedsFromSalesOfInvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 공동기업 및 관계기업투자의 처분","종속기업,공동기업및관계기업투자의처분",dart,1,현대자동차,2023;2024;2025,OFS,3,1,19,20,20,1,3
+CF,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정분류자산 처분으로 인한 현금유입액,매각예정분류자산처분으로인한현금유입액,dart,1,삼성전자,2025,CFS,1,1,20,20,20,1,5
+CF,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각예정자산의 처분으로 인한 현금유입액,매각예정자산의처분으로인한현금유입액,dart,1,삼성전자,2024,CFS,1,1,20,20,20,1,5
+CF,dart_ProceedsFromSalesOfShortTermLoansAndReceivables,기타수취채권의 감소,기타수취채권의감소,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,18,20.0,22,2,2
+CF,dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치금융자산의 취득,기타포괄손익-공정가치금융자산의취득,dart,1,삼성전자,2024;2025,CFS;OFS,4,1,18,20.0,22,1,3
+CF,ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금지급,배당금지급,ifrs,1,NAVER,2023,CFS;OFS,2,1,17,20.0,23,1,4
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,기타 재무활동으로 인한 현금유출입액,기타재무활동으로인한현금유출입액,ifrs,1,현대자동차,2024;2025,CFS,2,1,20,20.0,20,1,6
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,기타재무활동으로 인한 현금유입액,기타재무활동으로인한현금유입액,ifrs,1,NAVER,2024;2025,OFS,2,1,20,20.0,20,2,6
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsFinancingActivities,현금의기타유입(유출),현금의기타유입(유출),ifrs,1,현대자동차,2023,CFS,1,1,20,20,20,1,6
+CF,dart_PurchaseOfLoansAndReceivables,기타수취채권의 증가,기타수취채권의증가,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,19,20.5,21,2,1
+CF,-표준계정코드 미사용-,비지배지분과의 거래로 인한 현금유출,비지배지분과의거래로인한현금유출,N,1,NAVER,2023,CFS,1,1,21,21,21,2,
+CF,dart_AdjustmentsForDecreaseincreaseInOtherCurrentFinancialAssets,기타금융자산(유동)의 순증감,기타금융자산(유동)의순증감,dart,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,18,21.0,24,1,1
+CF,dart_ProceedsFromSalesOfNonCurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale,매각비유동자산의 처분,매각비유동자산의처분,dart,1,현대자동차,2025,OFS,1,1,21,21,21,1,5
+CF,dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치금융자산의 취득,당기손익-공정가치금융자산의취득,dart,1,삼성전자,2023;2024;2025,CFS,3,1,20,21,21,1,2
+CF,dart_PurchaseOfOtherFinancialAssets,기타금융자산의 처분(취득),기타금융자산의처분(취득),dart,1,SK하이닉스,2023,CFS,1,1,21,21,21,2,3
+CF,ifrs-full_PaymentsFromChangesInOwnershipInterestsInSubsidiaries,종속기업의 취득,종속기업의취득,ifrs,1,현대자동차,2024;2025,CFS,2,1,21,21.0,21,2,1
+CF,ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,정부보조금 수취,정부보조금수취,ifrs,1,LG에너지솔루션,2023,CFS;OFS,2,1,19,21.5,24,1,3
+CF,-표준계정코드 미사용-,기타비유동자산의 감소,기타비유동자산의감소,N,1,SK하이닉스,2024,OFS,1,1,22,22,22,1,
+CF,-표준계정코드 미사용-,기타재무활동으로 인한 현금유입액,기타재무활동으로인한현금유입액,N,1,NAVER,2023;2024;2025,CFS,3,1,19,22,22,2,
+CF,-표준계정코드 미사용-,비지배지분과의 거래로 인한 현금유입,비지배지분과의거래로인한현금유입,N,1,NAVER,2023,CFS,1,1,22,22,22,2,
+CF,-표준계정코드 미사용-,영업양수로 인한 현금유출,영업양수로인한현금유출,N,1,SK하이닉스,2025,OFS,1,1,22,22,22,1,
+CF,dart_ProceedsFromSalesOfCurrentFairValueFinancialAsset,당기손익-공정가치 측정 금융자산의 처분,당기손익-공정가치측정금융자산의처분,dart,1,NAVER,2023;2024;2025,OFS,3,1,20,22,22,2,1
+CF,dart_PurchaseOfOtherFinancialAssets,기타금융자산의 증가,기타금융자산의증가,dart,1,SK하이닉스,2024;2025,CFS;OFS,3,1,20,22,22,1,3
+CF,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유입,사업결합으로인한현금유입,ifrs,1,LG에너지솔루션,2025,CFS,1,1,22,22,22,1,5
+CF,ifrs-full_DividendsPaidClassifiedAsFinancingActivities,배당금 지급,배당금지급,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,19,22.0,25,1,4
+CF,ifrs-full_ProceedsFromIssuingShares,종속기업의 증자,종속기업의증자,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,21,22,22,1,1
+CF,-표준계정코드 미사용-,단기금융상품의 순감소(증가),단기금융상품의순감소(증가),N,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,19,22.5,26,1,
+CF,-표준계정코드 미사용-,기타비유동자산의 감소(증가),기타비유동자산의감소(증가),N,1,SK하이닉스,2023,OFS,1,1,23,23,23,1,
+CF,-표준계정코드 미사용-,사업결합,사업결합,N,1,LG에너지솔루션,2024,CFS,1,1,23,23,23,2,
+CF,-표준계정코드 미사용-,사업양도로 인한 현금유입,사업양도로인한현금유입,N,1,LG에너지솔루션,2023,CFS,1,1,23,23,23,1,
+CF,-표준계정코드 미사용-,종속기업투자(MMT)의 순증감,종속기업투자(MMT)의순증감,N,1,SK하이닉스,2023;2024;2025,OFS,3,1,23,23,24,1,
+CF,dart_PurchaseOfInvestmentsInSubsidiariesJointVenturesAndAssociates,"종속기업, 공동기업 및 관계기업투자의 취득","종속기업,공동기업및관계기업투자의취득",dart,1,현대자동차,2023;2024;2025,OFS,3,1,23,23,23,1,3
+CF,dart_PurchaseOfLongTermFinancialInstruments,장기금융상품의 취득,장기금융상품의취득,dart,1,삼성전자,2023;2024;2025,CFS,3,1,22,23,23,1,2
+CF,-표준계정코드 미사용-,사업결합으로 인한 순현금유출,사업결합으로인한순현금유출,N,1,SK하이닉스,2023;2024,CFS,2,1,23,23.5,24,1,
+CF,ifrs-full_OtherAdjustmentsForWhichCashEffectsAreInvestingOrFinancingCashFlow,기타투자활동의 유입,기타투자활동의유입,ifrs,1,LG에너지솔루션,2024;2025,CFS,2,1,23,23.5,24,2,1
+CF,ifrs-full_ProceedsFromSalesOfInterestsInAssociates,관계기업 및 공동기업 투자자산의 처분,관계기업및공동기업투자자산의처분,ifrs,1,LG에너지솔루션,2023,CFS;OFS,2,1,21,23.5,26,1,1
+CF,-표준계정코드 미사용-,단기상각후원가금융자산의 순감소(증가),단기상각후원가금융자산의순감소(증가),N,1,삼성전자,2023;2024;2025,CFS,3,1,23,24,24,1,
+CF,-표준계정코드 미사용-,종속회사 유상증자,종속회사유상증자,N,1,NAVER,2024;2025,CFS,2,1,24,24.0,24,1,
+CF,dart_PaymentForConsolidatedCapitalTransactions,연결범위 변동으로 인한 현금유출액,연결범위변동으로인한현금유출액,dart,1,현대자동차,2023,CFS,1,1,24,24,24,1,2
+CF,dart_ProceedsFromSalesOfOtherNonCurrentFinancialAssets,기타금융자산(비유동)의 감소,기타금융자산(비유동)의감소,dart,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,22,24.0,26,1,1
+CF,dart_PurchaseOfInvestmentsInAssociates,관계기업투자자산의 취득,관계기업투자자산의취득,dart,1,LG에너지솔루션,2023;2024;2025,OFS,3,1,24,24,25,1,2
+CF,-표준계정코드 미사용-,장기투자자산의 처분,장기투자자산의처분,N,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,24,24.5,25,1,
+CF,-표준계정코드 미사용-,단기당기손익-공정가치금융자산의 순감소(증가),단기당기손익-공정가치금융자산의순감소(증가),N,1,삼성전자,2023;2024;2025,CFS,3,1,24,25,25,1,
+CF,dart_PurchaseOfInvestmentsInSubsidiaries,종속기업투자자산의 취득,종속기업투자자산의취득,dart,1,LG에너지솔루션,2023;2024;2025,OFS,3,1,25,25,26,1,3
+CF,ifrs-full_OutflowsOfCashFromInvestingActivities,투자활동으로부터의 현금유출,투자활동으로부터의현금유출,ifrs,1,LG에너지솔루션,2025,CFS;OFS,2,1,23,25.0,27,1,2
+CF,-표준계정코드 미사용-,장기투자자산의 취득,장기투자자산의취득,N,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,25,25.5,26,1,
+CF,dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산의 처분,기타포괄손익-공정가치측정금융자산의처분,dart,1,NAVER,2024;2025,CFS;OFS,4,1,23,25.5,28,1,3
+CF,dart_ProceedsFromSalesOfInvestmentsInSubsidiariesJointVenturesAndAssociates,관계기업및공동기업투자주식의 처분,관계기업및공동기업투자주식의처분,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,22,25.5,29,1,3
+CF,ifrs-full_OutflowsOfCashFromInvestingActivities,투자활동으로 인한 현금유출액,투자활동으로인한현금유출액,ifrs,1,LG에너지솔루션,2023;2024,CFS;OFS,4,1,23,25.5,28,1,2
+CF,ifrs-full_CashFlowsFromUsedInDecreaseIncreaseInShorttermDepositsAndInvestments,단기투자자산의 순증감,단기투자자산의순증감,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,26,26.5,27,1,1
+CF,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금유출액,사업결합으로인한현금유출액,ifrs,1,삼성전자,2023;2024,CFS,2,1,26,26.5,27,1,5
+CF,dart_ProceedsFromSalesOfFairValueFinancialAsset,당기손익-공정가치 측정 금융자산의 처분,당기손익-공정가치측정금융자산의처분,dart,1,NAVER,2023;2024;2025,CFS,3,1,25,27,27,2,2
+CF,dart_PurchaseOfInvestmentsInSubsidiaries,종속기업의 취득,종속기업의취득,dart,1,현대자동차,2023;2024;2025,CFS,3,1,27,27,27,2,3
+CF,dart_PurchaseOfOtherFinancialAssets,금융상품의 취득,금융상품의취득,dart,1,LG에너지솔루션,2023;2024,CFS;OFS,3,1,27,27,30,2,3
+CF,dart_PurchaseOfOtherNonCurrentFinancialAssets,기타금융자산(비유동)의 증가,기타금융자산(비유동)의증가,dart,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,25,27.0,29,1,1
+CF,ifrs-full_CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업양도로 인한 현금유입액,사업양도로인한현금유입액,ifrs,1,삼성전자,2025,CFS,1,1,27,27,27,1,2
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타,기타,ifrs,1,SK하이닉스,2023,CFS,1,1,27,27,27,2,5
+CF,ifrs-full_ProceedsFromGovernmentGrantsClassifiedAsInvestingActivities,정부보조금의 수령,정부보조금의수령,ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,27,27.5,28,1,3
+CF,dart_PurchaseOfCurrentFairValueFinancialAsset,당기손익-공정가치 측정 금융자산의 취득,당기손익-공정가치측정금융자산의취득,dart,1,NAVER,2023;2024;2025,OFS,3,1,23,28,29,2,1
+CF,dart_PurchaseOfFinancialInstruments,금융상품의 취득,금융상품의취득,dart,1,LG에너지솔루션,2024;2025,CFS;OFS,3,1,24,28,29,2,1
+CF,dart_PurchaseOfLongTermLoansAndReceivables,기타장기수취채권의 증가,기타장기수취채권의증가,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,26,28.0,30,1,2
+CF,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 순현금유출액,사업결합으로인한순현금유출액,ifrs,1,삼성전자,2025,CFS,1,1,28,28,28,1,5
+CF,dart_ProceedsFromSalesOfLongTermLoansAndReceivables,장기대여금의 감소,장기대여금의감소,dart,1,NAVER,2024;2025,CFS;OFS,4,1,25,28.5,31,1,2
+CF,-표준계정코드 미사용-,기타채권의 증가,기타채권의증가,N,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,26,29.0,32,1,
+CF,ifrs-full_CashReceiptsFromFutureContractsForwardContractsOptionContractsAndSwapContractsClassifiedAsInvestingActivities,파생상품자산의 처분,파생상품자산의처분,ifrs,1,현대자동차,2023;2024,OFS,2,1,29,29.0,29,2,1
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동의 유출,기타투자활동의유출,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,4,1,28,29.0,33,2,5
+CF,ifrs-full_ProceedsFromSalesOfInvestmentProperty,투자부동산의 처분,투자부동산의처분,ifrs,1,SK하이닉스,2023;2024,CFS;OFS,4,1,28,29.0,29,1,1
+CF,-표준계정코드 미사용-,기타채권의 감소,기타채권의감소,N,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,28,29.5,31,1,
+CF,ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업투자주식의 처분,관계기업투자주식의처분,ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,29,29.5,30,1,4
+CF,dart_PurchaseOfShortTermLoansAndReceivables,기타수취채권의 증가,기타수취채권의증가,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,5,1,28,30,31,2,2
+CF,ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 처분,관계기업및공동기업투자의처분,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,29,30,32,1,4
+CF,ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,관계기업투자의 처분,관계기업투자의처분,ifrs,1,SK하이닉스,2023;2024,CFS;OFS,3,1,29,30,30,2,4
+CF,dart_ProceedsFromSalesOfShortTermLoansAndReceivables,단기대여금의 감소,단기대여금의감소,dart,1,NAVER,2024;2025,CFS;OFS,4,1,27,30.5,33,1,2
+CF,dart_PurchaseOfInvestmentsInSubsidiariesJointVenturesAndAssociates,관계기업및공동기업투자주식의 취득,관계기업및공동기업투자주식의취득,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,25,30.5,36,1,3
+CF,-표준계정코드 미사용-,기타의 투자활동 유출,기타의투자활동유출,N,1,LG에너지솔루션,2025,CFS,1,1,31,31,31,1,
+CF,dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동 (주27),영업활동으로인한자산부채의변동(주27),dart,1,삼성전자,2023,CFS;OFS,2,1,27,31.5,36,1,3
+CF,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합,사업결합,ifrs,1,LG에너지솔루션,2023,CFS,1,1,32,32,32,2,5
+CF,-표준계정코드 미사용-,단기대여금의 순증감,단기대여금의순증감,N,1,NAVER,2023,CFS;OFS,2,1,29,32.5,36,1,
+CF,dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산부채의 변동,영업활동으로인한자산부채의변동,dart,1,삼성전자,2024;2025,CFS;OFS,4,1,28,32.5,39,1,3
+CF,dart_PurchaseOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산의 취득,기타포괄손익-공정가치측정금융자산의취득,dart,1,NAVER,2024;2025,CFS;OFS,4,1,29,32.5,35,1,3
+CF,ifrs-full_AdjustmentsForReconcileProfitLoss,조정 (주27),조정(주27),ifrs,1,삼성전자,2023,CFS;OFS,2,1,28,32.5,37,1,2
+CF,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업투자주식의 취득,관계기업투자주식의취득,ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,32,32.5,33,1,5
+CF,-표준계정코드 미사용-,기타투자활동의 유출,기타투자활동의유출,N,1,LG에너지솔루션,2024,CFS,1,1,33,33,33,2,
+CF,-표준계정코드 미사용-,연결범위 변동으로 인한 순현금흐름,연결범위변동으로인한순현금흐름,N,1,현대자동차,2024;2025,CFS,2,1,33,33.0,33,1,
+CF,-표준계정코드 미사용-,장기금융상품의 순증감,장기금융상품의순증감,N,1,NAVER,2023,CFS,1,1,33,33,33,1,
+CF,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자의 취득,관계기업및공동기업투자의취득,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,32,33,35,1,5
+CF,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업투자의 취득,관계기업투자의취득,ifrs,1,SK하이닉스,2023;2024,CFS;OFS,3,1,32,33,33,2,5
+CF,-표준계정코드 미사용-,당기손익-공정가치 측정 금융부채의 감소,당기손익-공정가치측정금융부채의감소,N,1,NAVER,2023;2024,CFS;OFS,4,1,27,33.5,43,2,
+CF,ifrs-full_ProfitLoss,당기순이익(손실),당기순이익(손실),ifrs,1,삼성전자,2023,CFS;OFS,2,1,29,33.5,38,1,3
+CF,-표준계정코드 미사용-,장기대여금의 순증감,장기대여금의순증감,N,1,NAVER,2023,CFS,1,1,34,34,34,1,
+CF,dart_PurchaseOfFairValueFinancialAsset,당기손익-공정가치 측정 금융자산의 취득,당기손익-공정가치측정금융자산의취득,dart,1,NAVER,2023;2024;2025,CFS,3,1,28,34,34,2,2
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타 투자활동으로 인한 현금유출입액,기타투자활동으로인한현금유출입액,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,33,34,34,1,5
+CF,ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동 현금흐름,영업활동현금흐름,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,34,34.5,35,1,3
+CF,ifrs-full_ProfitLoss,당기순이익,당기순이익,ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,30,34.5,41,1,3
+CF,ifrs-full_DividendsReceivedClassifiedAsOperatingActivities,배당금 수입,배당금수입,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,30,35.0,42,1,3
+CF,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,관계기업 및 공동기업 투자자산의 취득,관계기업및공동기업투자자산의취득,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,33,35,35,1,5
+CF,dart_PurchaseOfLongTermLoansAndReceivables,장기대여금의 증가,장기대여금의증가,dart,1,NAVER,2024;2025,CFS;OFS,4,1,32,35.5,38,1,2
+CF,ifrs-full_CashFlowsFromUsedInOperations,영업으로부터 창출된 현금,영업으로부터창출된현금,ifrs,1,SK하이닉스,2024,CFS;OFS,2,1,35,35.5,36,1,3
+CF,-표준계정코드 미사용-,리스채권의 회수,리스채권의회수,N,1,NAVER,2023;2024;2025,CFS;OFS,6,1,28,36.0,42,1,
+CF,ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세 납부액,법인세납부액,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,31,36.0,43,1,3
+CF,ifrs-full_ProceedsFromSalesOfInvestmentsAccountedForUsingEquityMethod,공동기업 및 관계기업투자의 처분,공동기업및관계기업투자의처분,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,35,36,36,1,4
+CF,ifrs-full_CashFlowsFromUsedInOperatingActivities,영업활동으로 인한 현금흐름,영업활동으로인한현금흐름,ifrs,1,현대자동차,2023;2025,CFS;OFS,4,1,33,37.0,41,1,3
+CF,dart_PurchaseOfShortTermLoansAndReceivables,단기대여금의 증가,단기대여금의증가,dart,1,NAVER,2024;2025,CFS;OFS,4,1,34,37.5,40,1,2
+CF,dart_AdjustmentsForAssetsLiabilitiesOfOperatingActivities,영업활동으로 인한 자산·부채의 변동,영업활동으로인한자산·부채의변동,dart,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,35,38.0,43,1,3
+CF,-표준계정코드 미사용-,기타투자활동으로 인한 현금유출액,기타투자활동으로인한현금유출액,N,1,NAVER,2024;2025,CFS;OFS,4,1,37,39.0,41,1,
+CF,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,외화환산으로 인한 현금의 변동,외화환산으로인한현금의변동,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,34,39.0,46,1,4
+CF,ifrs-full_FinanceCostsPaidClassifiedAsOperatingActivities,이자의 지급,이자의지급,ifrs,1,LG에너지솔루션,2024;2025,CFS,2,1,38,39.0,40,2,1
+CF,ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자수취,이자수취,ifrs,1,SK하이닉스,2023,CFS;OFS,2,1,38,39.0,40,1,3
+CF,ifrs-full_PurchaseOfInterestsInInvestmentsAccountedForUsingEquityMethod,공동기업 및 관계기업투자의 취득,공동기업및관계기업투자의취득,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,38,39,39,1,5
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의순증감,현금및현금성자산의순증감,ifrs,1,삼성전자,2023,CFS;OFS,2,1,35,39.5,44,2,5
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,현금및현금성자산의 증가(감소),현금및현금성자산의증가(감소),ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,38,40.5,44,2,2
+CF,ifrs-full_CashFlowsUsedInObtainingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,사업결합으로 인한 현금의 순증감,사업결합으로인한현금의순증감,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,4,1,30,41.0,45,1,5
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의순증가(감소),현금및현금성자산의순증가(감소),ifrs,1,SK하이닉스,2023,CFS;OFS,2,1,40,41.0,42,1,5
+CF,ifrs-full_OtherInflowsOutflowsOfCashClassifiedAsInvestingActivities,기타투자활동으로 인한 현금유입액,기타투자활동으로인한현금유입액,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,38,41.5,46,1,5
+CF,ifrs-full_IncomeTaxesPaidRefundClassifiedAsOperatingActivities,법인세의 지급,법인세의지급,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,39,42.0,47,1,3
+CF,ifrs-full_CashFlowsFromLosingControlOfSubsidiariesOrOtherBusinessesClassifiedAsInvestingActivities,종속기업의 처분,종속기업의처분,ifrs,1,NAVER,2023;2024;2025,CFS,3,1,37,43,44,1,2
+CF,ifrs-full_ProfitLoss,연결당기순이익,연결당기순이익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,37,43.5,49,1,3
+CF,ifrs-full_PurchaseOfInvestmentProperty,투자부동산의 취득,투자부동산의취득,ifrs,1,NAVER,2025,CFS;OFS,2,1,42,45.5,49,1,1
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalents,현금및현금성자산의 증감,현금및현금성자산의증감,ifrs,1,현대자동차,2024;2025,CFS;OFS,4,1,42,47.0,51,1,5
+CF,ifrs-full_InterestReceivedClassifiedAsOperatingActivities,이자의 수입,이자의수입,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,41,49.0,56,1,3
+CF,ifrs-full_EffectOfExchangeRateChangesOnCashAndCashEquivalents,현금및현금성자산의 환율변둉효과,현금및현금성자산의환율변둉효과,ifrs,1,NAVER,2023;2024,CFS;OFS,4,1,42,49.5,57,1,4
+CF,ifrs-full_IncreaseDecreaseInCashAndCashEquivalentsBeforeEffectOfExchangeRateChanges,현금및현금성자산의 순증감,현금및현금성자산의순증감,ifrs,1,NAVER,2023;2024,CFS,2,1,51,54.5,58,2,2
+CIS,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,비지배지분,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS,15,1,8,8,12,2,1
+CIS,ifrs-full_OtherComprehensiveIncome,기타포괄손익,기타포괄손익,ifrs,4,LG에너지솔루션;NAVER;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,20,1,7,10.0,25,1,4
+CIS,ifrs-full_ComprehensiveIncome,총포괄손익,총포괄손익,ifrs,3,NAVER;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,10,1,6,9.0,10,1,6
+CIS,ifrs-full_ProfitLoss,당기순이익,당기순이익,ifrs,3,LG에너지솔루션;NAVER;삼성전자,2023;2024;2025,CFS;OFS,12,1,12,21.0,35,1,3
+CIS,ifrs-full_ProfitLoss,당기순이익(손실),당기순이익(손실),ifrs,3,LG에너지솔루션;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,12,1,12,22.0,29,1,3
+CIS,ifrs-full_ComprehensiveIncome,총포괄이익,총포괄이익,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,8,1,6,6.0,10,1,6
+CIS,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업 소유주지분,지배기업소유주지분,ifrs,2,NAVER;삼성전자,2023;2024;2025,CFS,6,1,9,11.0,13,2,3
+CIS,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업의 소유주지분,지배기업의소유주지분,ifrs,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS,6,1,9,11.0,13,2,3
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 포괄손익,후속적으로당기손익으로재분류되는포괄손익,ifrs,2,SK하이닉스;삼성전자,2024;2025,CFS;OFS,6,1,8,11.0,23,1,4
+CIS,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피파생상품평가손익,현금흐름위험회피파생상품평가손익,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,9,1,9,12,12,1,5
+CIS,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),희석주당이익(손실),ifrs,2,NAVER;SK하이닉스,2023;2024,CFS;OFS,5,1,12,14,17,1,3
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 포괄손익,후속적으로당기손익으로재분류되지않는포괄손익,ifrs,2,SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,8,1,9,15.0,27,1,2
+CIS,ifrs-full_FinanceCosts,금융비용,금융비용,ifrs,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,12,1,13,16.0,21,1,1
+CIS,ifrs-full_FinanceIncome,금융수익,금융수익,ifrs,2,NAVER;SK하이닉스,2023;2024;2025,CFS;OFS,12,1,14,17.0,22,1,1
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 항목,후속적으로당기손익으로재분류되지않는항목,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,12,1,10,17.0,30,1,2
+CIS,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업환산손익,해외사업환산손익,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS,6,1,13,18.0,28,1,2
+CIS,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업장환산외환차이,해외사업장환산외환차이,ifrs,2,SK하이닉스;삼성전자,2023;2024;2025,CFS,6,1,13,19.0,25,2,2
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,확정급여제도의재측정요소,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,10,1,12,19.5,28,1,5
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,지분법자본변동,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS,6,1,15,19.5,29,3,3
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,지분법자본변동,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS,5,1,20,30,34,3,2
+CIS,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,비지배지분,ifrs,2,NAVER;SK하이닉스,2023;2024;2025,CFS,6,1,31,32.0,37,2,1
+CIS,dart_OperatingIncomeLoss,영업이익,영업이익,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,6,6.0,6,1,2
+CIS,dart_OperatingIncomeLoss,영업이익(손실),영업이익(손실),dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,6,6.0,6,1,2
+CIS,ifrs-full_ComprehensiveIncome,당기총포괄손익,당기총포괄손익,ifrs,1,LG에너지솔루션,2023;2024,CFS;OFS,4,1,6,6.0,6,1,6
+CIS,ifrs-full_ComprehensiveIncome,당기총포괄이익(손실),당기총포괄이익(손실),ifrs,1,LG에너지솔루션,2025,CFS;OFS,2,1,6,6.0,6,1,6
+CIS,ifrs-full_ComprehensiveIncome,총포괄손익(*3),총포괄손익(*3),ifrs,1,삼성전자,2023,CFS;OFS,2,1,6,6.0,6,1,6
+CIS,dart_OtherGains,기타수익,기타수익,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,7,7.0,7,1,2
+CIS,dart_OtherGains,기타영업외수익,기타영업외수익,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,7,7.0,7,1,2
+CIS,dart_OtherLosses,기타비용,기타비용,dart,1,NAVER,2023;2024;2025,CFS;OFS,6,1,8,8.0,8,1,2
+CIS,dart_OtherLosses,기타영업외비용,기타영업외비용,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,8,8.0,8,1,2
+CIS,ifrs-full_OtherComprehensiveIncome,기타포괄손익(*4),기타포괄손익(*4),ifrs,1,삼성전자,2023,CFS;OFS,2,1,7,8.5,10,1,4
+CIS,ifrs-full_OtherComprehensiveIncome,연결기타포괄손익,연결기타포괄손익,ifrs,1,삼성전자,2025,CFS;OFS,2,1,7,8.5,10,1,4
+CIS,dart_ProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법손익,지분법손익,dart,1,NAVER,2023;2024;2025,CFS,3,1,9,9,9,1,1
+CIS,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,판매비와관리비,dart,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,9,9.0,9,1,1
+CIS,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업소유주지분,지배기업소유주지분,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,9,9,9,2,3
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,후속적으로 당기손익으로 재분류될 수 있는 항목,후속적으로당기손익으로재분류될수있는항목,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,8,9.5,11,2,1
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,당기손익으로 재분류되는 세후기타포괄손익,당기손익으로재분류되는세후기타포괄손익,ifrs,1,삼성전자,2023,CFS;OFS,2,1,8,9.5,11,1,4
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류될 수 있는 항목,후속적으로당기손익으로재분류될수있는항목,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,8,9.5,11,2,4
+CIS,ifrs-full_ComprehensiveIncome,총포괄이익(손실),총포괄이익(손실),ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,10,10.0,10,1,6
+CIS,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,기타포괄손익법인세효과,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,9,10.5,12,2,1
+CIS,ifrs-full_BasicEarningsLossPerShare,기본주당이익,기본주당이익,ifrs,1,NAVER,2023,OFS,1,1,11,11,11,1,4
+CIS,ifrs-full_OtherComprehensiveIncomeBeforeTaxCashFlowHedges,현금흐름위험회피,현금흐름위험회피,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,10,11.5,13,1,1
+CIS,ifrs-full_CostOfSales,매출원가,매출원가,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,11,12.5,14,1,1
+CIS,ifrs-full_BasicEarningsLossPerShare,기본주당순이익,기본주당순이익,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,11,13.0,15,1,4
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치금융자산평가손익,기타포괄손익-공정가치금융자산평가손익,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,10,13.0,16,1,4
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,당기손익으로 재분류되지 않는 항목,당기손익으로재분류되지않는항목,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,11,13.5,16,1,1
+CIS,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익,희석주당순이익,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,12,14.0,16,1,3
+CIS,ifrs-full_GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeNetOfTax,기타포괄손익-공정가치측정금융자산관련손익,기타포괄손익-공정가치측정금융자산관련손익,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,14,14,14,2,1
+CIS,ifrs-full_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation,해외사업장환산외환차이,해외사업장환산외환차이,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,14,14,14,2,1
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채(자산) 재측정요소,순확정급여부채(자산)재측정요소,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,6,1,11,14.0,17,1,5
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업및공동기업의기타포괄손익에대한지분,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,14,14,14,2,3
+CIS,ifrs-full_BasicEarningsLossPerShare,기본주당순이익(손실),기본주당순이익(손실),ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,13,14.5,16,1,4
+CIS,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),기본주당이익(손실),ifrs,1,SK하이닉스,2023;2024,CFS;OFS,4,1,13,14.5,16,1,4
+CIS,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,기타포괄손익법인세효과,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,12,14.5,17,2,1
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치측정금융자산관련손익,기타포괄손익-공정가치측정금융자산관련손익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,11,14.5,19,2,4
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,공동기업 및 관계기업 기타포괄손익에 대한 지분,공동기업및관계기업기타포괄손익에대한지분,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,15,15,15,1,1
+CIS,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익(손실),희석주당순이익(손실),ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,14,15.5,17,1,3
+CIS,ifrs-full_OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산 손익,기타포괄손익-공정가치측정금융자산손익,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,13,15.5,18,1,1
+CIS,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업기본주당순이익,계속영업기본주당순이익,ifrs,1,NAVER,2023,CFS,1,1,16,16,16,1,1
+CIS,ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,순확정급여부채의재측정요소,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,14,16.5,19,2,1
+CIS,-표준계정코드 미사용-,지분법이익잉여금,지분법이익잉여금,N,1,현대자동차,2023;2024;2025,CFS,3,1,17,17,18,1,
+CIS,-표준계정코드 미사용-,지분법자본변동,지분법자본변동,N,1,현대자동차,2025,CFS,1,1,17,17,17,3,
+CIS,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업기본주당순이익,중단영업기본주당순이익,ifrs,1,NAVER,2023,CFS,1,1,17,17,17,1,1
+CIS,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,법인세비용,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,15,17.0,23,1,2
+CIS,ifrs-full_ProfitLoss,연결당기순이익,연결당기순이익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,13,17.0,21,1,3
+CIS,ifrs-full_OperatingExpense,영업비용,영업비용,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,16,18.0,24,1,1
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업및공동기업의기타포괄손익에대한지분,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,18,18,18,2,2
+CIS,ifrs-full_GrossProfit,매출총이익,매출총이익,ifrs,1,SK하이닉스,2023,CFS;OFS,2,1,17,18.5,20,1,2
+CIS,ifrs-full_GrossProfit,매출총이익(손실),매출총이익(손실),ifrs,1,SK하이닉스,2024;2025,CFS;OFS,4,1,17,18.5,20,1,2
+CIS,ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations,계속영업희석주당순이익,계속영업희석주당순이익,ifrs,1,NAVER,2023,CFS,1,1,19,19,19,1,1
+CIS,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),법인세비용(수익),ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,18,19.5,21,1,2
+CIS,ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations,중단영업희석주당순이익,중단영업희석주당순이익,ifrs,1,NAVER,2023,CFS,1,1,20,20,20,1,1
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 지분상품 평가손익,기타포괄손익-공정가치지분상품평가손익,ifrs,1,NAVER,2023;2024,OFS,2,1,20,20.0,20,1,4
+CIS,ifrs-full_OtherComprehensiveIncome,법인세차감후 기타포괄손익,법인세차감후기타포괄손익,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,19,20.5,22,1,4
+CIS,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피 파생상품평가손익,현금흐름위험회피파생상품평가손익,ifrs,1,NAVER,2025,CFS;OFS,2,1,19,21.0,23,1,5
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 평가손익,기타포괄손익-공정가치측정지분상품평가손익,ifrs,1,NAVER,2025,OFS,1,1,22,22,22,2,4
+CIS,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 항목,후속적으로당기손익으로재분류되는항목,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,4,1,18,22.0,26,1,4
+CIS,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가손익,파생상품평가손익,ifrs,1,SK하이닉스,2025,CFS;OFS,2,1,21,22.5,24,1,5
+CIS,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익,파생상품평가이익,ifrs,1,SK하이닉스,2023,CFS;OFS,2,1,21,22.5,24,1,5
+CIS,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익(손실),파생상품평가이익(손실),ifrs,1,SK하이닉스,2024,CFS;OFS,2,1,21,22.5,24,1,5
+CIS,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 처분손익,기타포괄손익-공정가치측정지분상품처분손익,dart,1,NAVER,2024;2025,CFS;OFS,4,1,19,24.0,28,1,2
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,순확정급여부채의재측정요소,ifrs,1,NAVER,2023;2024,CFS;OFS,4,1,21,24.5,33,2,5
+CIS,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품처분손익,기타포괄손익-공정가치측정지분상품처분손익,dart,1,NAVER,2023,CFS;OFS,2,1,19,25.5,32,1,2
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여부채의 재측정요소,확정급여부채의재측정요소,ifrs,1,SK하이닉스,2023,CFS;OFS,2,1,23,25.5,28,1,5
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채 재측정요소,순확정급여부채재측정요소,ifrs,1,NAVER,2025,CFS;OFS,2,1,23,26.0,29,1,5
+CIS,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,관계기업의 기타포괄손익에 대한 지분,관계기업의기타포괄손익에대한지분,ifrs,1,SK하이닉스,2023;2024;2025,CFS,3,1,26,26,26,1,3
+CIS,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 평가손익,기타포괄손익-공정가치측정지분상품평가손익,dart,1,NAVER,2024;2025,CFS,2,1,26,26.5,27,2,2
+CIS,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,재평가손익,재평가손익,ifrs,1,NAVER,2024;2025,CFS;OFS,4,1,22,26.5,30,1,1
+CIS,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 채무상품평가손익,기타포괄손익-공정가치측정채무상품평가손익,dart,1,NAVER,2023,CFS,1,1,27,27,27,1,1
+CIS,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),법인세비용차감전순이익(손실),ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,25,29.0,33,1,2
+CIS,ifrs-full_Revenue,매출액,매출액,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,6,1,26,30.0,34,1,2
+CIS,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,법인세비용차감전순이익,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,23,30.5,43,1,2
+CIS,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품평가손익,기타포괄손익-공정가치측정지분상품평가손익,dart,1,NAVER,2023,CFS,1,1,31,31,31,2,2
+CIS,ifrs-full_Revenue,영업수익,영업수익,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,24,31.5,46,1,2
+CIS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주지분,지배기업의소유주지분,ifrs,1,SK하이닉스,2023;2024;2025,CFS,3,1,32,32,32,2,2
+CIS,ifrs-full_RevenueFromInterest,이자수익,이자수익,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,6,1,25,32.5,47,1,1
+CIS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유주지분,지배기업소유주지분,ifrs,1,NAVER,2023;2024;2025,CFS,3,1,34,35,40,2,2
+CIS,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법투자 관련 손익,지분법투자관련손익,ifrs,1,SK하이닉스,2023;2024;2025,CFS,3,1,35,35,35,1,1
+CIS,ifrs-full_ProfitLossFromContinuingOperationsAttributableToNoncontrollingInterests,비지배지분에 귀속될 계속영업손익,비지배지분에귀속될계속영업손익,ifrs,1,NAVER,2023,CFS,1,1,38,38,38,1,1
+CIS,ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToNoncontrollingInterests,비지배지분에 귀속될 중단영업손익,비지배지분에귀속될중단영업손익,ifrs,1,NAVER,2023,CFS,1,1,39,39,39,1,1
+CIS,ifrs-full_IncomeFromContinuingOperationsAttributableToOwnersOfParent,지배기업의 소유주에게 귀속될 계속영업손익,지배기업의소유주에게귀속될계속영업손익,ifrs,1,NAVER,2023,CFS,1,1,41,41,41,1,1
+CIS,ifrs-full_IncomeFromDiscontinuedOperationsAttributableToOwnersOfParent,지배기업의 소유주에게 귀속될 중단영업손익,지배기업의소유주에게귀속될중단영업손익,ifrs,1,NAVER,2023,CFS,1,1,42,42,42,1,1
+CIS,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익,계속영업이익,ifrs,1,NAVER,2023,CFS,1,1,44,44,44,1,1
+CIS,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업이익,중단영업이익,ifrs,1,NAVER,2023,CFS,1,1,45,45,45,1,1
+IS,dart_OperatingIncomeLoss,영업이익,영업이익,dart,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,16,1,6,6.0,6,1,2
+IS,ifrs-full_CostOfSales,매출원가,매출원가,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,10,10.5,11,1,1
+IS,ifrs-full_FinanceCosts,금융비용,금융비용,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,13,14.0,23,1,1
+IS,ifrs-full_FinanceIncome,금융수익,금융수익,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,14,15.0,24,1,1
+IS,ifrs-full_GrossProfit,매출총이익,매출총이익,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,18,1,15,16.0,25,1,1
+IS,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),법인세비용(수익),ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,16,17.0,26,1,2
+IS,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,비지배지분,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS,8,1,20,20.5,29,1,2
+IS,ifrs-full_Revenue,매출액,매출액,ifrs,3,LG에너지솔루션;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,16,1,19,23.0,34,1,2
+IS,dart_OtherGains,기타수익,기타수익,dart,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,10,1,7,7.0,7,1,3
+IS,dart_OtherLosses,기타비용,기타비용,dart,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,10,1,8,8.0,8,1,3
+IS,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,판매비와관리비,dart,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,12,1,9,9.0,9,1,2
+IS,ifrs-full_ProfitLoss,당기순이익,당기순이익,ifrs,2,LG에너지솔루션;삼성전자,2023;2024;2025,CFS;OFS,6,1,17,18.0,19,1,3
+IS,ifrs-full_ProfitLoss,당기순이익(손실),당기순이익(손실),ifrs,2,LG에너지솔루션;삼성전자,2023;2024;2025,CFS;OFS,6,1,17,18.0,18,1,3
+IS,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,법인세비용,ifrs,2,LG에너지솔루션;현대자동차,2023;2024;2025,CFS;OFS,6,1,16,20.0,24,1,2
+IS,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),법인세비용차감전순이익(손실),ifrs,2,LG에너지솔루션;삼성전자,2023;2024;2025,CFS;OFS,8,1,18,20.5,27,1,2
+IS,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,법인세비용차감전순이익,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,10,1,19,22.0,31,1,2
+IS,dart_OperatingIncomeLoss,영업이익(손실),영업이익(손실),dart,1,LG에너지솔루션,2023,CFS;OFS,2,1,6,6.0,6,1,2
+IS,dart_OtherGains,기타영업외수익,기타영업외수익,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,7,7.0,7,1,3
+IS,dart_OtherGains,기타이익,기타이익,dart,1,삼성전자,2023,CFS;OFS,2,1,7,7.0,7,1,3
+IS,dart_OtherLosses,기타손실,기타손실,dart,1,삼성전자,2023,CFS;OFS,2,1,8,8.0,8,1,3
+IS,dart_OtherLosses,기타영업외비용,기타영업외비용,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,8,8.0,8,1,3
+IS,dart_OtherOperatingIncome,기타영업수익,기타영업수익,dart,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,9,9,9,1,1
+IS,dart_TotalSellingGeneralAdministrativeExpenses,판매비와 관리비,판매비와관리비,dart,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,6,1,9,9.5,10,1,2
+IS,-표준계정코드 미사용-,공동기업및관계기업투자손익,공동기업및관계기업투자손익,N,1,현대자동차,2023;2024;2025,CFS,3,1,10,10,10,1,
+IS,-표준계정코드 미사용-,종속기업및관계기업투자손익,종속기업및관계기업투자손익,N,1,현대자동차,2023;2024;2025,OFS,3,1,10,10,10,1,
+IS,ifrs-full_BasicEarningsLossPerShare,기본주당이익,기본주당이익,ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,12,12.0,12,1,5
+IS,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),기본주당이익(손실),ifrs,1,삼성전자,2023,CFS;OFS,2,1,12,12.0,12,1,5
+IS,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당손실,보통주기본및희석주당손실,ifrs,1,LG에너지솔루션,2024,CFS;OFS,2,1,12,12.5,13,1,5
+IS,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당이익(손실),보통주기본및희석주당이익(손실),ifrs,1,LG에너지솔루션,2023;2025,CFS;OFS,4,1,12,12.5,13,1,5
+IS,dart_BasicEarningsLossPerSharePreferredStock,1우선주기본주당이익(손실),1우선주기본주당이익(손실),dart,1,현대자동차,2024;2025,CFS;OFS,4,1,13,13.0,13,2,1
+IS,ifrs-full_DilutedEarningsLossPerShare,희석주당이익,희석주당이익,ifrs,1,삼성전자,2024;2025,CFS;OFS,4,1,13,13.0,13,1,4
+IS,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),희석주당이익(손실),ifrs,1,삼성전자,2023,CFS;OFS,2,1,13,13.0,13,1,4
+IS,-표준계정코드 미사용-,계속영업 보통주기본주당이익(손실),계속영업보통주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,14,14,14,1,
+IS,-표준계정코드 미사용-,보통주 기본주당이익,보통주기본주당이익,N,1,현대자동차,2023,OFS,1,1,14,14,14,1,
+IS,dart_BasicEarningsLossPerSharePreferredStockFromContinuingOperations,계속영업 1우선주기본주당이익,계속영업1우선주기본주당이익,dart,1,현대자동차,2024;2025,CFS,2,1,14,14.0,14,1,1
+IS,ifrs-full_DilutedEarningsLossPerShare,보통주 기본 및 희석주당계속영업이익(손실),보통주기본및희석주당계속영업이익(손실),ifrs,1,LG에너지솔루션,2023,CFS,1,1,14,14,14,1,4
+IS,-표준계정코드 미사용-,1우선주 기본주당이익,1우선주기본주당이익,N,1,현대자동차,2023,OFS,1,1,15,15,15,1,
+IS,-표준계정코드 미사용-,중단영업 보통주기본주당이익(손실),중단영업보통주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,15,15,15,1,
+IS,dart_BasicEarningsLossPerSharePreferredStockFromDiscontinuedOperations,중단영업 1우선주기본주당손실,중단영업1우선주기본주당손실,dart,1,현대자동차,2024;2025,CFS,2,1,15,15.0,15,1,1
+IS,dart_DilutedEarningsLossPerSharePreferredStock,1우선주 희석주당이익,1우선주희석주당이익,dart,1,현대자동차,2024;2025,CFS;OFS,4,1,14,15.0,16,2,1
+IS,-표준계정코드 미사용-,보통주기본주당이익(손실),보통주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,16,16,16,2,
+IS,ifrs-full_BasicEarningsLossPerShare,보통주기본주당이익(손실),보통주기본주당이익(손실),ifrs,1,현대자동차,2024;2025,CFS;OFS,4,1,15,16.0,17,2,5
+IS,-표준계정코드 미사용-,계속영업 1우선주기본주당이익(손실),계속영업1우선주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,17,17,17,1,
+IS,-표준계정코드 미사용-,중단영업 1우선주기본주당이익(손실),중단영업1우선주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,18,18,18,1,
+IS,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업 보통주기본주당이익,계속영업보통주기본주당이익,ifrs,1,현대자동차,2024,CFS,1,1,18,18,18,1,2
+IS,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업보통주기본주당이익,계속영업보통주기본주당이익,ifrs,1,현대자동차,2025,CFS,1,1,18,18,18,1,2
+IS,ifrs-full_DilutedEarningsLossPerShare,보통주 희석주당이익,보통주희석주당이익,ifrs,1,현대자동차,2024;2025,CFS;OFS,4,1,16,18.0,20,2,4
+IS,-표준계정코드 미사용-,1우선주 기본주당이익(손실),1우선주기본주당이익(손실),N,1,현대자동차,2023,CFS,1,1,19,19,19,2,
+IS,-표준계정코드 미사용-,보통주 희석주당이익,보통주희석주당이익,N,1,현대자동차,2023,CFS;OFS,2,1,17,19.0,21,2,
+IS,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업 보통주기본주당손실,중단영업보통주기본주당손실,ifrs,1,현대자동차,2024,CFS,1,1,19,19,19,1,2
+IS,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업보통주기본주당손실,중단영업보통주기본주당손실,ifrs,1,현대자동차,2025,CFS,1,1,19,19,19,1,2
+IS,-표준계정코드 미사용-,1우선주 희석주당이익,1우선주희석주당이익,N,1,현대자동차,2023,CFS;OFS,2,1,18,20.0,22,2,
+IS,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분에 귀속되는 당기순이익(손실),비지배지분에귀속되는당기순이익(손실),ifrs,1,삼성전자,2023,CFS,1,1,20,20,20,1,2
+IS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유주지분,지배기업소유주지분,ifrs,1,삼성전자,2025,CFS,1,1,21,21,21,1,5
+IS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,지배기업소유지분,ifrs,1,삼성전자,2024,CFS,1,1,21,21,21,1,5
+IS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주에게 귀속되는 당기순이익(손실),지배기업의소유주에게귀속되는당기순이익(손실),ifrs,1,삼성전자,2023,CFS,1,1,21,21,21,1,5
+IS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주지분,지배기업의소유주지분,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,21,21,24,1,5
+IS,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익(손실),계속영업이익(손실),ifrs,1,삼성전자,2023,CFS;OFS,2,1,20,21.5,23,1,3
+IS,ifrs-full_ProfitLossFromContinuingOperationsAttributableToNoncontrollingInterests,계속영업이익,계속영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,22,22,22,3,1
+IS,ifrs-full_Revenue,영업수익,영업수익,ifrs,1,삼성전자,2023,CFS;OFS,2,1,21,22.5,24,1,2
+IS,ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToNoncontrollingInterests,중단영업이익,중단영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,23,23,23,3,1
+IS,ifrs-full_ProfitLoss,연결당기순이익,연결당기순이익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,6,1,21,24.0,27,1,3
+IS,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법손익,지분법손익,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,3,1,24,24,31,1,2
+IS,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,지분법이익,ifrs,1,삼성전자,2023;2024;2025,CFS,3,1,24,24,25,1,2
+IS,ifrs-full_IncomeFromContinuingOperationsAttributableToOwnersOfParent,계속영업이익,계속영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,25,25,25,3,1
+IS,ifrs-full_IncomeFromDiscontinuedOperationsAttributableToOwnersOfParent,중단영업이익,중단영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,26,26,26,3,1
+IS,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업소유주지분,지배기업소유주지분,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,28,28,30,1,5
+IS,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익,계속영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,28,28,28,3,3
+IS,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업이익,중단영업이익,ifrs,1,LG에너지솔루션,2023,CFS,1,1,29,29,29,3,3
+IS,ifrs-full_ProfitLossFromContinuingOperations,계속영업연결당기순이익,계속영업연결당기순이익,ifrs,1,현대자동차,2023;2024;2025,CFS,3,1,30,30,32,1,3
+IS,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업당기순손실,중단영업당기순손실,ifrs,1,현대자동차,2024;2025,CFS,2,1,31,31.0,31,1,3
+IS,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업당기순이익(손실),중단영업당기순이익(손실),ifrs,1,현대자동차,2023,CFS,1,1,33,33,33,1,3
+SCE,dart_EquityAtBeginningOfPeriod,기초자본,기초자본,dart,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,193,17,3,3,4,1,1
+SCE,ifrs-full_Equity,자본총계,자본총계,ifrs,5,LG에너지솔루션;NAVER;SK하이닉스;삼성전자;현대자동차,2023;2024;2025,CFS;OFS,192,16,5,9.0,14,1,1
+SCE,ifrs-full_ProfitLoss,당기순이익(손실),당기순이익(손실),ifrs,3,LG에너지솔루션;SK하이닉스;삼성전자,2023;2024;2025,CFS;OFS,64,14,7,8.0,14,1,3
+SCE,ifrs-full_ProfitLoss,당기순이익,당기순이익,ifrs,3,LG에너지솔루션;NAVER;삼성전자,2023;2024;2025,CFS;OFS,60,16,8,14.0,15,1,3
+SCE,ifrs-full_CancellationOfTreasuryShares,자기주식의 소각,자기주식의소각,ifrs,2,NAVER;삼성전자,2023;2025,CFS;OFS,16,12,4,6.0,7,1,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxExchangeDifferencesOnTranslation,해외사업장환산외환차이,해외사업장환산외환차이,ifrs,2,LG에너지솔루션;SK하이닉스,2023;2024;2025,CFS,25,7,6,6,12,2,1
+SCE,ifrs-full_DividendsPaid,배당,배당,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,58,16,4,7.0,11,1,4
+SCE,ifrs-full_CancellationOfTreasuryShares,자기주식 소각,자기주식소각,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS;OFS,37,14,6,8,11,2,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,순확정급여부채의재측정요소,ifrs,2,LG에너지솔루션;NAVER,2023;2024;2025,CFS;OFS,48,12,7,8.0,14,1,5
+SCE,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업장환산외환차이,해외사업장환산외환차이,ifrs,2,SK하이닉스;삼성전자,2023;2024;2025,CFS,34,9,6,9.0,10,2,2
+SCE,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피파생상품평가손익,현금흐름위험회피파생상품평가손익,ifrs,2,삼성전자;현대자동차,2023;2024;2025,CFS;OFS,51,15,8,10,15,2,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,확정급여제도의재측정요소,ifrs,2,SK하이닉스;현대자동차,2023;2024;2025,CFS;OFS,62,14,6,13.0,22,1,5
+SCE,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업환산손익,해외사업환산손익,ifrs,2,NAVER;현대자동차,2023;2024;2025,CFS,35,8,9,14,16,1,2
+SCE,ifrs-full_PurchaseOfTreasuryShares,자기주식의 취득,자기주식의취득,ifrs,2,삼성전자;현대자동차,2024;2025,CFS;OFS,38,16,9,15.0,23,1,3
+SCE,dart_CashInflowFromIssuanceOfHybridBond,신종자본증권의 발행,신종자본증권의발행,dart,1,현대자동차,2023;2024,CFS,10,8,3,3.0,3,1,1
+SCE,dart_ChangesInConsolidatedCompanies,연결실체의 변동,연결실체의변동,dart,1,삼성전자,2023;2024;2025,CFS,16,7,3,3.0,3,1,2
+SCE,dart_DecreaseInNoncontrollingInterests,비지배지분의 감소,비지배지분의감소,dart,1,SK하이닉스,2023,CFS,2,2,3,3.0,3,2,1
+SCE,-표준계정코드 미사용-,파생상품평가손익,파생상품평가손익,N,1,SK하이닉스,2023,OFS,2,2,4,4.0,4,2,
+SCE,dart_IncreaseDecreaseThroughBusinessCombinations,사업결합으로 인한 자본변동,사업결합으로인한자본변동,dart,1,NAVER,2023;2024;2025,OFS,9,5,4,4,4,1,2
+SCE,dart_IssueOfHybridBond,신종자본증권발행,신종자본증권발행,dart,1,현대자동차,2025,CFS,8,8,4,4.0,4,1,1
+SCE,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 처분손익,기타포괄손익-공정가치측정지분상품처분손익,dart,1,NAVER,2024;2025,CFS;OFS,18,12,4,4.0,5,2,1
+SCE,dart_TransferOfAmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 처분손익,기타포괄손익-공정가치측정지분상품처분손익,dart,1,NAVER,2023,CFS;OFS,6,6,4,4.0,5,2,1
+SCE,ifrs-full_ComprehensiveIncome,당기총포괄손익,당기총포괄손익,ifrs,1,LG에너지솔루션,2023;2024,CFS;OFS,14,12,4,4.0,4,1,4
+SCE,ifrs-full_ComprehensiveIncome,당기총포괄이익(손실),당기총포괄이익(손실),ifrs,1,LG에너지솔루션,2025,CFS;OFS,12,12,4,4.0,4,1,4
+SCE,ifrs-full_ComprehensiveIncome,총포괄이익(손실),총포괄이익(손실),ifrs,1,SK하이닉스,2024;2025,CFS;OFS,28,14,4,4.0,4,1,4
+SCE,dart_IntercompanyAcquisition,연결실체내 자본거래 등,연결실체내자본거래등,dart,1,삼성전자,2023;2024;2025,CFS,16,7,5,5.0,5,1,1
+SCE,dart_RepaymentOfHybridBond,신종자본증권상환,신종자본증권상환,dart,1,현대자동차,2024;2025,CFS,16,8,5,5.0,5,1,2
+SCE,dart_RepaymentOfHybridBond,신종자본증권의 상환,신종자본증권의상환,dart,1,현대자동차,2023,CFS,2,2,5,5.0,5,1,2
+SCE,dart_TreasuryShareTransactions,자기주식거래,자기주식거래,dart,1,NAVER,2023,CFS;OFS,7,7,5,5,6,1,2
+SCE,dart_TreasuryShareTransactions,자기주식취득,자기주식취득,dart,1,NAVER,2024,CFS;OFS,5,5,5,5,7,2,2
+SCE,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가손익,파생상품평가손익,ifrs,1,SK하이닉스,2025,CFS;OFS,14,14,5,5.0,5,2,3
+SCE,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익(손실),파생상품평가이익(손실),ifrs,1,SK하이닉스,2024,CFS;OFS,14,14,5,5.0,5,1,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges,현금흐름위험회피,현금흐름위험회피,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,36,12,5,5.0,5,1,3
+SCE,-표준계정코드 미사용-,매각예정분류,매각예정분류,N,1,삼성전자,2023,CFS,2,2,6,6.0,6,1,
+SCE,-표준계정코드 미사용-,비지배지분과의 거래 및 연결범위변동,비지배지분과의거래및연결범위변동,N,1,NAVER,2023;2024;2025,CFS,18,7,5,6.0,6,1,
+SCE,-표준계정코드 미사용-,자기주식의 처분,자기주식의처분,N,1,SK하이닉스,2023,CFS,4,4,6,6.0,6,2,
+SCE,-표준계정코드 미사용-,지분법평가,지분법평가,N,1,현대자동차,2023;2024,CFS,13,8,6,6,6,2,
+SCE,dart_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluationOfPropertyPlandAndEquipment,재평가손익,재평가손익,dart,1,NAVER,2024;2025,OFS,7,5,6,6,6,2,1
+SCE,ifrs-full_CancellationOfTreasuryShares,자기주식소각,자기주식소각,ifrs,1,NAVER,2025,CFS;OFS,12,12,6,6.0,7,2,3
+SCE,-표준계정코드 미사용-,기타포괄손익-공정가치측정금융자산관련손익,기타포괄손익-공정가치측정금융자산관련손익,N,1,현대자동차,2023;2025,CFS,13,8,7,7,10,3,
+SCE,-표준계정코드 미사용-,자기주식 소각,자기주식소각,N,1,현대자동차,2023,OFS,2,2,7,7.0,7,2,
+SCE,-표준계정코드 미사용-,주식선택권의 부여/행사,주식선택권의부여/행사,N,1,SK하이닉스,2023,CFS;OFS,8,8,6,7.0,7,2,
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 금융자산 손익,기타포괄손익-공정가치금융자산손익,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,36,12,6,7.0,7,1,2
+SCE,-표준계정코드 미사용-,자본에 직접 반영된 소유주와의 거래 [개요],자본에직접반영된소유주와의거래[개요],N,1,현대자동차,2024,CFS,8,8,8,8.0,8,1,
+SCE,-표준계정코드 미사용-,자본에 직접 반영된 소유주와의 거래 소계,자본에직접반영된소유주와의거래소계,N,1,현대자동차,2023,CFS;OFS,10,10,4,8.0,8,2,
+SCE,ifrs-full_DividendsPaid,현금배당,현금배당,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,23,12,7,8,9,1,4
+SCE,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,관계기업의 기타포괄손익에 대한 지분,관계기업의기타포괄손익에대한지분,ifrs,1,SK하이닉스,2023;2024;2025,CFS,19,8,9,9,15,1,2
+SCE,-표준계정코드 미사용-,주식선택권 조건변경,주식선택권조건변경,N,1,SK하이닉스,2023;2024,CFS;OFS,19,14,5,10,12,1,
+SCE,ifrs-full_ComprehensiveIncome,총포괄이익,총포괄이익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,36,14,7,10.0,12,1,4
+SCE,ifrs-full_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl,지배력을 상실하지 않는 종속기업에 대한 소유지분의 변동에 따른 증가(감소),지배력을상실하지않는종속기업에대한소유지분의변동에따른증가(감소),ifrs,1,SK하이닉스,2023,CFS,4,4,10,10.0,10,1,3
+SCE,ifrs-full_IncreaseDecreaseThroughSharebasedPaymentTransactions,주식기준보상거래,주식기준보상거래,ifrs,1,NAVER,2023;2024;2025,CFS;OFS,28,12,10,10.0,12,1,3
+SCE,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,지분법자본변동,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS,21,7,10,10,10,2,2
+SCE,ifrs-full_DividendsPaid,배당금의 지급,배당금의지급,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,34,14,7,11.0,14,1,4
+SCE,ifrs-full_GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeNetOfTax,기타포괄손익-공정가치 측정 채무상품 평가손익,기타포괄손익-공정가치측정채무상품평가손익,ifrs,1,NAVER,2023,CFS,3,3,11,11,11,1,1
+SCE,ifrs-full_IncreaseDecreaseThroughSharebasedPaymentTransactions,주식기준보상,주식기준보상,ifrs,1,삼성전자,2025,CFS;OFS,12,12,7,11.0,11,1,3
+SCE,ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners,자본에 직접 반영된 소유주와의 거래 합계,자본에직접반영된소유주와의거래합계,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,28,14,9,11.0,11,1,3
+SCE,ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity,기타,기타,ifrs,1,삼성전자,2023;2024;2025,CFS,19,7,10,11,12,2,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges,파생금융상품평가이익,파생금융상품평가이익,ifrs,1,SK하이닉스,2023,CFS,3,3,11,11,11,1,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxCashFlowHedges,현금흐름위험회피 파생상품평가손익,현금흐름위험회피파생상품평가손익,ifrs,1,NAVER,2025,CFS;OFS,12,12,11,11.0,11,2,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치금융자산평가손익,기타포괄손익-공정가치금융자산평가손익,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,32,12,6,11.0,13,1,4
+SCE,dart_ChangesInConsolidatedCompanies,연결대상 범위의 변동,연결대상범위의변동,dart,1,SK하이닉스,2025,CFS,8,8,12,12.0,12,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners,자본에 직접 반영된 소유주와의 거래 등,자본에직접반영된소유주와의거래등,ifrs,1,LG에너지솔루션,2024;2025,CFS;OFS,24,12,10,12.0,12,1,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 평가손익,기타포괄손익-공정가치측정지분상품평가손익,ifrs,1,NAVER,2025,CFS;OFS,12,12,12,12.0,12,1,4
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치측정금융자산관련손익,기타포괄손익-공정가치측정금융자산관련손익,ifrs,1,현대자동차,2023;2024;2025,OFS,15,6,12,12,12,3,4
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채(자산) 재측정요소,순확정급여부채(자산)재측정요소,ifrs,1,삼성전자,2023;2024;2025,CFS;OFS,30,12,7,12.0,14,1,5
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 지분상품 평가손익,기타포괄손익-공정가치지분상품평가손익,ifrs,1,NAVER,2023;2024,CFS;OFS,12,6,12,12.5,13,1,4
+SCE,-표준계정코드 미사용-,기타,기타,N,1,LG에너지솔루션,2023,CFS,7,7,13,13,13,2,
+SCE,-표준계정코드 미사용-,비지배지분의 감소,비지배지분의감소,N,1,SK하이닉스,2024,CFS,8,8,13,13.0,13,2,
+SCE,dart_IncreaseDecreaseThroughBusinessCombinations,사업결합,사업결합,dart,1,LG에너지솔루션,2024;2025,CFS,14,7,13,13.0,13,1,2
+SCE,ifrs-full_DividendsPaid,？배당,？배당,ifrs,1,현대자동차,2023,CFS;OFS,6,6,9,13.0,13,1,4
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채 재측정요소,순확정급여부채재측정요소,ifrs,1,NAVER,2025,CFS;OFS,12,12,13,13.0,13,1,5
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여부채의 재측정요소,확정급여부채의재측정요소,ifrs,1,SK하이닉스,2023,CFS;OFS,5,5,9,13,13,1,5
+SCE,dart_OtherTransactions,기타거래,기타거래,dart,1,LG에너지솔루션,2024;2025,CFS,14,7,14,14.0,14,1,1
+SCE,ifrs-full_IssueOfEquity,유상증자,유상증자,ifrs,1,LG에너지솔루션,2023;2024;2025,CFS;OFS,31,12,11,14,17,1,1
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,재평가손익,재평가손익,ifrs,1,NAVER,2024;2025,CFS,10,7,14,14.0,14,2,1
+SCE,ifrs-full_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl,종속기업 유상증자 및 소유지분변동,종속기업유상증자및소유지분변동,ifrs,1,SK하이닉스,2024;2025,CFS,16,8,14,14.5,15,1,3
+SCE,dart_ProceedsFromSalesOfFinancialAssetsAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치측정금융자산의처분,기타포괄손익-공정가치측정금융자산의처분,dart,1,LG에너지솔루션,2025,CFS;OFS,12,12,11,15.0,15,1,1
+SCE,ifrs-full_IncreaseDecreaseThroughAcquisitionOfSubsidiary,종속기업의 취득,종속기업의취득,ifrs,1,현대자동차,2024;2025,CFS,16,8,15,15.0,15,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughSharebasedPaymentTransactions,주식선택권의 부여/행사,주식선택권의부여/행사,ifrs,1,SK하이닉스,2024;2025,CFS;OFS,28,14,11,15.0,16,2,3
+SCE,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,관계기업 및 공동기업의 기타포괄손익에 대한 지분,관계기업및공동기업의기타포괄손익에대한지분,ifrs,1,삼성전자,2023;2024;2025,CFS,18,7,15,15.0,17,1,3
+SCE,dart_StockRedemption,유상감자,유상감자,dart,1,LG에너지솔루션,2025,CFS,7,7,16,16,16,1,1
+SCE,ifrs-full_IncreaseDecreaseThroughChangeInEquityOfSubsidiaries,종속기업의 증자,종속기업의증자,ifrs,1,현대자동차,2024;2025,CFS,16,8,16,16.0,16,1,2
+SCE,ifrs-full_PurchaseOfTreasuryShares,자기주식취득,자기주식취득,ifrs,1,NAVER,2025,CFS;OFS,12,12,15,16.0,16,2,3
+SCE,ifrs-full_SaleOrIssueOfTreasuryShares,자기주식의 처분,자기주식의처분,ifrs,1,SK하이닉스,2023;2024;2025,CFS;OFS,31,14,11,16,17,2,3
+SCE,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법자본변동,지분법자본변동,ifrs,1,NAVER,2023;2024;2025,CFS,15,7,16,16,17,2,3
+SCE,ifrs-full_IncreaseDecreaseThroughAcquisitionOfSubsidiary,？종속기업의 취득,？종속기업의취득,ifrs,1,현대자동차,2023,CFS,4,4,17,17.0,17,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughChangesInOwnershipInterestsInSubsidiariesThatDoNotResultInLossOfControl,종속기업에 대한 소유주지분의 변동,종속기업에대한소유주지분의변동,ifrs,1,현대자동차,2024;2025,CFS,16,8,17,17.0,17,1,3
+SCE,ifrs-full_IncreaseDecreaseThroughChangeInEquityOfSubsidiaries,？종속기업의 증자,？종속기업의증자,ifrs,1,현대자동차,2023,CFS,4,4,18,18.0,18,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughDisposalOfSubsidiary,종속기업의 처분,종속기업의처분,ifrs,1,현대자동차,2024;2025,CFS,16,8,18,18.0,18,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughDisposalOfSubsidiary,？종속기업의 처분,？종속기업의처분,ifrs,1,현대자동차,2023,CFS,2,2,19,19.0,19,1,2
+SCE,ifrs-full_IncreaseDecreaseThroughTransactionsWithOwners,자본에 직접 반영된 소유주와의 거래 소계,자본에직접반영된소유주와의거래소계,ifrs,1,현대자동차,2024;2025,CFS;OFS,28,14,11,19.0,19,2,3
+SCE,ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity,기타변동분,기타변동분,ifrs,1,현대자동차,2024;2025,CFS,16,8,20,20.0,20,1,3
+SCE,ifrs-full_IncreaseDecreaseThroughTransfersAndOtherChangesEquity,？기타변동분,？기타변동분,ifrs,1,현대자동차,2023,CFS,5,5,20,20,20,1,3
+SCE,ifrs-full_OtherComprehensiveIncomeNetOfTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치측정금융자산관련손익,기타포괄손익-공정가치측정금융자산관련손익,ifrs,1,현대자동차,2024,CFS,8,8,21,21.0,21,3,2
+SCE,ifrs-full_ProfitLoss,연결당기순이익,연결당기순이익,ifrs,1,현대자동차,2023;2024;2025,CFS;OFS,34,14,14,22.0,23,1,3
+SCE,ifrs-full_PurchaseOfTreasuryShares,자기주식 취득,자기주식취득,ifrs,1,현대자동차,2023;2024,CFS;OFS,19,14,15,23,24,2,3
+SCE,ifrs-full_SaleOrIssueOfTreasuryShares,자기주식 처분,자기주식처분,ifrs,1,현대자동차,2024;2025,CFS;OFS,28,14,16,24.0,25,1,3
+SCE,ifrs-full_SaleOrIssueOfTreasuryShares,？자기주식 처분,？자기주식처분,ifrs,1,현대자동차,2023,CFS;OFS,7,7,16,24,24,1,3
+SCE,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법평가,지분법평가,ifrs,1,현대자동차,2025,CFS,8,8,25,25.0,25,2,3
