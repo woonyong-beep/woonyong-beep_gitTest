@@ -1,0 +1,15 @@
+# 수집 대상 목록. python collect.py 가 이 목록을 모두 받아 갱신한다.
+# source: yahoo | coingecko | fred,  asset_class: stock | etf | index | fx | commodity | crypto | rate
+source,symbol,name,asset_class
+yahoo,SPY,SPDR S&P 500 ETF,etf
+yahoo,QQQ,Invesco QQQ (나스닥100 ETF),etf
+yahoo,TQQQ,ProShares UltraPro QQQ (나스닥100 3배),etf
+yahoo,^GSPC,S&P 500 지수,index
+yahoo,^KS11,코스피 지수,index
+yahoo,005930.KS,삼성전자,stock
+yahoo,KRW=X,원/달러 환율 (1달러당 원),fx
+yahoo,GC=F,금 선물 (근월물 연결),commodity
+yahoo,CL=F,WTI 원유 선물 (근월물 연결),commodity
+yahoo,BTC-USD,비트코인 (USD),crypto
+coingecko,bitcoin,비트코인 (USD),crypto
+fred,DTB3,미국 3개월 T-bill 금리 (할인율 기준 연 %),rate

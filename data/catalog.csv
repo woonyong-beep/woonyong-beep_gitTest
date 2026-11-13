@@ -1,0 +1,13 @@
+symbol,source,name,asset_class,currency,first_date,last_date,rows,fetched_at
+bitcoin,coingecko,비트코인 (USD),crypto,USD,2025-11-14,2026-11-13,365,2026-11-13T01:37:33Z
+DTB3,fred,미국 3개월 T-bill 금리 (할인율 기준 연 %),rate,,1954-01-04,2026-11-10,18206,2026-11-13T01:37:33Z
+005930.KS,yahoo,삼성전자,stock,KRW,2000-01-04,2026-11-12,6713,2026-11-13T01:37:27Z
+BTC-USD,yahoo,비트코인 (USD),crypto,USD,2014-09-17,2026-11-11,4439,2026-11-13T01:37:33Z
+CL=F,yahoo,WTI 원유 선물 (근월물 연결),commodity,USD,2000-08-23,2026-11-11,6584,2026-11-13T01:37:31Z
+GC=F,yahoo,금 선물 (근월물 연결),commodity,USD,2000-08-30,2026-11-11,6576,2026-11-13T01:37:30Z
+KRW=X,yahoo,원/달러 환율 (1달러당 원),fx,KRW,2003-12-01,2026-11-12,5953,2026-11-13T01:37:28Z
+QQQ,yahoo,Invesco QQQ (나스닥100 ETF),etf,USD,1999-03-10,2026-11-11,6963,2026-11-13T01:37:16Z
+SPY,yahoo,SPDR S&P 500 ETF,etf,USD,1993-01-29,2026-11-11,8505,2026-11-13T01:42:39Z
+TQQQ,yahoo,ProShares UltraPro QQQ (나스닥100 3배),etf,USD,2010-02-11,2026-11-11,4214,2026-11-13T01:37:22Z
+^GSPC,yahoo,S&P 500 지수,index,USD,1927-12-30,2026-11-12,24835,2026-11-13T01:37:24Z
+^KS11,yahoo,코스피 지수,index,KRW,1996-12-11,2026-11-11,7363,2026-11-13T01:37:26Z

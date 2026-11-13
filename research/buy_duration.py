@@ -15,8 +15,11 @@
 - 최적 매수 일정: 각 매수 시점을 하나의 "자산"으로 보고 샤프비율을 최대화하는
   매수 시점 포트폴리오(접점 포트폴리오).
 
-실행: python buy_duration.py
+실행 (저장소 루트에서): python research/buy_duration.py
+그래프는 research/buy_duration_frontier.png 로 저장된다.
 """
+
+from pathlib import Path
 
 import numpy as np
 from scipy.optimize import minimize
@@ -128,7 +131,7 @@ def run(label, **model):
     return points, (rf_total, base_sharpe)
 
 
-def plot(results, path="buy_duration_frontier.png"):
+def plot(results, path=Path(__file__).resolve().parent / "buy_duration_frontier.png"):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
@@ -149,7 +152,7 @@ def plot(results, path="buy_duration_frontier.png"):
         ax.legend(fontsize=8)
     fig.tight_layout()
     fig.savefig(path, dpi=130)
-    print(f"\n그래프 저장: {path}")
+    print(f"\n그래프 저장: {path.name}")
 
 
 if __name__ == "__main__":

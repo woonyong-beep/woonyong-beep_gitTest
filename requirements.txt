@@ -1,0 +1,6 @@
+# 수집기(collectors/, collect.py)와 백테스트 엔진(backtest/)은 표준 라이브러리와 numpy 만 쓴다.
+numpy
+scipy          # research/buy_duration.py
+matplotlib     # research/ 의 그래프
+pytest         # 테스트
+pandas         # research/backtest_tqqq.py 만 사용 (예전 스크립트를 그대로 두었다)

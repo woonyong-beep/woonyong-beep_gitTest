@@ -17,7 +17,8 @@
 - 검증용으로 Tiingo 조정 종가 (공개 저장소 ravelab/l-etf, data/etf-tqqq.csv) 를
   data/tqqq_daily_tiingo.csv 로 함께 저장했고, 실행 시 두 소스의 일별 수익률을 비교한다.
 
-실행: python backtest_tqqq.py
+실행 (저장소 루트에서): python research/backtest_tqqq.py
+그래프는 research/backtest_tqqq.png 로 저장된다.
 """
 
 from pathlib import Path
@@ -29,8 +30,9 @@ import infinite_buy as ib
 from infinite_buy import BUDGET, DT, RF, SPLITS, TAKE_PROFIT
 
 HERE = Path(__file__).resolve().parent
-DATA = HERE / "data" / "tqqq_daily.csv"
-DATA_CHECK = HERE / "data" / "tqqq_daily_tiingo.csv"
+ROOT = HERE.parent           # 저장소 루트 (data/ 는 루트에 있다)
+DATA = ROOT / "data" / "tqqq_daily.csv"
+DATA_CHECK = ROOT / "data" / "tqqq_daily_tiingo.csv"
 GROWTH = np.exp(RF * DT)     # 하루 무위험 성장률
 HORIZONS = {"5년": 252 * 5, "1년": 252}
 STEP = 1                     # 롤링 시작일 간격 (거래일)
@@ -43,7 +45,7 @@ def load_prices():
     s = df.set_index("date")["adj_close"]
 
     print("=== 데이터 점검 ===")
-    print(f"파일: {DATA.relative_to(HERE)}  행 수 {len(s)}  기간 {s.index[0].date()} ~ {s.index[-1].date()}")
+    print(f"파일: {DATA.relative_to(ROOT)}  행 수 {len(s)}  기간 {s.index[0].date()} ~ {s.index[-1].date()}")
     assert s.index.is_monotonic_increasing and not s.index.duplicated().any(), "날짜 정렬/중복 문제"
     assert s.notna().all() and (s > 0).all(), "결측 또는 0 이하 가격"
     per_year = s.groupby(s.index.year).size()

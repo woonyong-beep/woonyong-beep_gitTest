@@ -12,7 +12,7 @@
 - 일정비중 리밸런싱: 주식 비중을 고정하고 매일 리밸런싱하는 전략 중
   무한매수법과 기대 만기자산이 같은 것. 같은 기대수익을 더 단순하게 얻는 방법과의 비교다.
 
-실행: python infinite_buy.py
+실행 (저장소 루트에서): python research/infinite_buy.py
 """
 
 import numpy as np
