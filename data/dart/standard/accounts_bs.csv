@@ -1,0 +1,76 @@
+std_id,parent,name_ko,name_en,kind,note
+BS.A,,자산총계,Total assets,total,
+BS.A1,BS.A,유동자산,Current assets,subtotal,
+BS.A11,BS.A1,현금및현금성자산,Cash and cash equivalents,item,
+BS.A12,BS.A1,단기금융자산,Current financial assets,group,예치금·투자·공정가치/상각후원가 측정 금융자산·기타금융자산(유동)
+BS.A121,BS.A12,단기금융상품,Short-term deposits,item,현금성자산이 아닌 예치금
+BS.A122,BS.A12,단기투자금융자산,Current investments at FV or amortised cost,item,당기손익-공정가치·기타포괄손익-공정가치·상각후원가 측정(유동) 및 단기투자자산
+BS.A123,BS.A12,기타유동금융자산,Other current financial assets,item,
+BS.A13,BS.A1,매출채권및기타채권,Trade and other current receivables,group,
+BS.A131,BS.A13,매출채권,Current trade receivables,item,
+BS.A132,BS.A13,미수금및기타채권,Other current receivables,item,미수금·기타수취채권
+BS.A14,BS.A1,재고자산,Inventories,item,
+BS.A15,BS.A1,당기법인세자산,Current tax assets,item,선급법인세 포함
+BS.A16,BS.A1,기타유동자산,Other current assets,group,
+BS.A161,BS.A16,선급비용,Current prepaid expenses,item,
+BS.A169,BS.A16,그밖의기타유동자산,Other current assets - other,item,
+BS.A17,BS.A1,매각예정자산,Assets held for sale,item,이름에 '비유동'이 있어도 유동자산 구획에 표시되는 항목
+BS.A18,BS.A1,금융업채권(유동),Financial services receivables - current,item,금융 사업부문을 연결하는 회사(현대자동차)의 고유 항목
+BS.A2,BS.A,비유동자산,Non-current assets,subtotal,
+BS.A21,BS.A2,유형자산,Property plant and equipment,item,
+BS.A22,BS.A2,사용권자산,Right-of-use assets,item,
+BS.A23,BS.A2,투자부동산,Investment property,item,
+BS.A24,BS.A2,무형자산,Intangible assets including goodwill,item,영업권을 따로 표시하지 않는 회사가 많아 합쳐서 관리
+BS.A25,BS.A2,종속·관계·공동기업투자,Investments in subsidiaries associates and joint ventures,item,연결은 관계·공동기업(지분법) / 별도는 종속기업 포함
+BS.A26,BS.A2,장기금융자산,Non-current financial assets,group,
+BS.A261,BS.A26,장기금융상품,Long-term deposits,item,
+BS.A262,BS.A26,장기투자금융자산,Non-current investments at FV or amortised cost,item,
+BS.A263,BS.A26,기타비유동금융자산,Other non-current financial assets,item,
+BS.A27,BS.A2,장기매출채권및기타채권,Trade and other non-current receivables,group,
+BS.A271,BS.A27,장기매출채권,Non-current trade receivables,item,
+BS.A272,BS.A27,장기기타채권,Other non-current receivables,item,
+BS.A28,BS.A2,이연법인세자산,Deferred tax assets,item,
+BS.A29,BS.A2,순확정급여자산,Net defined benefit asset,item,
+BS.A2A,BS.A2,기타비유동자산,Other non-current assets,item,
+BS.A2B,BS.A2,금융업채권(비유동),Financial services receivables - non-current,item,현대자동차 고유 항목
+BS.A2C,BS.A2,운용리스자산,Operating lease assets,item,현대자동차 고유 항목
+BS.L,,부채총계,Total liabilities,total,
+BS.L1,BS.L,유동부채,Current liabilities,subtotal,
+BS.L11,BS.L1,매입채무및기타채무,Trade and other current payables,group,
+BS.L111,BS.L11,매입채무,Current trade payables,item,
+BS.L112,BS.L11,미지급금및기타지급채무,Other current payables,item,
+BS.L113,BS.L11,미지급비용,Accrued expenses,item,
+BS.L12,BS.L1,단기차입부채,Current borrowings,group,단기차입금과 유동성장기부채를 합쳐 '차입금' 한 줄로 표시하는 회사는 이 묶음에 직접 대응
+BS.L121,BS.L12,단기차입금,Short-term borrowings,item,
+BS.L122,BS.L12,유동성장기부채,Current portion of long-term borrowings and bonds,item,유동성장기차입금·유동성사채
+BS.L13,BS.L1,유동리스부채,Current lease liabilities,item,
+BS.L14,BS.L1,유동충당부채,Current provisions,item,
+BS.L15,BS.L1,당기법인세부채,Current tax liabilities,item,미지급법인세
+BS.L16,BS.L1,기타유동금융부채,Other current financial liabilities,item,당기손익-공정가치 측정 금융부채(유동) 포함
+BS.L17,BS.L1,기타유동부채,Other current liabilities,group,
+BS.L171,BS.L17,선수금,Advances received,item,
+BS.L172,BS.L17,예수금,Withholdings,item,
+BS.L179,BS.L17,그밖의기타유동부채,Other current liabilities - other,item,
+BS.L18,BS.L1,매각예정부채,Liabilities held for sale,item,
+BS.L2,BS.L,비유동부채,Non-current liabilities,subtotal,
+BS.L21,BS.L2,장기차입부채,Non-current borrowings,group,사채와 장기차입금을 합쳐 '차입금' 한 줄로 표시하는 회사는 이 묶음에 직접 대응
+BS.L211,BS.L21,사채,Bonds issued,item,
+BS.L212,BS.L21,장기차입금,Long-term borrowings,item,
+BS.L22,BS.L2,비유동리스부채,Non-current lease liabilities,item,
+BS.L23,BS.L2,비유동충당부채,Non-current provisions,item,
+BS.L24,BS.L2,순확정급여부채,Net defined benefit liability,item,
+BS.L25,BS.L2,이연법인세부채,Deferred tax liabilities,item,
+BS.L26,BS.L2,장기매입채무및기타채무,Trade and other non-current payables,item,장기미지급금·기타장기지급채무
+BS.L27,BS.L2,기타비유동금융부채,Other non-current financial liabilities,item,당기손익-공정가치 측정 금융부채(비유동) 포함
+BS.L28,BS.L2,기타비유동부채,Other non-current liabilities,item,
+BS.E,,자본총계,Total equity,total,
+BS.E1,BS.E,지배기업소유주지분,Equity attributable to owners of parent,subtotal,별도재무제표에서는 자본총계와 같다
+BS.E11,BS.E1,자본금,Issued capital,group,
+BS.E111,BS.E11,보통주자본금,Common stock,item,
+BS.E112,BS.E11,우선주자본금,Preferred stock,item,
+BS.E12,BS.E1,자본잉여금,Capital surplus,item,주식발행초과금만 표시하는 회사는 여기에 대응
+BS.E13,BS.E1,이익잉여금,Retained earnings,item,
+BS.E14,BS.E1,기타포괄손익누계액,Accumulated other comprehensive income,item,
+BS.E15,BS.E1,기타자본항목,Other components of equity,item,기타포괄손익누계액을 따로 표시하지 않는 회사는 여기에 포함되어 있을 수 있음
+BS.E2,BS.E,비지배지분,Non-controlling interests,item,
+BS.T,,부채와자본총계,Total equity and liabilities,total,
