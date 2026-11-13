@@ -1,0 +1,375 @@
+corp_code,company,fs_div,sj_div,bsns_year,account_id,account_nm,occurrence,std_id,role,flip,method,confidence,review,note,years,n_rows
+00126380,삼성전자,CFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익(손실),1,PL.CONT,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익,1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법이익,1,PL.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분에 귀속되는 당기순이익(손실),1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유주지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2025,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2024,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주에게 귀속되는 당기순이익(손실),1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023,1
+00126380,삼성전자,CFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,dart_OtherLosses,기타손실,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,dart_OtherGains,기타이익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,IS,,ifrs-full_Revenue,영업수익,1,PL.REV,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익(*3),1,PL.CI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,1,PL.CIN,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업 소유주지분,1,PL.CIO,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2024;2025,2
+00126380,삼성전자,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2024,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익(*4),1,PL.OCI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,연결기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2025,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 포괄손익,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채(자산) 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치금융자산평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,PL.OCI.N.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,당기손익으로 재분류되는 세후기타포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,관계기업 및 공동기업의 기타포괄손익에 대한 지분,1,PL.OCI.R.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,CFS,CIS,,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업장환산외환차이,1,PL.OCI.R.FX,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익(손실),1,PL.CONT,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익,1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,dart_OtherLosses,기타손실,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,dart_OtherGains,기타이익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,IS,,ifrs-full_Revenue,영업수익,1,PL.REV,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+00126380,삼성전자,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2024;2025,2
+00126380,삼성전자,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익(*3),1,PL.CI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2024;2025,2
+00126380,삼성전자,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2024,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익(*4),1,PL.OCI,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,연결기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2025,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 포괄손익,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채(자산) 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치금융자산평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,당기손익으로 재분류되는 세후기타포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2023,1
+00126380,삼성전자,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossFromContinuingOperations,계속영업연결당기순이익,1,PL.CONT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업당기순손실,1,PL.DISC,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업당기순이익(손실),1,PL.DISC,value,1,xbrl_id,high,ok,,2023,1
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,보통주기본주당이익(손실),1,PL.EPS.B,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,CFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,계속영업 보통주기본주당이익(손실),1,PL.EPS.B.CONT,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,CFS,IS,,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업 보통주기본주당이익,1,PL.EPS.B.CONT,value,1,xbrl_id,high,ok,,2024,1
+00164742,현대자동차,CFS,IS,,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업보통주기본주당이익,1,PL.EPS.B.CONT,value,1,xbrl_id,high,ok,,2025,1
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,중단영업 보통주기본주당이익(손실),1,PL.EPS.B.DISC,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,CFS,IS,,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업 보통주기본주당손실,1,PL.EPS.B.DISC,value,1,xbrl_id,high,ok,,2024,1
+00164742,현대자동차,CFS,IS,,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업보통주기본주당손실,1,PL.EPS.B.DISC,value,1,xbrl_id,high,ok,,2025,1
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,보통주 희석주당이익,1,PL.EPS.D,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,CFS,IS,,ifrs-full_DilutedEarningsLossPerShare,보통주 희석주당이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,1우선주 기본주당이익(손실),1,PL.EPS.PB,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,CFS,IS,,dart_BasicEarningsLossPerSharePreferredStock,1우선주기본주당이익(손실),1,PL.EPS.PB,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,계속영업 1우선주기본주당이익(손실),1,PL.EPS.PB.CONT,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,CFS,IS,,dart_BasicEarningsLossPerSharePreferredStockFromContinuingOperations,계속영업 1우선주기본주당이익,1,PL.EPS.PB.CONT,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,중단영업 1우선주기본주당이익(손실),1,PL.EPS.PB.DISC,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,CFS,IS,,dart_BasicEarningsLossPerSharePreferredStockFromDiscontinuedOperations,중단영업 1우선주기본주당손실,1,PL.EPS.PB.DISC,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,1우선주 희석주당이익,1,PL.EPS.PD,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,CFS,IS,,dart_DilutedEarningsLossPerSharePreferredStock,1우선주 희석주당이익,1,PL.EPS.PD,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,CFS,IS,,-표준계정코드 미사용-,공동기업및관계기업투자손익,1,PL.EQM,value,1,name,high,ok,표준코드 없음. 계정명과 PBT 대사(OP + 금융·기타 손익 + 이 줄 = PBT)로 확인,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLoss,연결당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업소유주지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2024;2025,2
+00164742,현대자동차,CFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023,1
+00164742,현대자동차,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,1,PL.CIN,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업소유주지분,1,PL.CIO,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_ProfitLoss,연결당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치측정금융자산관련손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,-표준계정코드 미사용-,지분법이익잉여금,1,PL.OCI.N.EQM,value,1,position,medium,ok,"표준코드 없음. '재분류되지 않는 항목' 소계의 구성 항목 (N 소계 = 이 줄 + FVOCI 지분상품 + 확정급여 + 지분법자본변동, 3년 × 3기간 대사로 확인). 관계기업의 이익잉여금 직접 변동(재측정요소 등)에 대한 지분으로 보아 지분법 OCI(재분류 안 됨)에 같은 노드의 지분법자본변동과 합산. 따로 보려면 노드가 필요 / 책임자 승인",2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,-표준계정코드 미사용-,지분법자본변동,1,PL.OCI.N.EQM,value,1,position,high,ok,"표준코드 없음 (2025). '재분류되지 않는 항목' 아래 줄 (ord 순서, N 대사로 확인). 2025 전기 열 146,829백만 = 2024 의 ifrs-full ...ThatWillNotBeReclassified... 줄 당기와 같다",2025,1
+00164742,현대자동차,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,1,PL.OCI.N.EQM,value,1,xbrl_id,high,ok,,2023;2024,2
+00164742,현대자동차,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류될 수 있는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_GainsLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncomeNetOfTax,기타포괄손익-공정가치측정금융자산관련손익,1,PL.OCI.R.DEBT,value,1,position,medium,ok,재분류되는 항목 아래의 '기타포괄손익-공정가치측정금융자산관련손익' (재분류 안 되는 쪽 같은 이름 줄은 지분상품 id). 재분류되는 FVOCI 는 채무상품뿐이고 R 대사가 맞는다,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,1,PL.OCI.R.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,CFS,CIS,,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업환산손익,1,PL.OCI.R.FX,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,-표준계정코드 미사용-,보통주 기본주당이익,1,PL.EPS.B,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,OFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,OFS,IS,,-표준계정코드 미사용-,보통주 희석주당이익,1,PL.EPS.D,value,1,name,high,ok,표준코드 없음 (2024 부터는 ifrs-full id),2023,1
+00164742,현대자동차,OFS,IS,,ifrs-full_DilutedEarningsLossPerShare,보통주 희석주당이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,OFS,IS,,-표준계정코드 미사용-,1우선주 기본주당이익,1,PL.EPS.PB,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,OFS,IS,,dart_BasicEarningsLossPerSharePreferredStock,1우선주기본주당이익(손실),1,PL.EPS.PB,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,OFS,IS,,-표준계정코드 미사용-,1우선주 희석주당이익,1,PL.EPS.PD,value,1,name,high,ok,표준코드 없음 (2024 부터는 dart id),2023,1
+00164742,현대자동차,OFS,IS,,dart_DilutedEarningsLossPerSharePreferredStock,1우선주 희석주당이익,1,PL.EPS.PD,value,1,xbrl_id,high,ok,,2024;2025,2
+00164742,현대자동차,OFS,IS,,-표준계정코드 미사용-,종속기업및관계기업투자손익,1,PL.EQM,value,1,name,high,ok,표준코드 없음. 별도재무제표의 종속·관계기업 투자손익 (차트 주석). PBT 대사로 확인,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_ProfitLoss,연결당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2024;2025,2
+00164742,현대자동차,OFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023,1
+00164742,현대자동차,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_ProfitLoss,연결당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치측정금융자산관련손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류될 수 있는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164742,현대자동차,OFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익(손실),1,PL.CI,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,1,PL.CIN,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업의 소유주지분,1,PL.CIO,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당순이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2023;2024,2
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2023;2024,2
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법투자 관련 손익,1,PL.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GrossProfit,매출총이익(손실),1,PL.GP,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,법인세차감후 기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 포괄손익,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익(손실),1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2024,1
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,관계기업의 기타포괄손익에 대한 지분,1,PL.OCI.R.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업장환산외환차이,1,PL.OCI.R.FX,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,dart_OperatingIncomeLoss,영업이익(손실),1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,dart_OtherLosses,기타영업외비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,dart_OtherGains,기타영업외수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,CFS,CIS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익(손실),1,PL.CI,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당순이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,,2023;2024,2
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2023;2024,2
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_GrossProfit,매출총이익(손실),1,PL.GP,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,법인세차감후 기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 포괄손익,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,확정급여제도의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2024;2025,2
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 포괄손익,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2025,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2023,1
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,파생상품평가이익(손실),1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2024,1
+00164779,SK하이닉스,OFS,CIS,,dart_OperatingIncomeLoss,영업이익(손실),1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,dart_OtherLosses,기타영업외비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,dart_OtherGains,기타영업외수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00164779,SK하이닉스,OFS,CIS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,CFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익,1,PL.CI,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,1,PL.CIN,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업 소유주지분,1,PL.CIO,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익,1,PL.CONT,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업이익,1,PL.DISC,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당순이익,1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,CFS,CIS,,ifrs-full_BasicEarningsLossPerShareFromContinuingOperations,계속영업기본주당순이익,1,PL.EPS.B.CONT,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations,중단영업기본주당순이익,1,PL.EPS.B.DISC,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,CFS,CIS,,ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations,계속영업희석주당순이익,1,PL.EPS.D.CONT,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations,중단영업희석주당순이익,1,PL.EPS.D.DISC,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,dart_ProfitsOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법손익,1,PL.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC.OTH,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_RevenueFromInterest,이자수익,1,PL.FININC.INT,value,1,manual,medium,ok,'중' 표시가 아닌 별도 구성 항목이다: 이 줄을 빼면 PBT 대사가 이자수익만큼 모자라고 넣으면 3년 × 3기간 원 단위로 맞는다 (OP 에는 들어가지 않음: REV - OPEX = OP). 유효이자율법 이자수익을 금융수익과 따로 표시한 것으로 보아 PL.FININC 에 금융수익 줄과 합산. 따라서 NAVER 의 PL.FININC 보고값은 '금융수익' 한 줄보다 크다. 차트에 이자수익 노드가 필요한지 결정 필요 / 책임자 승인,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossFromContinuingOperationsAttributableToNoncontrollingInterests,비지배지분에 귀속될 계속영업손익,1,PL.NIN.CONT,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToNoncontrollingInterests,비지배지분에 귀속될 중단영업손익,1,PL.NIN.DISC,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유주지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_IncomeFromContinuingOperationsAttributableToOwnersOfParent,지배기업의 소유주에게 귀속될 계속영업손익,1,PL.NIO.CONT,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_IncomeFromDiscontinuedOperationsAttributableToOwnersOfParent,지배기업의 소유주에게 귀속될 중단영업손익,1,PL.NIO.DISC,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,CFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,평가손익,2024;2025,2
+00266961,NAVER,CFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,평가손익,2023,1
+00266961,NAVER,CFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 처분손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,처분손익. 차트 주석대로 평가손익과 같은 노드에 합산,2024;2025,2
+00266961,NAVER,CFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품처분손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,처분손익. 차트 주석대로 평가손익과 같은 노드에 합산,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,1,PL.OCI.N.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,재평가손익,1,PL.OCI.N.REV,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피 파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,CFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxChangeInFairValueOfFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 채무상품평가손익,1,PL.OCI.R.DEBT,value,1,xbrl_id,high,ok,계정명이 채무상품평가손익,2023,1
+00266961,NAVER,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossNetOfTax,지분법자본변동,1,PL.OCI.R.EQM,value,-1,xbrl_id,high,ok,"부호 반대로 공시: R 소계 = 해외사업환산손익(+채무상품·현금흐름위험회피) - 이 줄 이 2023·2024·2025 보고서 모든 기간(9개 열)에서 원 단위로 맞고, 더하면 하나도 맞지 않는다. 독립 근거: 자본변동표(SCE) 지분법자본변동(연결재무제표 member) 2023 -515,729,167,155 = -(이 줄 545,588,292,957) + 재분류 안 되는 지분법자본변동 29,859,125,802, 2022 열도 같은 방식으로 맞는다. 원 데이터(XBRL)의 부호 오류로 보인다",2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_GainsLossesOnExchangeDifferencesOnTranslationNetOfTax,해외사업환산손익,1,PL.OCI.R.FX,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_OperatingExpense,영업비용,1,PL.OPEX,value,1,xbrl_id,high,ok,성격별 손익의 영업비용 한 줄. 매출원가·판관비로 나누지 않으므로 묶음 PL.OPEX 에 직접 대응 (REV - OPEX = OP 대사로 확인),2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_Revenue,영업수익,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,CFS,CIS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,OFS,CIS,,ifrs-full_ComprehensiveIncome,총포괄이익,1,PL.CI,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당순이익,1,PL.EPS.B,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,OFS,CIS,,ifrs-full_BasicEarningsLossPerShare,기본주당이익,1,PL.EPS.B,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,OFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당순이익,1,PL.EPS.D,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,OFS,CIS,,ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),1,PL.EPS.D,value,1,xbrl_id,high,ok,,2023,1
+00266961,NAVER,OFS,CIS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC.OTH,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_RevenueFromInterest,이자수익,1,PL.FININC.INT,value,1,manual,medium,ok,'중' 표시가 아닌 별도 구성 항목이다: 이 줄을 빼면 PBT 대사가 이자수익만큼 모자라고 넣으면 3년 × 3기간 원 단위로 맞는다 (OP 에는 들어가지 않음: REV - OPEX = OP). 유효이자율법 이자수익을 금융수익과 따로 표시한 것으로 보아 PL.FININC 에 금융수익 줄과 합산. 따라서 NAVER 의 PL.FININC 보고값은 '금융수익' 한 줄보다 크다. 차트에 이자수익 노드가 필요한지 결정 필요 / 책임자 승인,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,OFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 처분손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,처분손익. 차트 주석대로 평가손익과 같은 노드에 합산,2024;2025,2
+00266961,NAVER,OFS,CIS,,dart_OtherComprehensiveIncomeNetOfTaxDisposalOfInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품처분손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,처분손익. 차트 주석대로 평가손익과 같은 노드에 합산,2023,1
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 지분상품 평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2023;2024,2
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesFromInvestmentsInEquityInstruments,기타포괄손익-공정가치 측정 지분상품 평가손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeNetOfTaxGainsLossesOnRevaluation,재평가손익,1,PL.OCI.N.REV,value,1,xbrl_id,high,ok,,2024;2025,2
+00266961,NAVER,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax,후속적으로 당기손익으로 재분류되는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,CIS,,ifrs-full_GainsLossesOnCashFlowHedgesNetOfTax,현금흐름위험회피 파생상품평가손익,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,,2025,1
+00266961,NAVER,OFS,CIS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_OperatingExpense,영업비용,1,PL.OPEX,value,1,xbrl_id,high,ok,성격별 손익의 영업비용 한 줄. 매출원가·판관비로 나누지 않으므로 묶음 PL.OPEX 에 직접 대응 (REV - OPEX = OP 대사로 확인),2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,dart_OtherLosses,기타비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,dart_OtherGains,기타수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익,1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_Revenue,영업수익,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+00266961,NAVER,OFS,CIS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossFromContinuingOperations,계속영업이익,1,PL.CONT,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossFromDiscontinuedOperations,중단영업이익,1,PL.DISC,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당손실,1,PL.EPS.B,value,1,xbrl_id,high,ok,기본 및 희석 주당이익 한 줄. 매핑 행 하나에 노드 하나라 PL.EPS.B 에만 둔다 (PL.EPS.D 는 값 없음),2024,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,기본 및 희석 주당이익 한 줄. 매핑 행 하나에 노드 하나라 PL.EPS.B 에만 둔다 (PL.EPS.D 는 값 없음),2023;2025,2
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_DilutedEarningsLossPerShare,보통주 기본 및 희석주당계속영업이익(손실),1,PL.EPS.B.CONT,value,1,manual,medium,ok,"id 는 희석주당이익(전체)이지만 계정명은 '기본 및 희석 주당계속영업이익'. 2021 열에서 이 줄 3,036 원 ≠ 주당이익 3,963 원 (중단영업이 있던 해) 이므로 계속영업 EPS 로 본다. 기본=희석 한 줄이라 PL.EPS.D.CONT 에도 같은 값이지만 매핑 행 하나에 노드 하나라 B.CONT 에만 둔다 / 책임자 승인",2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ShareOfProfitLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod,지분법손익,1,PL.EQM,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossAttributableToNoncontrollingInterests,비지배지분,1,PL.NIN,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossFromContinuingOperationsAttributableToNoncontrollingInterests,계속영업이익,1,PL.NIN.CONT,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossFromDiscontinuedOperationsAttributableToNoncontrollingInterests,중단영업이익,1,PL.NIN.DISC,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업의 소유주지분,1,PL.NIO,value,1,xbrl_id,high,ok,당기순이익의 귀속 (id 로 총포괄손익 귀속과 구분),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_IncomeFromContinuingOperationsAttributableToOwnersOfParent,계속영업이익,1,PL.NIO.CONT,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_IncomeFromDiscontinuedOperationsAttributableToOwnersOfParent,중단영업이익,1,PL.NIO.DISC,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,dart_OtherOperatingIncome,기타영업수익,1,PL.OOI,value,1,xbrl_id,high,ok,영업이익 위에 표시 (REV - COGS - SGA + OOI = OP 대사로 확인),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,CFS,IS,,dart_OperatingIncomeLoss,영업이익(손실),1,PL.OP,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,CFS,IS,,dart_OtherLosses,기타영업외비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,dart_OtherGains,기타영업외수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와 관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023,1
+01515323,LG에너지솔루션,CFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2024;2025,2
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ComprehensiveIncome,당기총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024,2
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ComprehensiveIncome,당기총포괄이익(손실),1,PL.CI,value,1,xbrl_id,high,ok,,2025,1
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests,비지배지분,1,PL.CIN,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent,지배기업의 소유주지분,1,PL.CIO,value,1,xbrl_id,high,ok,총포괄손익의 귀속 (id 로 당기순이익 귀속과 구분),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023,1
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2024;2025,2
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,id 는 BeforeTax 이지만 값은 세후다: 세전 구성 항목과 법인세효과 줄을 합한 값이고 OCI = R + N 이 맞는다 (대사로 확인),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.N.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산 손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,재분류되지 않는 항목 아래의 세전 FVOCI 금융자산 손익 = 지분상품 (N 대사로 확인). 법인세효과는 PL.OCI.N.TAX 줄,2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,2023,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.N.TAX,value,1,xbrl_id,high,ok,2023 보고서는 이 줄을 더하는 방향으로 공시: 소계 = 세전 구성 항목 + 이 줄 (당기·전기·전전기 3개 열 원 단위 일치). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2023,1
+01515323,LG에너지솔루션,CFS,CIS,2024,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.N.TAX,value,-1,xbrl_id,high,ok,2024 보고서는 비용을 양수로 공시: 소계 = 세전 구성 항목 - 이 줄 (3개 열 일치). 같은 금액이 2023 보고서와 부호만 반대 (2024 전기 열 = -(2023 당기 열)). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2024,1
+01515323,LG에너지솔루션,CFS,CIS,2025,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.N.TAX,value,-1,xbrl_id,high,ok,2025 보고서는 비용을 양수로 공시: 소계 = 세전 구성 항목 - 이 줄 (3개 열 일치). 2025 전기 열 = 2024 당기 열. 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2025,1
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,후속적으로 당기손익으로 재분류될 수 있는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,id 는 BeforeTax 이지만 값은 세후다: 세전 구성 항목과 법인세효과 줄을 합한 값이고 OCI = R + N 이 맞는다 (대사로 확인),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxCashFlowHedges,현금흐름위험회피,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.R.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax,공동기업 및 관계기업 기타포괄손익에 대한 지분,1,PL.OCI.R.EQM,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.R.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation,해외사업장환산외환차이,1,PL.OCI.R.FX,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.R.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,CFS,CIS,2023,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.R.TAX,value,1,xbrl_id,high,ok,2023 보고서는 이 줄을 더하는 방향으로 공시: 소계 = 세전 구성 항목 + 이 줄 (당기·전기·전전기 3개 열 원 단위 일치). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2023,1
+01515323,LG에너지솔루션,CFS,CIS,2024,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.R.TAX,value,-1,xbrl_id,high,ok,2024 보고서는 비용을 양수로 공시: 소계 = 세전 구성 항목 - 이 줄 (3개 열 일치). 같은 금액이 2023 보고서와 부호만 반대 (2024 전기 열 = -(2023 당기 열)). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2024,1
+01515323,LG에너지솔루션,CFS,CIS,2025,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.R.TAX,value,-1,xbrl_id,high,ok,2025 보고서는 비용을 양수로 공시: 소계 = 세전 구성 항목 - 이 줄 (3개 열 일치). 2025 전기 열 = 2024 당기 열. 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2025,1
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_CostOfSales,매출원가,1,PL.COGS,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당손실,1,PL.EPS.B,value,1,xbrl_id,high,ok,기본 및 희석 주당이익 한 줄. 매핑 행 하나에 노드 하나라 PL.EPS.B 에만 둔다 (PL.EPS.D 는 값 없음),2024,1
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_BasicEarningsLossPerShare,보통주 기본 및 희석주당이익(손실),1,PL.EPS.B,value,1,xbrl_id,high,ok,기본 및 희석 주당이익 한 줄. 매핑 행 하나에 노드 하나라 PL.EPS.B 에만 둔다 (PL.EPS.D 는 값 없음),2023;2025,2
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_FinanceCosts,금융비용,1,PL.FINCOST,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_FinanceIncome,금융수익,1,PL.FININC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_GrossProfit,매출총이익,1,PL.GP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,value,1,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,OFS,IS,,dart_OperatingIncomeLoss,영업이익,1,PL.OP,value,1,xbrl_id,high,ok,,2024;2025,2
+01515323,LG에너지솔루션,OFS,IS,,dart_OperatingIncomeLoss,영업이익(손실),1,PL.OP,value,1,xbrl_id,high,ok,,2023,1
+01515323,LG에너지솔루션,OFS,IS,,dart_OtherLosses,기타영업외비용,1,PL.OTHEXP,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,dart_OtherGains,기타영업외수익,1,PL.OTHINC,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),1,PL.PBT,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_Revenue,매출액,1,PL.REV,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,dart_TotalSellingGeneralAdministrativeExpenses,판매비와 관리비,1,PL.SGA,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2023,1
+01515323,LG에너지솔루션,OFS,IS,,ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),1,PL.TAX,value,1,xbrl_id,high,ok,비용을 양수로 공시 (법인세수익이면 음수). PBT - TAX = CONT 대사로 확인,2024;2025,2
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_ComprehensiveIncome,당기총포괄손익,1,PL.CI,value,1,xbrl_id,high,ok,,2023;2024,2
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_ComprehensiveIncome,당기총포괄이익(손실),1,PL.CI,value,1,xbrl_id,high,ok,,2025,1
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익,1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2023,1
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_ProfitLoss,당기순이익(손실),1,PL.NI,check_only,1,xbrl_id,high,ok,포괄손익계산서 맨 위에 다시 적은 당기순이익. 손익계산서 줄과 같아야 하고 다시 더하지 않는다,2024;2025,2
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncome,기타포괄손익,1,PL.OCI,value,1,xbrl_id,high,ok,,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossBeforeTax,당기손익으로 재분류되지 않는 항목,1,PL.OCI.N,value,1,xbrl_id,high,ok,id 는 BeforeTax 이지만 값은 세후다: 세전 구성 항목과 법인세효과 줄을 합한 값이고 OCI = R + N 이 맞는다 (대사로 확인),2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans,순확정급여부채의 재측정요소,1,PL.OCI.N.DB,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.N.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome,기타포괄손익-공정가치 측정 금융자산 손익,1,PL.OCI.N.EQI,value,1,xbrl_id,high,ok,재분류되지 않는 항목 아래의 세전 FVOCI 금융자산 손익 = 지분상품 (N 대사로 확인). 법인세효과는 PL.OCI.N.TAX 줄,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.N.TAX,value,-1,xbrl_id,high,ok,비용을 양수로 공시: 2023·2024·2025 보고서 모두 소계 = 세전 구성 항목 - 이 줄 (보고서마다 3개 열 원 단위 일치). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossBeforeTax,후속적으로 당기손익으로 재분류될 수 있는 항목,1,PL.OCI.R,value,1,xbrl_id,high,ok,id 는 BeforeTax 이지만 값은 세후다: 세전 구성 항목과 법인세효과 줄을 합한 값이고 OCI = R + N 이 맞는다 (대사로 확인),2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_OtherComprehensiveIncomeBeforeTaxCashFlowHedges,현금흐름위험회피,1,PL.OCI.R.CFH,value,1,xbrl_id,high,ok,세전 금액 (법인세효과는 PL.OCI.R.TAX 줄),2023;2024;2025,3
+01515323,LG에너지솔루션,OFS,CIS,,ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss,기타포괄손익 법인세효과,1,PL.OCI.R.TAX,value,-1,xbrl_id,high,ok,비용을 양수로 공시: 2023·2024·2025 보고서 모두 소계 = 세전 구성 항목 - 이 줄 (보고서마다 3개 열 원 단위 일치). 차트 노드는 OCI 에 더하는 방향(세금 혜택이 양수)으로 저장,2023;2024;2025,3

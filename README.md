@@ -168,7 +168,7 @@ python -m pytest
 ## DART 재무제표 (파일럿)
 
 OpenDART API 로 사업보고서 재무제표(재무상태표 BS, 손익계산서 IS, 포괄손익계산서 CIS, 현금흐름표 CF, 자본변동표 SCE)를
-받아 **받은 그대로(as-reported)** 저장하고, 재무상태표는 표준 계정과목(트리)으로 옮긴 층도 만든다 (아래 "표준화 층").
+받아 **받은 그대로(as-reported)** 저장하고, 재무상태표와 손익·포괄손익계산서는 표준 계정과목(트리)으로 옮긴 층도 만든다 (아래 "표준화 층").
 값을 지어내거나 채우지 않는다.
 
 ```
@@ -178,7 +178,7 @@ python dart_collect.py --years 2021-2025 --only 삼성전자
 python dart_collect.py --check     # 받지 않고 점검 -> data/dart/checks.csv, checks.md
 python dart_collect.py --inventory # 받지 않고 계정 목록 -> data/dart/account_inventory.csv
 python dart_collect.py --doc-probe # 삼성전자 원문 문서에서 연결 재무상태표 시험 추출 -> data/dart/doc_probe.md
-python dart_collect.py --standardize # 받지 않고 재무상태표 표준화·대사 -> data/dart/standardized/
+python dart_collect.py --standardize # 받지 않고 재무상태표·손익 표준화·대사 -> data/dart/standardized/
 ```
 
 받은 응답은 모두 디스크에 캐시하고, 캐시가 있으면 다시 받지 않는다 (OpenDART 는 하루 호출 한도가 있다).
@@ -199,7 +199,7 @@ python dart_collect.py --standardize # 받지 않고 재무상태표 표준화·
    currency, raw_file, raw_index`. `raw_file` 의 `list[raw_index]` 가 그 행의 원본이다.
    금액이 빈칸이거나 "-" 이면 빈칸으로 둔다. `rcept_dt` 는 공시목록(list.json)에서 그 접수번호의 접수일을 가져온다.
    `filings.csv` 는 사업보고서 공시 목록(원본·정정 포함)과 재무제표 API 가 실제로 쓴 접수번호(`used_by_fnltt`).
-3. **표준화 층** `data/dart/standardized/` — 지금은 재무상태표(BS)만. 아래 "표준화 층 (재무상태표)" 절.
+3. **표준화 층** `data/dart/standardized/` — 재무상태표(BS)와 손익(PL, 손익계산서 + 포괄손익계산서). 아래 "표준화 층" 두 절.
    설계 근거 자료로 `data/dart/account_inventory.csv` 가 있다: 서로 다른 (재무제표, account_id, 계정명) 마다 쓰는 회사, 연도,
    연결/별도, 행 수, ord 범위, 같은 이름의 id 수, 같은 id 의 이름 수.
 
@@ -225,8 +225,38 @@ python dart_collect.py --standardize # 받지 않고 재무상태표 표준화·
 - **비교 가능성** `bs_coverage.csv`: 노드마다 30개 재무제표(5개사 × 3년 × 연결/별도, 당기 열) 중 값이 있는 수, 매핑 행 수,
   연결에서 5개사 × 3년 모두 값이 있는지(`all5_cfs`), 그 노드가 공통으로 비교되는 가장 깊은 노드인지(`frontier_cfs`).
 
-`python dart_collect.py --standardize` 는 받지 않고 `statements.csv` 에서 다시 만든다. 점검 실패나 매핑 없는 줄이 있으면
-종료 코드 1. 매핑표에 없는 줄(새 회사·새 연도)은 "매핑 없음" 으로 보고하고 값에 넣지 않는다.
+### 표준화 층 (손익, 같은 `--standardize`)
+
+재무상태표와 같은 엔진(`dart/standardize.py`, 명세 `standardize.BS` / `standardize.PL`)으로 처리한다. 다른 점만 적는다.
+
+- **표준 계정과목** `data/dart/standard/accounts_pl.csv` (`std_id, parent, sign, name_ko, name_en, kind, formula, note`).
+  손익계산서(IS)와 포괄손익계산서(CIS)를 **한 재무제표 "PL"** 로 본다. SK하이닉스·NAVER 는 IS 가 없고 CIS 하나에 다 있다.
+  **부호 있는 나무**다: `sign` 은 노드가 부모에 더해지는 부호다 (PL.OP = PL.REV − PL.OPEX + PL.OOI, PL.OPEX = PL.COGS + PL.SGA,
+  PL.PBT = PL.OP + PL.NONOP, PL.NONOP = 금융수익 − 금융비용 + 기타수익 − 기타비용 + 지분법손익, PL.CONT = PL.PBT − PL.TAX,
+  PL.NI = PL.CONT + PL.DISC). 금액은 노드의 자연스러운 방향으로 저장한다 (비용은 양수). `kind`:
+  `formula` (PL.GP = REV − COGS, PL.CI = NI + OCI) 는 나무 밖에서 공식으로 정의하고 보고값과 공식 값이 같은지 본다.
+  `attribution` (PL.NIO/NIN, PL.CIO/CIN) 은 합계를 지배·비지배로 나눈다 (자식 CONT/DISC 는 합산). `per_share` (EPS, 원/주) 는
+  부모·자식이 없고 어떤 합산·공식에도 쓰지 않는다 (차트를 읽을 때 검사).
+  기능별(매출원가·판관비) 4개사와 성격별(영업수익·영업비용) NAVER 는 PL.OPEX 와 PL.OP 에서 비교된다.
+- **매핑표** `data/dart/standard/mapping_pl.csv`: 키는 `corp_code, fs_div, sj_div, bsns_year, account_id, account_nm, occurrence`.
+  `bsns_year` 는 보통 빈칸(모든 연도)이고, 같은 줄의 공시 부호가 보고서마다 달라 연도별로 달리 처리해야 할 때만 연도를 적는다
+  (LG에너지솔루션 연결 "기타포괄손익 법인세효과"). 같은 줄에 빈칸 행과 연도 행이 함께 있으면 오류다. BS 의 열에 더해
+  `role` (`value` 그 줄이 노드 값을 나른다 / `check_only` 다른 곳에 이미 있는 값을 다시 적은 줄 — 두 재무제표 회사의 CIS 맨 위
+  당기순이익. 노드 값과 같은지 점검만 하고 더하지 않는다), `flip` (1 / −1. 차트 방향과 반대로 공시한 줄. 표준 금액 = 공시 × flip.
+  산술 근거가 있을 때만 쓰고 근거를 `note` 에 적는다).
+- **표준화 표** `pl.csv`: `bs.csv` 열에 `period_start`(흐름이라 기간 시작일, 결산월로 계산), `kind`, `unit`(KRW, 주당 노드는
+  KRW/주)을 더했다. `source` 는 reported / rollup / formula(공식 노드). 사업보고서(11011)의 thstrm/frmtrm/bfefrmtrm 은
+  회계연도 전체(12개월) 금액이다 (분기·반기 보고서를 넣으면 누적 금액은 `*_add_amount` 에 있다 — 지금은 쓰지 않는다).
+- **대사** `pl_checks.csv`, 요약 `pl_checks.md`: 보고값과 하위 부호 합계가 둘 다 있는 모든 노드(PL.OP, PL.PBT, PL.CONT, PL.NI,
+  PL.OCI, PL.OCI.R, PL.OCI.N, 귀속 PL.NIO/NIN …; PL.OP·PBT·NI·OCI 는 필수), `보고값=공식` (PL.GP, PL.CI), 귀속 항등식
+  (NIO + NIN = NI, CIO + CIN = CI 는 연결 필수; NIO.CONT + NIN.CONT = CONT 등은 값이 있을 때), `check_only=노드값`, 그리고
+  재작성 비교(`전기=전년보고서당기`, `전전기=2년전보고서당기`: N 년 보고서의 전기·전전기 열과 앞선 보고서의 당기 열을 표준화 노드 값으로
+  비교. 차이는 고치지 않는다. 한쪽 보고서에만 값이 있으면 status=one_side). 설명된 실패는 `standardize.KNOWN_FINDINGS` 에
+  이유와 함께 적는다 (지금 1건: LG에너지솔루션 2023 보고서 2021 열의 총포괄손익 귀속 합 1백만원 차이).
+- **비교 가능성** `pl_coverage.csv`: BS 와 같은 열. `n_rollup_only` 는 보고값 없이 합계·공식 값으로만 있는 재무제표 수.
+
+`python dart_collect.py --standardize` 는 받지 않고 `statements.csv` 에서 다시 만든다. 설명되지 않은 점검 실패, 필수 대사의
+값 없음, 매핑 없는 줄이 있으면 종료 코드 1. 매핑표에 없는 줄(새 회사·새 연도)은 "매핑 없음" 으로 보고하고 값에 넣지 않는다.
 
 ### 점검 (`--check`)
 
