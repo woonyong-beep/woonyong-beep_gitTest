@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>매수듀레이션 실험실</title>
-<meta name="description" content="매수듀레이션 몬테카를로 시뮬레이션과 TQQQ 무한매수법 백테스트를 브라우저에서 직접 돌려 보는 페이지">
+<meta name="description" content="매수듀레이션 몬테카를로 시뮬레이션과 TQQQ 무한매수법 백테스트를 브라우저에서 직접 돌려 보고, DART 재무제표의 표준화 값과 출처를 살펴보는 페이지">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -16,6 +16,7 @@
     <nav class="tabs" role="tablist" aria-label="분석 선택">
       <button role="tab" id="tab-duration" aria-controls="panel-duration" aria-selected="true">매수듀레이션 시뮬레이터</button>
       <button role="tab" id="tab-infinite" aria-controls="panel-infinite" aria-selected="false" tabindex="-1">무한매수법 백테스트</button>
+      <button role="tab" id="tab-dart" aria-controls="panel-dart" aria-selected="false" tabindex="-1">재무제표 탐색</button>
     </nav>
   </div>
 </header>
@@ -159,6 +160,75 @@
       </ul>
     </div>
   </section>
+
+  <!-- ============================================================ 3. 재무제표 탐색 (DART) -->
+  <section id="panel-dart" role="tabpanel" aria-labelledby="tab-dart" hidden>
+    <div class="intro">
+      <p>삼성전자, SK하이닉스, 현대자동차, LG에너지솔루션, NAVER 5개사의 2023~2025 사업보고서 재무제표(DART)를 회사마다 다른 계정 이름 대신 <b>하나의 표준 계정 체계</b>에 맞춰 보여 줍니다. 숫자를 누르면 그 값이 회사가 보고한 어느 줄에서 왔는지 볼 수 있습니다.</p>
+    </div>
+    <p id="dart-loading" class="loading">데이터를 불러오는 중…</p>
+    <div id="dart-main" hidden>
+      <div class="card status-box" id="dart-status" aria-live="polite"></div>
+
+      <div class="seg" id="dart-views" role="group" aria-label="보기 선택">
+        <button type="button" data-view="company" aria-pressed="true">회사별 보기</button>
+        <button type="button" data-view="compare" aria-pressed="false">회사 간 비교</button>
+      </div>
+
+      <!-- 회사별 보기 -->
+      <div id="dart-view-company">
+        <form class="card controls" id="form-dart" novalidate>
+          <div class="grid">
+            <label class="field"><span>회사</span><select name="corp"></select></label>
+            <label class="field"><span>연결 / 별도</span>
+              <select name="fs"><option value="CFS" selected>연결</option><option value="OFS">별도</option></select></label>
+            <label class="field"><span>재무제표</span>
+              <select name="stmt"><option value="BS" selected>재무상태표</option><option value="PL">손익 (손익계산서 + 포괄손익계산서)</option></select></label>
+            <label class="field"><span>단위</span>
+              <select name="unit" class="dart-unit"><option value="jo" selected>조 원</option><option value="eok">억 원</option><option value="mil">백만 원</option><option value="won">원</option></select></label>
+          </div>
+          <div class="actions">
+            <label class="check"><input type="checkbox" name="empty"> 값 없는 계정도 보기</label>
+            <button type="button" class="secondary" id="dart-expand">모두 펼치기</button>
+            <button type="button" class="secondary" id="dart-collapse">기본 보기</button>
+          </div>
+        </form>
+        <p class="key">각 열은 그 해 사업보고서의 당기 금액입니다. 숫자 앞에 표시가 없으면 회사가 보고한 값, <span class="src">합</span> = 하위 계정을 더한 값, <span class="src">식</span> = 공식으로 계산한 값. <span class="absent">없음</span> 은 0 이 아니라 값이 없다는 뜻입니다. 주당이익은 단위와 관계없이 원/주입니다.</p>
+        <div class="table-wrap dart-wrap"><table class="data dart" id="dart-table"></table></div>
+        <p class="small muted" id="dart-empty-note"></p>
+      </div>
+
+      <!-- 회사 간 비교 -->
+      <div id="dart-view-compare" hidden>
+        <form class="card controls" id="form-cmp" novalidate>
+          <div class="grid">
+            <label class="field"><span>계정 찾기</span><input type="search" id="cmp-search" placeholder="예: 매출, 차입, PL.OP" autocomplete="off"></label>
+            <label class="field wide"><span>표준 계정</span><select id="cmp-node"></select></label>
+            <label class="field"><span>연결 / 별도</span>
+              <select name="fs"><option value="CFS" selected>연결</option><option value="OFS">별도</option></select></label>
+            <label class="field"><span>단위</span>
+              <select name="unit" class="dart-unit"><option value="jo" selected>조 원</option><option value="eok">억 원</option><option value="mil">백만 원</option><option value="won">원</option></select></label>
+          </div>
+        </form>
+        <p class="coverage" id="cmp-coverage"></p>
+        <ul class="hints" id="cmp-hints"></ul>
+        <div class="table-wrap dart-wrap"><table class="data dart cmp" id="cmp-table"></table></div>
+        <h2>회사별 막대그래프</h2>
+        <div class="chart" id="cmp-chart"></div>
+      </div>
+    </div>
+
+    <div id="interpretation-dart" class="interpretation">
+      <h2>이 화면으로 알 수 있는 것</h2>
+      <ul>
+        <li><strong>회사마다 다른 계정 이름이 한 줄로 모입니다.</strong> 같은 차입금도 회사에 따라 "단기차입금", "유동성장기부채", "차입금" 등으로 다르게 적습니다. 숫자를 눌러 회사가 실제로 쓴 이름과 금액, 그리고 DART 원문을 확인할 수 있습니다.</li>
+        <li><strong>큰 항목일수록 5개사를 그대로 비교할 수 있습니다.</strong> 자산총계, 유동자산, 매출, 영업이익, 당기순이익은 5개사 모두 값이 있습니다. 매출채권, 사채 같은 세부 항목은 본문에 따로 적지 않는 회사가 있어 "없음"으로 나옵니다.</li>
+        <li><strong>"없음"은 0이 아닙니다.</strong> 회사가 그 항목을 따로 표시하지 않았다는 뜻이고, 금액은 상위 항목 안에 들어 있습니다. NAVER는 비용을 성격별로 적어 매출원가와 판관비가 없고, 영업비용에서 다른 회사와 비교됩니다.</li>
+        <li><strong>"합" 표시는 이 프로젝트가 계산한 값입니다.</strong> 회사가 소계를 적지 않은 자리에 하위 항목을 더해 넣었습니다. 회사가 소계를 적은 경우에는 하위 항목의 합이 그 값과 원 단위까지 같은지 검증했습니다.</li>
+        <li><strong>같은 표준 항목이어도 구성이 같다는 보장은 없습니다.</strong> 특히 "기타"가 붙은 항목은 회사마다 담는 내용이 다릅니다. 이를 가르려면 주석 정보가 필요하고, 아직 다루지 않았습니다.</li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <footer class="site-foot">
@@ -172,14 +242,29 @@
       <li>매수듀레이션 시뮬레이터의 가격은 로그정규(랜덤워크) 또는 로그가격 평균회귀 모형에서 만든 가상 경로입니다.</li>
     </ul>
     <p><b>데이터</b>: TQQQ 일별 분할·배당 조정 종가. Yahoo Finance chart API에서 2026-11-13에 직접 받았습니다. <span id="data-range">수록 기간 2010-02-11 ~ 2026-11-11, 4,214거래일.</span></p>
+    <p><b>재무제표 데이터</b>: 금융감독원 OpenDART(전자공시) 단일회사 전체 재무제표 API에서 2026-11-13에 받은 사업보고서 재무제표입니다. 금액은 공시된 원 단위 그대로이며, 각 열은 그 해 보고서의 당기 금액입니다.</p>
+    <ul>
+      <li>회사마다 다른 계정을 하나의 표준 계정 체계로 옮긴 매핑과 합산은 이 프로젝트가 직접 만든 것이며 오류가 있을 수 있습니다. 숫자마다 출처 패널에서 원래 줄과 DART 원문을 확인할 수 있습니다.</li>
+      <li>시험 범위: 5개사, 2023~2025 사업연도, 사업보고서(연간)만. 재무상태표와 손익계산서·포괄손익계산서만 표준화했고, 현금흐름표·자본변동표·주석은 아직 다루지 않습니다.</li>
+    </ul>
     <p><b>원본 코드</b>: <a href="https://github.com/woonyong-beep/woonyong-beep_gitTest">github.com/woonyong-beep/woonyong-beep_gitTest</a> (research/ 폴더의 buy_duration.py, infinite_buy.py, backtest_tqqq.py). 이 페이지의 계산은 그 Python 스크립트를 그대로 옮긴 것입니다.</p>
   </div>
 </footer>
 
 <div class="tooltip" id="tooltip" role="status" hidden></div>
+<div class="prov-backdrop" id="dart-backdrop" hidden></div>
+<aside class="prov" id="dart-prov" role="dialog" aria-modal="true" aria-labelledby="prov-title" tabindex="-1" hidden>
+  <div class="prov-head">
+    <button type="button" class="icon-btn" id="prov-back" aria-label="이전 출처로" hidden>←</button>
+    <h2 id="prov-title">출처</h2>
+    <button type="button" class="icon-btn" id="prov-close" aria-label="출처 패널 닫기 (Esc)">×</button>
+  </div>
+  <div class="prov-body" id="prov-body"></div>
+</aside>
 <script src="tqqq-data.js"></script>
 <script src="calc.js"></script>
 <script src="charts.js"></script>
+<script src="dart.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

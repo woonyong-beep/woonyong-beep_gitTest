@@ -31,12 +31,13 @@ backtest/
   strategies/              매수후보유, N일 분할매수, 무한매수법, 일정비중 리밸런싱
 research/                  예전 단발성 분석 스크립트와 그래프
 tools/make_web_data.py     docs/tqqq-data.js 를 data/prices/yahoo/TQQQ.csv 에서 만든다
+tools/make_web_dart.py     docs/dart-data.js 를 data/dart/ 의 표준화 CSV 에서 만든다 (웹 페이지 3번 탭 "재무제표 탐색")
 dart_collect.py            DART 재무제표 수집 CLI (파일럿)
 dart_watchlist.csv         DART 수집 대상 (corp_code, stock_code, name)
 dart/                      OpenDART 클라이언트·추출·점검·계정 목록·원문 시험 추출기
 data/dart/                 DART 데이터 (raw, extracted, 점검 결과, 계정 목록). 아래 "DART 재무제표" 절
 tests/                     pytest (네트워크 없이 돈다)
-docs/                      브라우저용 시뮬레이터 페이지 (자기 파일만 쓴다. TQQQ 가격은 tqqq-data.js)
+docs/                      브라우저용 페이지 (자기 파일만 쓴다. TQQQ 가격은 tqqq-data.js, DART 재무제표는 dart-data.js)
 knowledge/                 작업 규칙 문서
 ```
 
@@ -294,6 +295,20 @@ python tools/make_web_data.py --check    # 지금 파일이 다시 만든 것과
 
 기간은 `research/backtest_tqqq.py` 와 같은 끝 날짜로 고정되어 있어, 웹 페이지 2번 탭의 기본값 결과가 그 스크립트 (a) 와 같다.
 기간을 늘리려면 두 파일의 `END` 와 `docs/index.html` 의 데이터 설명을 함께 고친다.
+
+### docs/dart-data.js (3번 탭 "재무제표 탐색")
+
+```
+python tools/make_web_dart.py            # data/dart/standard/*.csv, standardized/*.csv, extracted/*.csv → docs/dart-data.js
+python tools/make_web_dart.py --check    # 지금 파일이 다시 만든 것과 같은지만 확인
+```
+
+5개사 × 2023~2025 × 연결/별도, 각 해 보고서의 당기 열(`period=current`)만 싣는다 (약 440KB, gzip 약 60KB).
+노드 값(보고값·합계/공식 값), 당기 금액이 있는 as-reported BS·IS·CIS 줄 전부와 그 줄의 매핑 행(method, confidence, note, role, flip),
+접수번호·공시일, 당기 열 대사 점검, 점검 요약(`*_checks.csv` 와 `standardize.KNOWN_FINDINGS`)이 들어 있다. 금액은 원 단위 정수 그대로다.
+만들 때 매핑으로 다시 고른 줄의 합(× flip)과 트리 합계가 `bs.csv` / `pl.csv` 의 amount·raw_index 와 정확히 같은지 확인하고,
+다르면 멈춘다. 표준화 CSV 를 다시 만들었으면 이 스크립트도 다시 돌린다. 페이지는 탭을 처음 열 때 이 파일을 불러온다
+(`index.html#dart` 로 바로 열 수 있다).
 
 ## 데이터 소스와 한계 (2026-11 확인)
 

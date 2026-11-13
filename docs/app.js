@@ -10,7 +10,8 @@
   const last = { duration: null, infinite: null };
 
   // ------------------------------------------------------------ 탭
-  const tabs = [$("#tab-duration"), $("#tab-infinite")];
+  const tabs = [$("#tab-duration"), $("#tab-infinite"), $("#tab-dart")];
+  const HASH = ["#duration", "#infinite", "#dart"];
   function selectTab(btn, focus) {
     for (const b of tabs) {
       const on = b === btn;
@@ -19,14 +20,17 @@
       document.getElementById(b.getAttribute("aria-controls")).hidden = !on;
     }
     if (focus) btn.focus();
-    history.replaceState(null, "", btn === tabs[1] ? "#infinite" : "#duration");
+    history.replaceState(null, "", HASH[tabs.indexOf(btn)]);
     Charts.hideTip();
     redraw();
   }
   tabs.forEach((b, i) => {
     b.addEventListener("click", () => selectTab(b));
     b.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowRight" || e.key === "ArrowLeft") { e.preventDefault(); selectTab(tabs[(i + 1) % 2], true); }
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        selectTab(tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length], true);
+      }
     });
   });
 
@@ -197,6 +201,7 @@
   function redraw() {
     if (!$("#panel-duration").hidden && last.duration) Charts.riskReturn($("#chart-duration"), last.duration.res);
     if (!$("#panel-infinite").hidden && last.infinite) renderInfinite();
+    if (!$("#panel-dart").hidden && window.DartView) window.DartView.show();
   }
   let rt, lastW = window.innerWidth;
   window.addEventListener("resize", () => {
@@ -207,7 +212,7 @@
 
   // ------------------------------------------------------------ 시작
   syncModel();
-  if (location.hash === "#infinite") selectTab(tabs[1]);
+  if (HASH.indexOf(location.hash) > 0) selectTab(tabs[HASH.indexOf(location.hash)]);
   runInfinite();
   runDuration();
 })();

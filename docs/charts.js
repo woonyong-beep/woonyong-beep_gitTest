@@ -268,5 +268,5 @@
   // 터치 화면: 차트 밖을 누르면 툴팁을 닫는다 (터치는 pointerleave 로 닫지 않으므로)
   document.addEventListener("pointerdown", (ev) => { if (!ev.target.closest || !ev.target.closest(".chart")) hideTip(); });
 
-  root.Charts = { riskReturn, wealthChart, hideTip, signed };
+  root.Charts = { riskReturn, wealthChart, showTip, hideTip, signed };
 })(window);
