@@ -57,7 +57,7 @@ def load_csv(path, column=None, name=None, positive=True):
     """날짜 열(date 또는 observation_date)과 값 열 하나를 읽는다.
 
     column=None 이면 adj_close 가 모두 채워져 있을 때 adj_close, 아니면 close.
-    data/tqqq_daily.csv (date,adj_close) 같은 예전 파일도 이것으로 읽는다.
+    data/tqqq_daily_tiingo.csv (date,adj_close) 처럼 열이 두 개뿐인 파일도 이것으로 읽는다.
     """
     path = Path(path)
     with open(path, newline="", encoding="utf-8") as f:

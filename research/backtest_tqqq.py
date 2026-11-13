@@ -10,12 +10,15 @@
 미투입 현금은 연 3% 고정 무위험수익률로 불어난다 (infinite_buy.RF). 실제 T-bill 금리가 아니다.
 거래비용, 세금, 호가 차이는 반영하지 않았다.
 
-데이터: data/tqqq_daily.csv (date, adj_close)
-- 분할/배당 조정 종가. Yahoo Finance 조정 종가를 공개 GitHub 저장소
-  culolom/culolom-backtest (data/TQQQ.csv) 에서 받은 것이다. stooq, Yahoo API 등은
-  이 환경의 프록시가 막아서 직접 받을 수 없었다.
+데이터: data/prices/yahoo/TQQQ.csv 의 adj_close (collect.py 가 Yahoo Finance chart API 에서 직접 받은 것)
+- 분할/배당 조정 종가. collect.py 가 나중에 새 행을 덧붙여도 결과가 바뀌지 않도록
+  START ~ END (2010-02-11 ~ 2026-11-11, 4214행) 만 쓴다. 기간을 늘리려면 END 를 고친다.
+- Yahoo 는 새 배당이 생기면 과거 조정 종가 전체에 같은 배수를 곱해 다시 맞춘다. 이 스크립트의 결과는
+  모두 가격 비율로만 계산되므로 그런 상수배 재조정에는 바뀌지 않는다.
+- 예전에는 공개 GitHub 저장소 culolom/culolom-backtest 의 Yahoo 사본(data/tqqq_daily.csv)을 썼는데,
+  2025-12 ~ 2026-09 의 배당 조정 네 번이 날짜가 어긋나 있어 2026-11 에 이 파일로 바꿨다.
 - 검증용으로 Tiingo 조정 종가 (공개 저장소 ravelab/l-etf, data/etf-tqqq.csv) 를
-  data/tqqq_daily_tiingo.csv 로 함께 저장했고, 실행 시 두 소스의 일별 수익률을 비교한다.
+  data/tqqq_daily_tiingo.csv 로 저장해 두었고, 실행 시 두 소스의 일별 수익률을 비교한다.
 
 실행 (저장소 루트에서): python research/backtest_tqqq.py
 그래프는 research/backtest_tqqq.png 로 저장된다.
@@ -31,7 +34,9 @@ from infinite_buy import BUDGET, DT, RF, SPLITS, TAKE_PROFIT
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent           # 저장소 루트 (data/ 는 루트에 있다)
-DATA = ROOT / "data" / "tqqq_daily.csv"
+DATA = ROOT / "data" / "prices" / "yahoo" / "TQQQ.csv"
+START, END = "2010-02-11", "2026-11-11"   # 발표한 수치의 기간. 파일에 이후 행이 늘어도 여기까지만 쓴다
+N_ROWS = 4214
 DATA_CHECK = ROOT / "data" / "tqqq_daily_tiingo.csv"
 GROWTH = np.exp(RF * DT)     # 하루 무위험 성장률
 HORIZONS = {"5년": 252 * 5, "1년": 252}
@@ -42,10 +47,15 @@ STEP = 1                     # 롤링 시작일 간격 (거래일)
 
 def load_prices():
     df = pd.read_csv(DATA, parse_dates=["date"])
-    s = df.set_index("date")["adj_close"]
+    full = df.set_index("date")["adj_close"]
+    s = full.loc[START:END]
 
     print("=== 데이터 점검 ===")
-    print(f"파일: {DATA.relative_to(ROOT)}  행 수 {len(s)}  기간 {s.index[0].date()} ~ {s.index[-1].date()}")
+    print(f"파일: {DATA.relative_to(ROOT)} (adj_close, 파일 전체 {full.index[0].date()} ~ {full.index[-1].date()} "
+          f"{len(full)}행 중 {START} ~ {END} 사용)")
+    print(f"사용 구간: 행 수 {len(s)}  기간 {s.index[0].date()} ~ {s.index[-1].date()}")
+    assert str(s.index[0].date()) == START and str(s.index[-1].date()) == END and len(s) == N_ROWS, \
+        "사용 구간의 행 수나 처음/마지막 날짜가 예전과 다르다"
     assert s.index.is_monotonic_increasing and not s.index.duplicated().any(), "날짜 정렬/중복 문제"
     assert s.notna().all() and (s > 0).all(), "결측 또는 0 이하 가격"
     per_year = s.groupby(s.index.year).size()
@@ -66,9 +76,10 @@ def load_prices():
         j = pd.concat([s, t], axis=1, join="inner")
         rr = j.pct_change().dropna()
         diff = (rr.iloc[:, 0] - rr.iloc[:, 1]).abs()
+        big = diff[diff > 0.001]
         print(f"교차검증 (Tiingo, 겹치는 {len(j)}일): 일별 수익률 차이 최대 {diff.max():.3%} "
-              f"({diff.idxmax().date()}), 평균 {diff.mean():.5%}, 0.1% 초과 {(diff > 0.001).sum()}일 "
-              f"(최근 배당락일 조정 차이)")
+              f"({diff.idxmax().date()}), 평균 {diff.mean():.5%}, 0.1% 초과 {len(big)}일"
+              + (" (" + ", ".join(str(d.date()) for d in big.index) + ")" if len(big) else ""))
     return s
 
 

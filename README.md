@@ -22,16 +22,16 @@ collectors/                소스별 수집기. 모두 fetch(symbol, start=None,
 data/
   prices/<source>/<symbol>.csv   시계열 하나 = 파일 하나
   catalog.csv              저장된 시계열 목록
-  tqqq_daily.csv           예전 TQQQ 조정 종가 (research/ 스크립트와 docs/ 가 쓴다. 손대지 않는다)
-  tqqq_daily_tiingo.csv    예전 교차검증용 Tiingo 조정 종가
+  tqqq_daily_tiingo.csv    예전 교차검증용 Tiingo 조정 종가 (research/backtest_tqqq.py 가 교차검증에만 쓴다)
 backtest/
   data.py                  시계열 불러오기, 점검, 여러 자산 날짜 맞추기
   engine.py                일별 루프 백테스터 (미래 정보 차단)
   metrics.py               최종자산, CAGR, 변동성, 샤프, 최대낙폭, 롤링 시작일 분포
   strategies/              매수후보유, N일 분할매수, 무한매수법, 일정비중 리밸런싱
 research/                  예전 단발성 분석 스크립트와 그래프
+tools/make_web_data.py     docs/tqqq-data.js 를 data/prices/yahoo/TQQQ.csv 에서 만든다
 tests/                     pytest (네트워크 없이 돈다)
-docs/                      브라우저용 시뮬레이터 페이지 (자기 파일만 쓴다)
+docs/                      브라우저용 시뮬레이터 페이지 (자기 파일만 쓴다. TQQQ 가격은 tqqq-data.js)
 knowledge/                 작업 규칙 문서
 ```
 
@@ -152,7 +152,10 @@ python -m pytest
 - `test_lookahead.py`: 미래 가격을 바꿔도 과거 결정이 같은지, 전략이 미래 값에 닿을 수 없는지
 - `test_collectors.py`: `tests/fixtures/` 에 저장한 실제 응답으로 수집기와 병합 규칙 시험 (네트워크를 막고 돈다)
 - `test_regression_tqqq.py`: 새 엔진이 `research/backtest_tqqq.py` (a) 의 TQQQ 수치
-  (최종자산 29,238 / 24,239 / 23,480 / 12,212, 완료 사이클 72회, 평균 비중 70.1%, 최장 사이클 780거래일) 를 재현하는지
+  (`data/prices/yahoo/TQQQ.csv` 2010-02-11 ~ 2026-11-11, 최종자산 29,456 / 24,420 / 22,848 / 12,272,
+  완료 사이클 72회, 평균 비중 70.1%, 최장 사이클 780거래일) 를 재현하는지.
+  끝 날짜를 고정하고 가격 비율로만 비교하므로 collect.py 가 새 행을 덧붙이거나 새 배당으로 과거 adj_close 를
+  상수배 재조정해도 깨지지 않는다. 그 이전 구간의 수익률이 바뀌면 (실제 데이터 정정) 실패한다
 
 ## 예전 분석 스크립트 (research/)
 
@@ -161,10 +164,22 @@ python -m pytest
 ```
 python research/buy_duration.py      # 매수듀레이션 몬테카를로, research/buy_duration_frontier.png
 python research/infinite_buy.py      # 무한매수법 몬테카를로 (몇 분 걸림)
-python research/backtest_tqqq.py     # TQQQ 실데이터 백테스트, data/tqqq_daily.csv, research/backtest_tqqq.png
+python research/backtest_tqqq.py     # TQQQ 실데이터 백테스트, data/prices/yahoo/TQQQ.csv (2010-02-11 ~ 2026-11-11), research/backtest_tqqq.png
 ```
 
-`backtest_tqqq.py` 만 pandas 를 쓴다.
+`backtest_tqqq.py` 만 pandas 를 쓴다. 예전에는 `data/tqqq_daily.csv` (공개 GitHub 저장소의 Yahoo 사본) 를 썼는데,
+2025-12 ~ 2026-09 의 배당 조정 네 번이 날짜가 어긋나 있어 2026-11 에 collect.py 가 직접 받은
+`data/prices/yahoo/TQQQ.csv` 로 바꾸고 지웠다. 수치는 그때 다시 계산했다.
+
+## 웹 페이지 데이터 (docs/tqqq-data.js)
+
+```
+python tools/make_web_data.py            # data/prices/yahoo/TQQQ.csv 2010-02-11 ~ 2026-11-11 → docs/tqqq-data.js
+python tools/make_web_data.py --check    # 지금 파일이 다시 만든 것과 같은지만 확인
+```
+
+기간은 `research/backtest_tqqq.py` 와 같은 끝 날짜로 고정되어 있어, 웹 페이지 2번 탭의 기본값 결과가 그 스크립트 (a) 와 같다.
+기간을 늘리려면 두 파일의 `END` 와 `docs/index.html` 의 데이터 설명을 함께 고친다.
 
 ## 데이터 소스와 한계 (2026-11 확인)
 
