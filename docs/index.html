@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>매수듀레이션 실험실</title>
+<meta name="description" content="매수듀레이션 몬테카를로 시뮬레이션과 TQQQ 무한매수법 백테스트를 브라우저에서 직접 돌려 보는 페이지">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <h1>매수듀레이션 실험실</h1>
+    <p class="lede">언제, 얼마나 나눠 사느냐가 만기 성과를 어떻게 바꾸는지 직접 돌려 봅니다. 모든 계산은 이 브라우저 안에서 이루어집니다.</p>
+    <nav class="tabs" role="tablist" aria-label="분석 선택">
+      <button role="tab" id="tab-duration" aria-controls="panel-duration" aria-selected="true">매수듀레이션 시뮬레이터</button>
+      <button role="tab" id="tab-infinite" aria-controls="panel-infinite" aria-selected="false" tabindex="-1">무한매수법 백테스트</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- ============================================================ 1. 매수듀레이션 -->
+  <section id="panel-duration" role="tabpanel" aria-labelledby="tab-duration">
+    <div class="intro">
+      <p>예산 100을 같은 종목에 같은 기간 투자합니다. <b>기준군</b>은 0시점에 전액 매수하고, <b>비교군</b>은 예산을 D개월에 걸쳐 매달 똑같이 나눠 삽니다. 아직 사지 않은 예산은 무위험채권에 둡니다. 성과는 만기 자산의 기대값과 표준편차(위험)로 비교합니다.</p>
+    </div>
+
+    <form class="card controls" id="form-duration" novalidate>
+      <div class="presets" role="group" aria-label="예시 시나리오">
+        <span class="presets-label">예시 시나리오</span>
+        <button type="button" class="chip" data-preset="rw">랜덤워크</button>
+        <button type="button" class="chip" data-preset="mr">평균회귀, 적정가 시작</button>
+        <button type="button" class="chip" data-preset="mr20">평균회귀, 20% 고평가 시작</button>
+      </div>
+      <div class="grid">
+        <label class="field"><span>시장 기대수익률 (연 %)</span>
+          <input type="number" name="mu" value="8" step="0.5" min="-20" max="40" inputmode="decimal"></label>
+        <label class="field"><span>변동성 (연 %)</span>
+          <input type="number" name="sigma" value="16" step="1" min="1" max="100" inputmode="decimal"></label>
+        <label class="field"><span>무위험수익률 (연 %)</span>
+          <input type="number" name="rf" value="3" step="0.25" min="-5" max="20" inputmode="decimal"></label>
+        <label class="field"><span>투자기간 (년)</span>
+          <input type="number" name="years" value="5" step="0.5" min="0.5" max="30" inputmode="decimal"></label>
+        <label class="field"><span>가격 모형</span>
+          <select name="model">
+            <option value="rw" selected>랜덤워크</option>
+            <option value="mr">평균회귀</option>
+          </select></label>
+        <label class="field mr-only"><span>회귀속도 κ (연)</span>
+          <input type="number" name="kappa" value="0.5" step="0.1" min="0" max="10" inputmode="decimal"></label>
+        <label class="field mr-only"><span>시작 괴리 (로그 기준 %, + 고평가)</span>
+          <input type="number" name="x0" value="0" step="5" min="-100" max="100" inputmode="decimal"></label>
+        <label class="field"><span>경로 수</span>
+          <select name="paths">
+            <option value="10000">10,000</option>
+            <option value="50000" selected>50,000</option>
+            <option value="100000">100,000</option>
+            <option value="200000">200,000</option>
+          </select></label>
+        <label class="field"><span>난수 시드</span>
+          <input type="number" name="seed" value="0" step="1" min="0" max="999999" inputmode="numeric"></label>
+      </div>
+      <div class="actions">
+        <button type="submit" class="primary" id="run-duration">시뮬레이션 실행</button>
+        <div class="progress" id="progress-duration" hidden><div class="bar"><i></i></div><span></span></div>
+        <p class="error" id="error-duration" role="alert"></p>
+      </div>
+    </form>
+
+    <div class="results" id="results-duration" aria-live="polite">
+      <p class="summary" id="summary-duration"></p>
+      <h2>전략별 결과</h2>
+      <div class="table-wrap"><table class="data" id="table-duration"></table></div>
+      <details class="defs">
+        <summary>표 읽는 법</summary>
+        <ul>
+          <li><b>기대만기자산</b>: 예산 100이 만기에 평균 얼마가 되는가.</li>
+          <li><b>위험</b>: 만기 자산의 표준편차.</li>
+          <li><b>샤프</b>: (기대 총수익률 − 무위험 총수익률) ÷ 총수익률 표준편차. 기간 전체 기준이며 연율화하지 않았습니다.</li>
+          <li><b>기준군 대비</b>: 기대만기자산의 차이.</li>
+          <li><b>기준군 이길 확률</b>: 만기 자산이 기준군보다 큰 경로의 비율.</li>
+          <li><b>위험조정 초과</b>: 같은 위험이 되도록 기준군을 무위험채권과 섞었을 때(자본시장선 위의 점)보다 기대만기자산이 얼마나 많은가. 음수면 그 위험을 지는 더 나은 방법이 있다는 뜻입니다.</li>
+        </ul>
+      </details>
+      <h2>위험–수익 평면</h2>
+      <p class="chart-note">가로축 위험, 세로축 기대만기자산. 점선은 무위험점과 기준군을 잇는 자본시장선(CML)입니다.</p>
+      <div class="chart" id="chart-duration"></div>
+    </div>
+
+    <div id="interpretation-duration" class="interpretation">
+      <h2>결과 읽는 법</h2>
+      <ul>
+        <li><strong>점선(자본시장선)</strong>은 "처음에 일부만 사고 나머지는 끝까지 무위험채권에 두는" 조합입니다. 분할매수 점이 이 선 아래에 있으면, 같은 위험을 더 단순한 방법으로 지면서 더 많이 벌 수 있었다는 뜻입니다.</li>
+        <li><strong>랜덤워크</strong>에서는 분할 기간을 늘릴수록 위험과 기대수익이 함께 줄고, 점들이 선보다 조금씩 아래에 놓입니다. 분할매수는 위험을 줄이지만, 처음부터 덜 사는 것보다 효율이 낮습니다.</li>
+        <li><strong>평균회귀 + 고평가에서 시작</strong>으로 바꾸면 점들이 선 위로 올라갑니다. 분할매수가 유리해지는 것은 나눠 사는 것 자체의 효과가 아니라, 가격이 내려올 것이라는 예측이 맞았기 때문입니다.</li>
+        <li><strong>평균회귀 + 적정가에서 시작</strong>이면 처음에 전액 매수하는 쪽이 가장 좋습니다.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================================================ 2. 무한매수법 -->
+  <section id="panel-infinite" role="tabpanel" aria-labelledby="tab-infinite" hidden>
+    <div class="intro">
+      <p>실제 TQQQ 일별 조정 종가로 무한매수법을 백테스트합니다. 현재 자산을 N등분해 매 거래일 종가에 1회분씩 사고, 종가가 평단가보다 익절 기준 이상 오르면 전량 매도한 뒤 다음 거래일부터 새 사이클을 시작합니다. N회분을 다 쓰면 익절 기준에 닿을 때까지 보유합니다(손절 없음). 사지 않은 현금은 무위험수익률로 불어납니다.</p>
+    </div>
+
+    <form class="card controls" id="form-infinite" novalidate>
+      <div class="grid">
+        <label class="field"><span>분할 횟수 N</span>
+          <input type="number" name="splits" value="40" step="1" min="1" max="500" inputmode="numeric"></label>
+        <label class="field"><span>익절 기준 (%)</span>
+          <input type="number" name="tp" value="10" step="1" min="1" max="500" inputmode="decimal"></label>
+        <label class="field"><span>무위험수익률 (연 %)</span>
+          <input type="number" name="rf" value="3" step="0.25" min="-5" max="20" inputmode="decimal"></label>
+        <label class="field"><span>시작일</span>
+          <input type="date" name="start"></label>
+        <label class="field"><span>종료일</span>
+          <input type="date" name="end"></label>
+      </div>
+      <div class="actions">
+        <button type="submit" class="primary">백테스트 실행</button>
+        <button type="button" class="secondary" id="reset-infinite">기본값으로</button>
+        <p class="error" id="error-infinite" role="alert"></p>
+      </div>
+    </form>
+
+    <div class="results" id="results-infinite" aria-live="polite">
+      <p class="summary" id="summary-infinite"></p>
+      <h2>전략별 결과</h2>
+      <div class="table-wrap"><table class="data" id="table-infinite"></table></div>
+      <details class="defs">
+        <summary>표 읽는 법</summary>
+        <ul>
+          <li><b>만기자산</b>: 시작 자산 100이 종료일에 얼마가 되었는가.</li>
+          <li><b>연복리수익률</b>: 달력 기준 연수(365.25일)로 계산한 연평균 복리수익률.</li>
+          <li><b>변동성</b>: 일간 수익률 표준편차 × √252.</li>
+          <li><b>샤프</b>: (일간 평균수익률 − 일간 무위험수익률) × 252 ÷ 변동성.</li>
+          <li><b>최대낙폭</b>: 직전 고점 대비 가장 크게 빠진 비율과 그 날짜.</li>
+          <li><b>일정비중 (동일노출)</b>: 주식 비중을 무한매수법의 평균 주식 비중과 같게 고정하고 매일 리밸런싱한 전략.</li>
+        </ul>
+      </details>
+      <h2>무한매수법 사이클</h2>
+      <div class="tiles" id="tiles-infinite"></div>
+      <ul class="facts" id="facts-infinite"></ul>
+      <h2>자산 추이 (로그 눈금)</h2>
+      <p class="chart-note">시작 자산 100 기준. 세로축은 로그 눈금이라 같은 높이 차이가 같은 배율을 뜻합니다.</p>
+      <div class="chart" id="chart-infinite"></div>
+    </div>
+
+    <div id="interpretation-infinite" class="interpretation">
+      <h2>결과 읽는 법</h2>
+      <ul>
+        <li><strong>전체 기간 기본값</strong>에서 무한매수법은 단순 보유보다 만기자산이 적습니다. 익절이 큰 상승 구간을 잘라내는데, 이 기간 TQQQ는 상승이 압도적이었습니다.</li>
+        <li><strong>최대낙폭은 거의 줄지 않습니다.</strong> 손절이 없어 긴 하락장에서는 40회분을 모두 쓴 채 그대로 하락을 맞습니다. 2021년 11월에 시작한 사이클은 약 3년 동안 끝나지 않았습니다.</li>
+        <li><strong>같은 주식 비중을 고정으로 유지한 전략</strong>보다는 만기자산이 많습니다. 급락 뒤 반등이 잦았던 구간에서 낮은 가격에 계속 사들인 효과입니다. 가격이 무작위로 움직인다는 가정의 시뮬레이션에서는 이 우위가 나타나지 않았습니다.</li>
+        <li><strong>시작일을 바꿔 보세요.</strong> 2021년 11월에 시작해 1년 뒤에 끝내면 모든 전략이 원금의 4분의 1 수준이 되고, 2018년 8월에 시작해 5년 뒤에 끝내면 무한매수법이 가장 낮습니다. 하나의 과거 경로에서 나온 결과이므로 시작일에 따라 순위가 바뀝니다.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="notice"><b>투자 권유가 아닙니다.</b> 이 페이지의 결과는 가정에 따른 시뮬레이션과 과거 데이터에 대한 백테스트일 뿐이며, 미래 수익을 보장하거나 특정 투자를 권하지 않습니다.</p>
+    <p><b>단순화한 점</b></p>
+    <ul>
+      <li>무한매수법의 실제 세부 규칙(LOC 주문, 절반 평단 매수, 쿼터 손절 등)은 반영하지 않았습니다. 모든 매매는 그날 종가에 체결된다고 봅니다.</li>
+      <li>거래비용, 세금, 호가 차이, 환율은 반영하지 않았습니다.</li>
+      <li>무위험수익률은 기간 내내 일정하다고 가정합니다. 실제 국채 금리가 아닙니다.</li>
+      <li>매수듀레이션 시뮬레이터의 가격은 로그정규(랜덤워크) 또는 로그가격 평균회귀 모형에서 만든 가상 경로입니다.</li>
+    </ul>
+    <p><b>데이터</b>: TQQQ 일별 분할·배당 조정 종가. Yahoo Finance 조정 종가를 공개 GitHub 저장소 <a href="https://github.com/culolom/culolom-backtest">culolom/culolom-backtest</a>에서 받았습니다. <span id="data-range"></span></p>
+    <p><b>원본 코드</b>: <a href="https://github.com/woonyong-beep/woonyong-beep_gitTest">github.com/woonyong-beep/woonyong-beep_gitTest</a> (buy_duration.py, infinite_buy.py, backtest_tqqq.py). 이 페이지의 계산은 그 Python 스크립트를 그대로 옮긴 것입니다.</p>
+  </div>
+</footer>
+
+<div class="tooltip" id="tooltip" role="status" hidden></div>
+<script src="tqqq-data.js"></script>
+<script src="calc.js"></script>
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
