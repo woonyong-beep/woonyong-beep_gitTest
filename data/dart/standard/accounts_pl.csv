@@ -1,0 +1,51 @@
+std_id,parent,sign,name_ko,name_en,kind,formula,note
+PL.NI,,,당기순이익,Profit (loss),total,,손익계산서와 포괄손익계산서 양쪽에 나오면 같은 값이어야 한다
+PL.CONT,PL.NI,1,계속영업이익,Profit from continuing operations,subtotal,,중단영업이 없는 회사는 표시하지 않는 경우가 많다. 그때는 세전이익과 법인세비용의 합산으로만 존재
+PL.PBT,PL.CONT,1,법인세비용차감전순이익,Profit before tax,subtotal,,
+PL.OP,PL.PBT,1,영업이익,Operating profit,subtotal,,
+PL.REV,PL.OP,1,매출액,Revenue,item,,영업수익으로 표시하는 회사 포함
+PL.OPEX,PL.OP,-1,영업비용,Operating expenses,group,,기능별 손익은 매출원가+판관비의 합산 / 성격별 손익(NAVER)은 영업비용 한 줄이 직접 대응
+PL.COGS,PL.OPEX,1,매출원가,Cost of sales,item,,
+PL.SGA,PL.OPEX,1,판매비와관리비,Selling general and administrative expenses,item,,
+PL.OOI,PL.OP,1,기타영업수익,Other operating income,item,,영업이익 위에 표시되는 기타영업수익 (LG에너지솔루션 연결)
+PL.GP,,,매출총이익,Gross profit,formula,PL.REV-PL.COGS,합산 나무 밖의 공식 항목. 회사가 공시한 값과 공식 값이 일치해야 한다. 성격별 손익에는 없다
+PL.NONOP,PL.PBT,1,영업외손익,Non-operating items,group,,
+PL.FININC,PL.NONOP,1,금융수익,Finance income,item,,
+PL.FINCOST,PL.NONOP,-1,금융비용,Finance costs,item,,
+PL.OTHINC,PL.NONOP,1,기타수익,Other non-operating income,item,,기타영업외수익·기타이익
+PL.OTHEXP,PL.NONOP,-1,기타비용,Other non-operating expenses,item,,기타영업외비용·기타손실
+PL.EQM,PL.NONOP,1,지분법손익,Share of profit of associates and joint ventures,item,,별도재무제표의 종속·관계기업 투자손익 포함
+PL.TAX,PL.CONT,-1,법인세비용,Income tax expense,item,,법인세수익이면 음수
+PL.DISC,PL.NI,1,중단영업이익,Profit from discontinued operations,item,,
+PL.NIO,,,지배기업소유주지분순이익,Profit attributable to owners of parent,attribution,,PL.NIO + PL.NIN = PL.NI (연결)
+PL.NIO.CONT,PL.NIO,1,지배기업소유주지분 계속영업이익,Owners - continuing operations,item,,
+PL.NIO.DISC,PL.NIO,1,지배기업소유주지분 중단영업이익,Owners - discontinued operations,item,,
+PL.NIN,,,비지배지분순이익,Profit attributable to non-controlling interests,attribution,,
+PL.NIN.CONT,PL.NIN,1,비지배지분 계속영업이익,NCI - continuing operations,item,,
+PL.NIN.DISC,PL.NIN,1,비지배지분 중단영업이익,NCI - discontinued operations,item,,
+PL.OCI,,,기타포괄손익,Other comprehensive income (net of tax),total,,
+PL.OCI.N,PL.OCI,1,후속적으로 당기손익으로 재분류되지 않는 항목,OCI not reclassified to profit or loss,subtotal,,
+PL.OCI.N.DB,PL.OCI.N,1,확정급여제도 재측정요소,Remeasurements of defined benefit plans,item,,
+PL.OCI.N.EQI,PL.OCI.N,1,기타포괄손익-공정가치 지분상품 손익,Gains (losses) on equity instruments at FVOCI,item,,평가손익과 처분손익 포함
+PL.OCI.N.EQM,PL.OCI.N,1,지분법 기타포괄손익(재분류 안 됨),Share of OCI of associates - not reclassified,item,,
+PL.OCI.N.REV,PL.OCI.N,1,재평가손익,Revaluation surplus,item,,
+PL.OCI.N.TAX,PL.OCI.N,1,법인세효과(재분류 안 됨),Income tax on OCI not reclassified,item,,구성 항목을 세전으로 표시하고 법인세효과를 따로 적는 회사(LG에너지솔루션)용. 부호는 공시된 그대로
+PL.OCI.R,PL.OCI,1,후속적으로 당기손익으로 재분류될 수 있는 항목,OCI that may be reclassified to profit or loss,subtotal,,
+PL.OCI.R.FX,PL.OCI.R,1,해외사업환산손익,Exchange differences on translation,item,,
+PL.OCI.R.CFH,PL.OCI.R,1,현금흐름위험회피 손익,Cash flow hedges,item,,
+PL.OCI.R.EQM,PL.OCI.R,1,지분법 기타포괄손익(재분류됨),Share of OCI of associates - reclassified,item,,
+PL.OCI.R.DEBT,PL.OCI.R,1,기타포괄손익-공정가치 채무상품 손익,Gains (losses) on debt instruments at FVOCI,item,,
+PL.OCI.R.TAX,PL.OCI.R,1,법인세효과(재분류됨),Income tax on OCI reclassified,item,,
+PL.CI,,,총포괄손익,Total comprehensive income,formula,PL.NI+PL.OCI,
+PL.CIO,,,지배기업소유주지분 총포괄손익,Comprehensive income attributable to owners of parent,attribution,,PL.CIO + PL.CIN = PL.CI (연결)
+PL.CIN,,,비지배지분 총포괄손익,Comprehensive income attributable to non-controlling interests,attribution,,
+PL.EPS.B,,,기본주당이익(보통주),Basic earnings per share - common,per_share,,금액이 아니라 주당 원. 합산에 쓰지 않는다
+PL.EPS.D,,,희석주당이익(보통주),Diluted earnings per share - common,per_share,,
+PL.EPS.B.CONT,,,계속영업 기본주당이익(보통주),Basic EPS from continuing operations - common,per_share,,
+PL.EPS.B.DISC,,,중단영업 기본주당이익(보통주),Basic EPS from discontinued operations - common,per_share,,
+PL.EPS.D.CONT,,,계속영업 희석주당이익(보통주),Diluted EPS from continuing operations - common,per_share,,
+PL.EPS.D.DISC,,,중단영업 희석주당이익(보통주),Diluted EPS from discontinued operations - common,per_share,,
+PL.EPS.PB,,,기본주당이익(우선주),Basic earnings per share - preferred,per_share,,
+PL.EPS.PD,,,희석주당이익(우선주),Diluted earnings per share - preferred,per_share,,
+PL.EPS.PB.CONT,,,계속영업 기본주당이익(우선주),Basic EPS from continuing operations - preferred,per_share,,
+PL.EPS.PB.DISC,,,중단영업 기본주당이익(우선주),Basic EPS from discontinued operations - preferred,per_share,,
