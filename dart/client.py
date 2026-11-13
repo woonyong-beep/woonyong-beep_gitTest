@@ -60,8 +60,8 @@ def redact(text, key=None):
 
 def public_url(endpoint, params):
     """기록용 URL. 키 자리는 *** 로 둔다."""
-    p = {"crtfc_key": "***", **{k: v for k, v in params.items() if k != "crtfc_key"}}
-    return BASE + endpoint + "?" + urllib.parse.urlencode(p)
+    rest = urllib.parse.urlencode({k: v for k, v in params.items() if k != "crtfc_key"})
+    return BASE + endpoint + "?crtfc_key=***" + ("&" + rest if rest else "")
 
 
 def _urlopen(req, timeout):

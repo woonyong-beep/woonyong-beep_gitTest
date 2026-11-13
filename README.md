@@ -4,6 +4,7 @@
 
 1. 가격이나 값이 있는 것(주식, ETF, 지수, 환율, 암호화폐, 원자재, 금리)의 일별 데이터를 모아 한 가지 형식으로 저장한다.
 2. 그 데이터로 백테스트 프로그램을 쓰고 시험한다.
+3. (파일럿) 한국 상장사 재무제표를 DART(금융감독원 전자공시)에서 받아 as-reported 표로 저장한다. 아래 "DART 재무제표" 절.
 
 값을 만들어 내거나 채우지 않는다. 소스가 주지 않은 날은 저장하지 않고, 받지 못한 시계열은 오류를 그대로 보고한다.
 
@@ -30,6 +31,10 @@ backtest/
   strategies/              매수후보유, N일 분할매수, 무한매수법, 일정비중 리밸런싱
 research/                  예전 단발성 분석 스크립트와 그래프
 tools/make_web_data.py     docs/tqqq-data.js 를 data/prices/yahoo/TQQQ.csv 에서 만든다
+dart_collect.py            DART 재무제표 수집 CLI (파일럿)
+dart_watchlist.csv         DART 수집 대상 (corp_code, stock_code, name)
+dart/                      OpenDART 클라이언트·추출·점검·계정 목록·원문 시험 추출기
+data/dart/                 DART 데이터 (raw, extracted, 점검 결과, 계정 목록). 아래 "DART 재무제표" 절
 tests/                     pytest (네트워크 없이 돈다)
 docs/                      브라우저용 시뮬레이터 페이지 (자기 파일만 쓴다. TQQQ 가격은 tqqq-data.js)
 knowledge/                 작업 규칙 문서
@@ -156,6 +161,57 @@ python -m pytest
   완료 사이클 72회, 평균 비중 70.1%, 최장 사이클 780거래일) 를 재현하는지.
   끝 날짜를 고정하고 가격 비율로만 비교하므로 collect.py 가 새 행을 덧붙이거나 새 배당으로 과거 adj_close 를
   상수배 재조정해도 깨지지 않는다. 그 이전 구간의 수익률이 바뀌면 (실제 데이터 정정) 실패한다
+
+- `test_dart.py`: DART 클라이언트(키 가리기, 캐시, 오류), 응답 해석(`tests/fixtures/dart/`, 키 없음), 점검 로직(손으로 만든 예),
+  원문 추출기(작은 DART XML), 받아 둔 표의 잘 알려진 값 (삼성전자 2025 연결 자산총계 566,942,110백만원 등)
+
+## DART 재무제표 (파일럿)
+
+OpenDART API 로 사업보고서 재무제표(재무상태표 BS, 손익계산서 IS, 포괄손익계산서 CIS, 현금흐름표 CF, 자본변동표 SCE)를
+받아 **받은 그대로(as-reported)** 저장한다. 표준화 계정과목으로 옮기는 층은 아직 없다. 값을 지어내거나 채우지 않는다.
+
+```
+export DART_API_KEY=...            # OpenDART 인증키. 코드는 환경 변수에서만 읽고 어디에도 남기지 않는다
+python dart_collect.py             # dart_watchlist.csv 5개사, 2023~2025 사업보고서, 연결(CFS)·별도(OFS)
+python dart_collect.py --years 2021-2025 --only 삼성전자
+python dart_collect.py --check     # 받지 않고 점검 -> data/dart/checks.csv, checks.md
+python dart_collect.py --inventory # 받지 않고 계정 목록 -> data/dart/account_inventory.csv
+python dart_collect.py --doc-probe # 삼성전자 원문 문서에서 연결 재무상태표 시험 추출 -> data/dart/doc_probe.md
+```
+
+받은 응답은 모두 디스크에 캐시하고, 캐시가 있으면 다시 받지 않는다 (OpenDART 는 하루 호출 한도가 있다).
+그래서 두 번째 실행은 API 요청 0회다. 공시목록을 새로 받으려면 `data/dart/raw/list/` 의 해당 파일을 지운다.
+요청 URL 을 기록할 때는 키 자리를 `crtfc_key=***` 로 둔다.
+
+### 저장 층
+
+1. **raw** `data/dart/raw/` — API 응답 그대로 (JSON). 커밋한다.
+   - `company/<corp_code>.json` 기업개황, `list/<corp_code>_<공시유형>_<시작>_<끝>_p<쪽>.json` 공시검색,
+     `fnltt/<corp_code>/<연도>_<보고서코드>_<CFS|OFS>.json` 단일회사 전체 재무제표, `taxonomy/<양식>.json` XBRL 택사노미
+   - `raw/_large/` 의 원문 zip(`document/`), XBRL zip(`xbrl/`), 고유번호 zip(`corpCode.zip`) 은 크기 때문에 커밋하지 않는다.
+     `data/dart/large_manifest.csv` 에 경로, 접수번호, 바이트 수, sha256 을 남긴다.
+2. **extracted (as-reported)** `data/dart/extracted/statements.csv` — 긴 표 하나. 한 행 = 응답의 한 줄.
+   `corp_code, stock_code, company, rcept_no, rcept_dt(접수일), bsns_year, reprt_code, fs_div, sj_div, sj_nm, ord,
+   account_id(XBRL 요소 id 또는 "-표준계정코드 미사용-"), account_nm, account_detail(자본변동표의 자본 구성요소 열),
+   thstrm/frmtrm/bfefrmtrm _nm·_amount(당기·전기·전전기, 원 단위 정수), thstrm_add_amount·frmtrm_add_amount(분기·반기 누적),
+   currency, raw_file, raw_index`. `raw_file` 의 `list[raw_index]` 가 그 행의 원본이다.
+   금액이 빈칸이거나 "-" 이면 빈칸으로 둔다. `rcept_dt` 는 공시목록(list.json)에서 그 접수번호의 접수일을 가져온다.
+   `filings.csv` 는 사업보고서 공시 목록(원본·정정 포함)과 재무제표 API 가 실제로 쓴 접수번호(`used_by_fnltt`).
+3. **표준화 층** — 아직 없다 (계정과목 설계 뒤에 만든다). 설계 근거로 `data/dart/account_inventory.csv` 를 만든다:
+   서로 다른 (재무제표, account_id, 계정명) 마다 쓰는 회사, 연도, 연결/별도, 행 수, ord 범위, 같은 이름의 id 수, 같은 id 의 이름 수.
+
+### 점검 (`--check`)
+
+회사·연도·연결/별도마다 재무제표가 다 있는지와 중복 행, 자산총계 = 부채총계 + 자본총계 (원 단위 정확히),
+현금흐름표 기말현금 = 재무상태표 현금및현금성자산, N년 보고서의 전기 = N-1년 보고서의 당기 (다르면 종류별로: 금액다름,
+부호반대, 빈칸과0, 한쪽빈칸). 실패를 고치지 않고 그대로 적는다.
+
+### 알아 둘 것 (2026-11 확인)
+
+- `fnlttSinglAcntAll` 은 2015 사업연도(사업보고서)와 2016 1분기부터 데이터가 있다. 그 이전은 원문 문서에서 뽑아야 한다.
+- 정정공시가 있으면 `fnlttSinglAcntAll` 은 마지막 정정본의 접수번호와 값만 준다 (원래 공시의 값은 이 API 로는 못 받는다).
+- `ord` 는 화면에 보이는 행 순서가 아니다 (같은 묶음 안에서 대체로 account_id 순). 행의 위·아래 관계(계층)도 주지 않는다.
+- 단일 포괄손익계산서를 쓰는 회사(SK하이닉스, NAVER)는 IS 가 없고 손익 항목이 CIS 에 있다.
 
 ## 예전 분석 스크립트 (research/)
 

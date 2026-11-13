@@ -5,6 +5,7 @@
     python dart_collect.py --years 2021-2025   # 연도 범위 바꾸기
     python dart_collect.py --check             # 받지 않고 저장된 표만 점검 -> data/dart/checks.csv, checks.md
     python dart_collect.py --inventory         # 받지 않고 계정 목록 -> data/dart/account_inventory.csv
+    python dart_collect.py --doc-probe         # 삼성전자 원문 문서에서 연결 재무상태표 시험 추출 -> data/dart/doc_probe.md
 
 받은 응답은 data/dart/raw/ 에 캐시하고, 캐시가 있으면 다시 받지 않는다. 공시목록을 새로 받으려면
 data/dart/raw/list/ 의 해당 파일을 지운다. 값을 지어내거나 채우지 않는다. 없는 재무제표는 없다고 출력한다.
@@ -13,7 +14,7 @@ data/dart/raw/list/ 의 해당 파일을 지운다. 값을 지어내거나 채�
 import argparse
 import sys
 
-from dart import checks, client as dclient, collect, extract, inventory, paths
+from dart import checks, client as dclient, collect, doc_probe, extract, inventory, paths
 
 
 def parse_years(s):
@@ -80,7 +81,13 @@ def main(argv=None):
     p.add_argument("--only", nargs="*", help="이 회사들만 (이름 또는 종목코드)")
     p.add_argument("--check", action="store_true", help="받지 않고 저장된 표 점검")
     p.add_argument("--inventory", action="store_true", help="받지 않고 계정 목록 만들기")
+    p.add_argument("--doc-probe", action="store_true", help="삼성전자 원문 문서 시험 추출 (원문 zip 이 없으면 받는다)")
     args = p.parse_args(argv)
+    if args.doc_probe:
+        c = dclient.Client(timeout=600)
+        print(doc_probe.run(c, log=lambda s: None))
+        print(f"API 요청 {c.calls}회, 캐시 사용 {c.cache_hits}회")
+        return 0
     if args.check or args.inventory:
         rc = 0
         if args.check:
